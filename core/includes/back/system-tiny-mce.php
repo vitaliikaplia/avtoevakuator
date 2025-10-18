@@ -32,28 +32,68 @@ add_filter( 'mce_buttons_3', 'my_mce_buttons_3' );
 
 /** adding custom style formats and fix important mce configs */
 function my_mce_before_init_insert_formats( $init_array ) {
+    $mce_style_prefix = 'mce-';
     $style_formats = array(
         array(
-            'title' => 'Bold green text',
-            'inline' => 'span',
-            'classes' => 'boldGreenText'
+            'title' => __("Text sizes", TEXTDOMAIN),
+            'items' => array(
+                array(
+                    'title' => __("Very Small", TEXTDOMAIN),
+                    'inline' => 'span',
+                    'classes' => $mce_style_prefix.'text-size-very-small'
+                ),
+                array(
+                    'title' => __("Small", TEXTDOMAIN),
+                    'inline' => 'span',
+                    'classes' => $mce_style_prefix.'text-size-small'
+                ),
+                array(
+                    'title' => __("Normal", TEXTDOMAIN),
+                    'inline' => 'span',
+                    'classes' => $mce_style_prefix.'text-size-normal'
+                ),
+                array(
+                    'title' => __("Large", TEXTDOMAIN),
+                    'inline' => 'span',
+                    'classes' => $mce_style_prefix.'text-size-large'
+                ),
+                array(
+                    'title' => __("Very Large", TEXTDOMAIN),
+                    'inline' => 'span',
+                    'classes' => $mce_style_prefix.'text-size-very-large'
+                ),
+            )
         ),
         array(
-            'title' => 'Title icon style', // Title to show in dropdown
-            'selector' => 'img', // Element to add class to
-            'classes' => 'titleIcon'
+            'title' => __("Text colors", TEXTDOMAIN),
+            'items' => array(
+                array( 'title' => __('Accent Teal', TEXTDOMAIN), 'inline' => 'span', 'classes' => $mce_style_prefix.'text-color-accent-teal' ),
+                array( 'title' => __('Accent Orange', TEXTDOMAIN), 'inline' => 'span', 'classes' => $mce_style_prefix.'text-color-accent-orange' ),
+                array( 'title' => __('Accent Yellow', TEXTDOMAIN), 'inline' => 'span', 'classes' => $mce_style_prefix.'text-color-accent-yellow' ),
+                array( 'title' => __('Text White', TEXTDOMAIN), 'inline' => 'span', 'classes' => $mce_style_prefix.'text-color-text-white' ),
+                array( 'title' => __('White 80%', TEXTDOMAIN), 'inline' => 'span', 'classes' => $mce_style_prefix.'text-color-white-80' ),
+                array( 'title' => __('White 60%', TEXTDOMAIN), 'inline' => 'span', 'classes' => $mce_style_prefix.'text-color-white-60' ),
+                array( 'title' => __('White 40%', TEXTDOMAIN), 'inline' => 'span', 'classes' => $mce_style_prefix.'text-color-white-40' ),
+                array( 'title' => __('BG Main', TEXTDOMAIN), 'inline' => 'span', 'classes' => $mce_style_prefix.'text-color-bg-main' ),
+                array( 'title' => __('BG Secondary', TEXTDOMAIN), 'inline' => 'span', 'classes' => $mce_style_prefix.'text-color-bg-secondary' ),
+                array( 'title' => __('BG Darkest', TEXTDOMAIN), 'inline' => 'span', 'classes' => $mce_style_prefix.'text-color-bg-darkest' ),
+            )
         ),
         array(
-            'title' => '50% width column', // Title to show in dropdown
-            'block' => 'div',
-            'classes' => 'column50',
-            'wrapper' => true
+            'title' => __("Background text colors", TEXTDOMAIN),
+            'items' => array(
+                array( 'title' => __('Accent Teal', TEXTDOMAIN), 'inline' => 'span', 'classes' => $mce_style_prefix.'background-text-color ' . $mce_style_prefix.'background-text-color-accent-teal' ),
+                array( 'title' => __('Accent Orange', TEXTDOMAIN), 'inline' => 'span', 'classes' => $mce_style_prefix.'background-text-color ' . $mce_style_prefix.'background-text-color-accent-orange' ),
+                array( 'title' => __('Accent Yellow', TEXTDOMAIN), 'inline' => 'span', 'classes' => $mce_style_prefix.'background-text-color ' . $mce_style_prefix.'background-text-color-accent-yellow' ),
+                array( 'title' => __('Text White', TEXTDOMAIN), 'inline' => 'span', 'classes' => $mce_style_prefix.'background-text-color ' . $mce_style_prefix.'background-text-color-text-white' ),
+                array( 'title' => __('White 80%', TEXTDOMAIN), 'inline' => 'span', 'classes' => $mce_style_prefix.'background-text-color ' . $mce_style_prefix.'background-text-color-white-80' ),
+                array( 'title' => __('White 60%', TEXTDOMAIN), 'inline' => 'span', 'classes' => $mce_style_prefix.'background-text-color ' . $mce_style_prefix.'background-text-color-white-60' ),
+                array( 'title' => __('White 40%', TEXTDOMAIN), 'inline' => 'span', 'classes' => $mce_style_prefix.'background-text-color ' . $mce_style_prefix.'background-text-color-white-40' ),
+                array( 'title' => __('BG Main', TEXTDOMAIN), 'inline' => 'span', 'classes' => $mce_style_prefix.'background-text-color ' . $mce_style_prefix.'background-text-color-bg-main' ),
+                array( 'title' => __('BG Secondary', TEXTDOMAIN), 'inline' => 'span', 'classes' => $mce_style_prefix.'background-text-color ' . $mce_style_prefix.'background-text-color-bg-secondary' ),
+                array( 'title' => __('BG Darkest', TEXTDOMAIN), 'inline' => 'span', 'classes' => $mce_style_prefix.'background-text-color ' . $mce_style_prefix.'background-text-color-bg-darkest' ),
+            )
         ),
-        array(
-            'title' => 'Checklist style', // Title to show in dropdown
-            'selector' => 'ul', // Element to add class to
-            'classes' => 'checkList' // CSS class to add
-        )
     );
     $init_array['wpautop'] = false;
     $init_array['tadv_noautop'] = true;

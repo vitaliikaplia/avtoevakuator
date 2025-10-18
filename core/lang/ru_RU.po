@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: avtoevakuator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-19 00:46+0300\n"
+"POT-Creation-Date: 2025-10-19 01:35+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
 "Language-Team: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
@@ -745,6 +745,90 @@ msgstr "Тест"
 msgid "Thumbnail"
 msgstr "Миниатюра"
 
+#: core/includes/back/system-tiny-mce.php:38
+msgid "Text sizes"
+msgstr "Размеры текста"
+
+#: core/includes/back/system-tiny-mce.php:41
+msgid "Very Small"
+msgstr "Очень маленький"
+
+#: core/includes/back/system-tiny-mce.php:46
+msgid "Small"
+msgstr "Маленький"
+
+#: core/includes/back/system-tiny-mce.php:51
+msgid "Normal"
+msgstr "Нормальный"
+
+#: core/includes/back/system-tiny-mce.php:56
+msgid "Large"
+msgstr "Большой"
+
+#: core/includes/back/system-tiny-mce.php:61
+msgid "Very Large"
+msgstr "Огромный"
+
+#: core/includes/back/system-tiny-mce.php:68
+msgid "Text colors"
+msgstr "Цвета текста"
+
+#: core/includes/back/system-tiny-mce.php:70
+#: core/includes/back/system-tiny-mce.php:85
+msgid "Accent Teal"
+msgstr "Акцентный бирюзовый"
+
+#: core/includes/back/system-tiny-mce.php:71
+#: core/includes/back/system-tiny-mce.php:86
+msgid "Accent Orange"
+msgstr "Акцентный оранжевый"
+
+#: core/includes/back/system-tiny-mce.php:72
+#: core/includes/back/system-tiny-mce.php:87
+msgid "Accent Yellow"
+msgstr "Акцентный желтый"
+
+#: core/includes/back/system-tiny-mce.php:73
+#: core/includes/back/system-tiny-mce.php:88
+#| msgid "Text sizes"
+msgid "Text White"
+msgstr "Белый текст"
+
+#: core/includes/back/system-tiny-mce.php:74
+#: core/includes/back/system-tiny-mce.php:89
+msgid "White 80%"
+msgstr "Белый 80%"
+
+#: core/includes/back/system-tiny-mce.php:75
+#: core/includes/back/system-tiny-mce.php:90
+msgid "White 60%"
+msgstr "Белый 60%"
+
+#: core/includes/back/system-tiny-mce.php:76
+#: core/includes/back/system-tiny-mce.php:91
+msgid "White 40%"
+msgstr "Белый 40%"
+
+#: core/includes/back/system-tiny-mce.php:77
+#: core/includes/back/system-tiny-mce.php:92
+#| msgid "Main"
+msgid "BG Main"
+msgstr "Основной фон"
+
+#: core/includes/back/system-tiny-mce.php:78
+#: core/includes/back/system-tiny-mce.php:93
+msgid "BG Secondary"
+msgstr "Вторичный фон"
+
+#: core/includes/back/system-tiny-mce.php:79
+#: core/includes/back/system-tiny-mce.php:94
+msgid "BG Darkest"
+msgstr "Самый темный фон"
+
+#: core/includes/back/system-tiny-mce.php:83
+msgid "Background text colors"
+msgstr "Цвета фонового текста"
+
 #: core/init.php:109
 msgid "Please, install Advanced Custom Fields PRO version"
 msgstr "Пожалуйста, установите PRO версию Advanced Custom Fields"
@@ -1045,9 +1129,6 @@ msgstr "Отправить"
 #~ "пользователей, включить HTML-минификатор на фронтенде и скрыть Advanced "
 #~ "Custom Fields из панели инструментов. Кроме того, вы можете указать ключ "
 #~ "API Google Maps для интеграции с Advanced Custom Fields."
-
-#~ msgid "Main"
-#~ msgstr "Главный"
 
 #~ msgid "System tweaks"
 #~ msgstr "Настройки системы"

@@ -194,6 +194,42 @@
             }
         }
     }
+    .mce-{
+
+        &text-size-very-small{ font-size: 12px; }
+        &text-size-small{ font-size: 14px; }
+        &text-size-normal{ font-size: 16px; }
+        &text-size-large{ font-size: 20px; }
+        &text-size-very-large{ font-size: 24px; }
+
+        &text-color-accent-teal{ color: var(--color-accent-teal); }
+        &text-color-accent-orange{ color: var(--color-accent-orange); }
+        &text-color-accent-yellow{ color: var(--color-accent-yellow); }
+        &text-color-text-white{ color: var(--color-text-white); }
+        &text-color-white-80{ color: var(--color-white-80); }
+        &text-color-white-60{ color: var(--color-white-60); }
+        &text-color-white-40{ color: var(--color-white-40); }
+        &text-color-bg-main{ color: var(--color-bg-main); }
+        &text-color-bg-secondary{ color: var(--color-bg-secondary); }
+        &text-color-bg-darkest{ color: var(--color-bg-darkest); }
+
+        &background-text-color{
+            padding: 1px 2px;
+            border-radius: 2px;
+            display: inline-block;
+
+            &-accent-teal{ background-color: var(--color-accent-teal); }
+            &-accent-orange{ background-color: var(--color-accent-orange); }
+            &-accent-yellow{ background-color: var(--color-accent-yellow); }
+            &-text-white{ background-color: var(--color-text-white); }
+            &-white-80{ background-color: var(--color-white-80); }
+            &-white-60{ background-color: var(--color-white-60); }
+            &-white-40{ background-color: var(--color-white-40); }
+            &-bg-main{ background-color: var(--color-bg-main); }
+            &-bg-secondary{ background-color: var(--color-bg-secondary); }
+            &-bg-darkest{ background-color: var(--color-bg-darkest); }
+        }
+    }
 }
 
 .no-select{
