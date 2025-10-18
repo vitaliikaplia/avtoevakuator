@@ -1,0 +1,50 @@
+/* css variables
+-------------------------------------------------------------- */
+
+:root{
+
+    // Background colors
+    --color-bg-main: #12141D;
+    --color-bg-main-rgb: 18, 20, 29;
+    --color-bg-secondary: #1a1d2e;
+    --color-bg-secondary-rgb: 26, 29, 46;
+    --color-bg-darkest: #0A0C14;
+    --color-bg-darkest-rgb: 10, 12, 20;
+
+    // Accent colors
+    --color-accent-teal: #67DAEA;
+    --color-accent-teal-rgb: 103, 218, 234;
+    --color-accent-orange: #F47622;
+    --color-accent-orange-rgb: 244, 118, 34;
+    --color-accent-yellow: #FFC448;
+    --color-accent-yellow-rgb: 255, 196, 72;
+
+    // Text colors
+    --color-text-white: #FFFFFF;
+    --color-text-white-rgb: 255, 255, 255;
+    --color-white-80: rgba(255,255,255,0.8);   // white/80 — підзаголовки
+    --color-white-60: rgba(255,255,255,0.6);   // white/60 — допоміжний текст
+    --color-white-40: rgba(255,255,255,0.4);   // white/40 — плейсхолдери
+
+    // Helper transparent colors
+    --color-white-10: rgba(255,255,255,0.1);  // бордери, роздільники
+    --color-white-05: rgba(255,255,255,0.05); // фон карток, ховер-ефекти
+    --color-accent-teal-20: rgba(103,218,234,0.2); // #67DAEA/20
+    --color-accent-orange-20: rgba(244,118,34,0.2); // #F47622/20
+    --color-accent-yellow-20: rgba(255,196,72,0.2); // #FFC448/20
+    --color-accent-teal-30: rgba(103,218,234,0.3); // тіні кнопок
+    --color-accent-teal-10: rgba(103,218,234,0.1); // градієнтні картки
+
+    // Gradients (опис у тому ж стилі)
+    //--gradient-teal-to-orange: from-[#67DAEA] to-[#F47622];
+    //--gradient-dark-to-secondary: from-[#12141D] to-[#1a1d2e];
+    //--gradient-teal10-orange10: from-[#67DAEA]/10 to-[#F47622]/10;
+
+    // fonts
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Ubuntu', sans-serif;
+
+    // sizes
+    --inner-max-width: 1280px;
+
+}

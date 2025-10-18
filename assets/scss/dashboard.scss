@@ -2,6 +2,8 @@
 -------------------------------------------------------------- */
 
 @import "mixins";
+@import "animation";
+@import "variables";
 @import "plugins/select2.min";
 
 /* disable-welcome-and-tips */
@@ -76,6 +78,10 @@ body.mce-fullscreen{
             border: solid 1px #ccd0d4 !important;
             border-top: none !important;
 
+            &:first-child{
+                border-top: solid 1px #ccd0d4 !important;
+            }
+
             &.acf-field-accordion{
                 margin-left: 0 !important;
                 margin-right: 0 !important;
@@ -145,6 +151,16 @@ body.mce-fullscreen{
 .no_label > .acf-label{
     display: none;
 }
+.acf-field{
+    .acf-image-uploader.has-value{
+        img{
+            width: 100%;
+            max-width: 180px;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+        }
+    }
+}
 
 /* new gutenberg fixes */
 .editor-header .editor-header__center{
@@ -159,21 +175,6 @@ body.mce-fullscreen{
     .block-editor-tabbed-sidebar__tablist-and-close-button{
         .block-editor-tabbed-sidebar__tab:last-child{
             display: none !important;
-        }
-    }
-}
-
-/* custom acf options pages */
-#acf-group_634e9e74a9c0d,
-#acf-group_674a44baa578f{
-    padding: 0;
-
-    & > .inside{
-        padding: 0;
-
-        & > .acf-field{
-            padding: 0;
-            border: none !important;
         }
     }
 }
@@ -301,6 +302,150 @@ body.mce-fullscreen{
     #custom-email-log-information-fields-meta-box-2{
         .inside{
             font-size: 0 !important;
+        }
+    }
+}
+
+/* hide acf field group synchronise widget */
+#acfml-field-group-synchronise{
+    display: none !important;
+}
+
+/* disable editing for copied acf fields */
+.acfml-field-copied{
+    opacity: 0.75;
+    pointer-events: none;
+
+    .acfml-field-copied{
+        opacity: 1;
+    }
+}
+
+/* mce translate popup */
+.translate-popup-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    transform: translateZ(150000000000000000px);
+    z-index: 150000000000000000;
+}
+.translate-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    padding: 40px 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transform: translateZ(150000000000000001px) translate(-50%, -50%);
+    z-index: 150000000000000001;
+
+    &.busy {
+        cursor: wait;
+        pointer-events: none;
+
+        * {
+            pointer-events: none;
+            opacity: .5;
+        }
+    }
+
+    .lang-item {
+        padding: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &:hover {
+            background: #f0f0f0;
+        }
+    }
+
+    .close-translate-popup {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 0;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+
+        &:hover {
+            color: #666;
+        }
+    }
+}
+
+/* mce generate popup */
+.generate-popup-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    transform: translateZ(150000000000000000px);
+    z-index: 150000000000000000;
+}
+.generate-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    padding: 40px 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 150000000000000001;
+    transform: translateZ(150000000000000001px) translate(-50%, -50%);
+
+    &.busy {
+        cursor: wait;
+        pointer-events: none;
+
+        * {
+            pointer-events: none;
+            opacity: .5;
+        }
+    }
+
+    .generate-popup-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    input {
+        width: 480px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .close-generate-popup {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 0;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+
+        &:hover {
+            color: #666;
         }
     }
 }

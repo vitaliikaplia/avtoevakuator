@@ -32,8 +32,176 @@ function get_custom_gutenberg_blocks_array(){
             )
         ),
         array(
-            "name" => "second-screen",
-            "label" => __( "Second screen", TEXTDOMAIN ),
+            "name" => "tiles",
+            "label" => __( "Tiles", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
+            "name" => "services",
+            "label" => __( "Services", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
+            "name" => "reviews",
+            "label" => __( "Reviews", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
+            "name" => "map",
+            "label" => __( "Map", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
+            "name" => "districts",
+            "label" => __( "Districts", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
+            "name" => "cities",
+            "label" => __( "Cities", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
+            "name" => "features",
+            "label" => __( "Features", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
+            "name" => "cost-calculation",
+            "label" => __( "Cost Calculation", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
+            "name" => "call-examples",
+            "label" => __( "Call examples", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
+            "name" => "price-examples",
+            "label" => __( "Price examples", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
+            "name" => "special-offers",
+            "label" => __( "Special offers", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
+            "name" => "car-models",
+            "label" => __( "Car Models", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
+            "name" => "cta",
+            "label" => __( "Call To Action", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
+            "name" => "guarantees",
+            "label" => __( "Guarantees", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
+            "name" => "importantly",
+            "label" => __( "Importantly", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
+            "name" => "form",
+            "label" => __( "Form", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
+            "name" => "contacts",
+            "label" => __( "Contacts", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
+            "name" => "faq",
+            "label" => __( "FAQ", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
+            "name" => "prices",
+            "label" => __( "Prices", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
+            "name" => "icon",
+            "label" => __( "Icon", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
+            "name" => "text",
+            "label" => __( "Text", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
+            "name" => "hint",
+            "label" => __( "Hint", TEXTDOMAIN ),
             "category" => "main",
             'defaults' => array(
                 'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
@@ -117,7 +285,7 @@ function block_render_callback( $block, $content = '', $is_preview = false, $pos
     $context['is_admin'] = is_admin();
     $context['is_example'] = get_field('is_example');
     if($context['is_example']){
-        $context['block_example'] = TEMPLATE_DIRECTORY_URL . 'assets/block-preview/' . $block['category'] . '/' . $no_category_block_name . '.png?ver=' . ASSETS_VERSION;
+        $context['block_example'] = TEMPLATE_DIRECTORY_URL . 'screenshot.png?ver=' . ASSETS_VERSION;
     }
 
     // Render the block

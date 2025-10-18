@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: avtoevakuator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-18 22:19+0300\n"
+"POT-Creation-Date: 2025-10-19 00:17+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
 "Language-Team: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
@@ -62,19 +62,193 @@ msgid "First screen"
 msgstr ""
 
 #: core/gutenberg.php:36
-msgid "Second screen"
+msgid "Tiles"
 msgstr ""
 
-#: core/gutenberg.php:44 core/includes/back/custom-post-types.php:57
+#: core/gutenberg.php:44
+msgid "Services"
+msgstr ""
+
+#: core/gutenberg.php:52
+msgid "Reviews"
+msgstr ""
+
+#: core/gutenberg.php:60
+msgid "Map"
+msgstr ""
+
+#: core/gutenberg.php:68
+msgid "Districts"
+msgstr ""
+
+#: core/gutenberg.php:76
+msgid "Cities"
+msgstr ""
+
+#: core/gutenberg.php:84
+msgid "Features"
+msgstr ""
+
+#: core/gutenberg.php:92
+msgid "Cost Calculation"
+msgstr ""
+
+#: core/gutenberg.php:100
+msgid "Call examples"
+msgstr ""
+
+#: core/gutenberg.php:108
+msgid "Price examples"
+msgstr ""
+
+#: core/gutenberg.php:116
+msgid "Special offers"
+msgstr ""
+
+#: core/gutenberg.php:124
+msgid "Car Models"
+msgstr ""
+
+#: core/gutenberg.php:132
+msgid "Call To Action"
+msgstr ""
+
+#: core/gutenberg.php:140
+msgid "Guarantees"
+msgstr ""
+
+#: core/gutenberg.php:148
+msgid "Importantly"
+msgstr ""
+
+#: core/gutenberg.php:156
+msgid "Form"
+msgstr ""
+
+#: core/gutenberg.php:164
+msgid "Contacts"
+msgstr ""
+
+#: core/gutenberg.php:172
+msgid "FAQ"
+msgstr ""
+
+#: core/gutenberg.php:180
+msgid "Prices"
+msgstr ""
+
+#: core/gutenberg.php:188 core/includes/back/acf-field-button-type.php:200
+msgid "Icon"
+msgstr ""
+
+#: core/gutenberg.php:196 core/includes/back/dashboard-options.php:293
+msgid "Text"
+msgstr ""
+
+#: core/gutenberg.php:204
+msgid "Hint"
+msgstr ""
+
+#: core/gutenberg.php:212 core/includes/back/custom-post-types.php:57
 msgid "Pattern"
 msgstr ""
 
-#: core/gutenberg.php:294
+#: core/gutenberg.php:462
 msgid "Block"
 msgstr ""
 
-#: core/gutenberg.php:295
+#: core/gutenberg.php:463
 msgid "Block from"
+msgstr ""
+
+#: core/includes/back/acf-field-button-type.php:19
+msgid "Button Type"
+msgstr ""
+
+#: core/includes/back/acf-field-button-type.php:182
+msgid "Button Style"
+msgstr ""
+
+#: core/includes/back/acf-field-button-type.php:188
+msgid "- Select Style -"
+msgstr ""
+
+#: core/includes/back/acf-field-button-type.php:208
+msgid "- No Icon -"
+msgstr ""
+
+#: core/includes/back/acf-field-button-type.php:220
+msgid "Icon Position"
+msgstr ""
+
+#: core/includes/back/acf-field-button-type.php:226
+msgid "Left"
+msgstr ""
+
+#: core/includes/back/acf-field-button-type.php:227
+msgid "Right"
+msgstr ""
+
+#: core/includes/back/acf-field-button-type.php:235
+msgid "Options"
+msgstr ""
+
+#: core/includes/back/acf-field-nav-menu.php:19
+msgid "Nav Menu"
+msgstr ""
+
+#: core/includes/back/acf-field-nav-menu.php:38
+msgid "Return Value"
+msgstr ""
+
+#: core/includes/back/acf-field-nav-menu.php:39
+msgid "Specify the returned value on front end"
+msgstr ""
+
+#: core/includes/back/acf-field-nav-menu.php:44
+msgid "Nav Menu Object"
+msgstr ""
+
+#: core/includes/back/acf-field-nav-menu.php:45
+msgid "Nav Menu HTML"
+msgstr ""
+
+#: core/includes/back/acf-field-nav-menu.php:46
+msgid "Nav Menu ID"
+msgstr ""
+
+#: core/includes/back/acf-field-nav-menu.php:47
+msgid "All"
+msgstr ""
+
+#: core/includes/back/acf-field-nav-menu.php:53
+msgid "Menu Container"
+msgstr ""
+
+#: core/includes/back/acf-field-nav-menu.php:54
+msgid "What to wrap the Menu's ul with (when returning HTML only)"
+msgstr ""
+
+#: core/includes/back/acf-field-nav-menu.php:62
+msgid "Allow Null?"
+msgstr ""
+
+#: core/includes/back/acf-field-nav-menu.php:67
+msgid "Yes"
+msgstr ""
+
+#: core/includes/back/acf-field-nav-menu.php:68
+msgid "No"
+msgstr ""
+
+#: core/includes/back/acf-field-nav-menu.php:81
+#: core/includes/back/system-thumbnails.php:20
+#: core/includes/back/system-thumbnails.php:22
+msgid "None"
+msgstr ""
+
+#: core/includes/back/acf-field-nav-menu.php:128
+msgid "Choose one"
 msgstr ""
 
 #: core/includes/back/custom-post-types.php:6
@@ -420,194 +594,117 @@ msgstr ""
 msgid "Maintenance mode title for anonymous users"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:292
-msgid "Text"
-msgstr ""
-
-#: core/includes/back/dashboard-options.php:293
+#: core/includes/back/dashboard-options.php:294
 msgid "Maintenance mode text for anonymous users"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:308
+#: core/includes/back/dashboard-options.php:310
 msgid "Integrations"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:309
+#: core/includes/back/dashboard-options.php:311
 msgid "Integrations with third-party services options"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:314
+#: core/includes/back/dashboard-options.php:316
 msgid "Google Maps API key"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:315
+#: core/includes/back/dashboard-options.php:317
 msgid "Google Cloud Console"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:320
+#: core/includes/back/dashboard-options.php:322
+msgid "Telegram token"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:323
+msgid "Telegram token to integrate with Telegram bot"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:323
+#: core/includes/back/dashboard-options.php:329
+msgid "link"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:328
+msgid "Telegram chat ID"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:329
+msgid "Telegram chat ID to integrate with Telegram bot"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:334
 msgid "Other options"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:321
+#: core/includes/back/dashboard-options.php:335
 msgid "All other various options"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:326
+#: core/includes/back/dashboard-options.php:340
 msgid "Disable all updates"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:327
+#: core/includes/back/dashboard-options.php:341
 msgid "Disable plugins and WordPress core updates"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:332
+#: core/includes/back/dashboard-options.php:346
 msgid "Delete child media"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:333
+#: core/includes/back/dashboard-options.php:347
 msgid "Delete child media when parent post is deleted"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:338
+#: core/includes/back/dashboard-options.php:352
 msgid "Enable HTML cache"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:339
+#: core/includes/back/dashboard-options.php:353
 msgid "Enable HTML page cache for anonymous users"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:344
+#: core/includes/back/dashboard-options.php:358
 msgid "Enable minify"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:345
+#: core/includes/back/dashboard-options.php:359
 msgid "Enable HTML minifier on frontend"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:350
+#: core/includes/back/dashboard-options.php:364
 msgid "Hide ACF"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:351
+#: core/includes/back/dashboard-options.php:365
 msgid "Hide Advanced Custom Fields from Dashboard"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:356
+#: core/includes/back/dashboard-options.php:370
+msgid "Pages to patterns"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:371
 msgid "Parse all pages blocks as Gutenberg patterns"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:376
+msgid "Translation duplicates"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:377
+msgid "Create translation duplicates while adding posts"
 msgstr ""
 
 #: core/includes/back/dashboard-update-assets-version.php:16
 msgid "Update theme version"
 msgstr ""
 
-#: core/includes/back/system-acf-nav-menu-field.php:19
-msgid "Nav Menu"
-msgstr ""
-
-#: core/includes/back/system-acf-nav-menu-field.php:38
-msgid "Return Value"
-msgstr ""
-
-#: core/includes/back/system-acf-nav-menu-field.php:39
-msgid "Specify the returned value on front end"
-msgstr ""
-
-#: core/includes/back/system-acf-nav-menu-field.php:44
-msgid "Nav Menu Object"
-msgstr ""
-
-#: core/includes/back/system-acf-nav-menu-field.php:45
-msgid "Nav Menu HTML"
-msgstr ""
-
-#: core/includes/back/system-acf-nav-menu-field.php:46
-msgid "Nav Menu ID"
-msgstr ""
-
-#: core/includes/back/system-acf-nav-menu-field.php:47
-msgid "All"
-msgstr ""
-
-#: core/includes/back/system-acf-nav-menu-field.php:53
-msgid "Menu Container"
-msgstr ""
-
-#: core/includes/back/system-acf-nav-menu-field.php:54
-msgid "What to wrap the Menu's ul with (when returning HTML only)"
-msgstr ""
-
-#: core/includes/back/system-acf-nav-menu-field.php:62
-msgid "Allow Null?"
-msgstr ""
-
-#: core/includes/back/system-acf-nav-menu-field.php:67
-msgid "Yes"
-msgstr ""
-
-#: core/includes/back/system-acf-nav-menu-field.php:68
-msgid "No"
-msgstr ""
-
-#: core/includes/back/system-acf-nav-menu-field.php:81
-#: core/includes/back/system-thumbnails.php:20
-#: core/includes/back/system-thumbnails.php:22
-msgid "None"
-msgstr ""
-
-#: core/includes/back/system-acf-nav-menu-field.php:128
-msgid "Choose one"
-msgstr ""
-
 #: core/includes/back/system-disable-customizer.php:107
 msgid "The Customizer is currently disabled."
-msgstr ""
-
-#: core/includes/back/system-generate-blog-posts.php:10
-#: core/includes/back/system-generate-blog-posts.php:11
-#: core/includes/back/system-generate-blog-posts.php:163
-msgid "Generate Posts"
-msgstr ""
-
-#: core/includes/back/system-generate-blog-posts.php:85
-#, php-format
-msgid "Error generating post %d: %s"
-msgstr ""
-
-#: core/includes/back/system-generate-blog-posts.php:112
-#, php-format
-msgid "Successfully generated %d posts!"
-msgstr ""
-
-#: core/includes/back/system-generate-blog-posts.php:119
-msgid "Errors occurred:"
-msgstr ""
-
-#: core/includes/back/system-generate-blog-posts.php:129
-msgid "Generate Random Posts"
-msgstr ""
-
-#: core/includes/back/system-generate-blog-posts.php:136
-msgid "Number of posts to generate"
-msgstr ""
-
-#: core/includes/back/system-generate-blog-posts.php:140
-msgid "How many posts should be generated (max 100)"
-msgstr ""
-
-#: core/includes/back/system-generate-blog-posts.php:145
-msgid "Paragraphs per post"
-msgstr ""
-
-#: core/includes/back/system-generate-blog-posts.php:149
-msgid "How many paragraphs should be in each post (max 50)"
-msgstr ""
-
-#: core/includes/back/system-generate-blog-posts.php:154
-msgid "Include featured image"
-msgstr ""
-
-#: core/includes/back/system-generate-blog-posts.php:158
-msgid "Generate and attach a random featured image for each post"
 msgstr ""
 
 #: core/includes/back/system-redirect-rules.php:8

@@ -316,6 +316,18 @@ function get_custom_options(){
                     'label'         => __("Google Maps API key", TEXTDOMAIN),
                     'description'   => '<a href="https://console.cloud.google.com/apis/credentials" target="_blank">'.__('Google Cloud Console', TEXTDOMAIN).'</a>',
                 ),
+                array (
+                    'type'          => 'password',
+                    'name'          => 'telegram_token',
+                    'label'         => __("Telegram token", TEXTDOMAIN),
+                    'description'   => __("Telegram token to integrate with Telegram bot", TEXTDOMAIN) . ', <a href="https://core.telegram.org/bots#6-botfather" target="_blank">'.__('link', TEXTDOMAIN).'</a>',
+                ),
+                array (
+                    'type'          => 'text',
+                    'name'          => 'telegram_chat_id',
+                    'label'         => __("Telegram chat ID", TEXTDOMAIN),
+                    'description'   => __("Telegram chat ID to integrate with Telegram bot", TEXTDOMAIN) . ', <a href="https://core.telegram.org/bots#6-botfather" target="_blank">'.__('link', TEXTDOMAIN).'</a>',
+                ),
             ),
         ),
         'various'   =>  Array(
@@ -355,7 +367,14 @@ function get_custom_options(){
                 array (
                     'type'          => 'checkbox',
                     'name'          => 'parse_all_pages_blocks_as_gutenberg_patterns',
-                    'label'         => __("Parse all pages blocks as Gutenberg patterns", TEXTDOMAIN),
+                    'label'         => __("Pages to patterns", TEXTDOMAIN),
+                    'description'   => __("Parse all pages blocks as Gutenberg patterns", TEXTDOMAIN)
+                ),
+                array (
+                    'type'          => 'checkbox',
+                    'name'          => 'create_translation_duplicates_while_adding_posts',
+                    'label'         => __("Translation duplicates", TEXTDOMAIN),
+                    'description'   => __("Create translation duplicates while adding posts", TEXTDOMAIN)
                 ),
             ),
         ),

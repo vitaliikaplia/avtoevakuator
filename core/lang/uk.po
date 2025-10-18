@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: avtoevakuator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-18 22:20+0300\n"
+"POT-Creation-Date: 2025-10-19 00:18+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
 "Language-Team: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
@@ -62,20 +62,194 @@ msgid "First screen"
 msgstr "Перший екран"
 
 #: core/gutenberg.php:36
-msgid "Second screen"
-msgstr "Другий екран"
+msgid "Tiles"
+msgstr "Плитки"
 
-#: core/gutenberg.php:44 core/includes/back/custom-post-types.php:57
+#: core/gutenberg.php:44
+msgid "Services"
+msgstr "Послуги"
+
+#: core/gutenberg.php:52
+msgid "Reviews"
+msgstr "Відгуки"
+
+#: core/gutenberg.php:60
+msgid "Map"
+msgstr "Мапа"
+
+#: core/gutenberg.php:68
+msgid "Districts"
+msgstr "Райони"
+
+#: core/gutenberg.php:76
+msgid "Cities"
+msgstr "Міста"
+
+#: core/gutenberg.php:84
+msgid "Features"
+msgstr "Особливості"
+
+#: core/gutenberg.php:92
+msgid "Cost Calculation"
+msgstr "Розрахунок вартості"
+
+#: core/gutenberg.php:100
+msgid "Call examples"
+msgstr "Приклади дзвінків"
+
+#: core/gutenberg.php:108
+msgid "Price examples"
+msgstr "Приклади цін"
+
+#: core/gutenberg.php:116
+msgid "Special offers"
+msgstr "Спеціальні пропозиції"
+
+#: core/gutenberg.php:124
+msgid "Car Models"
+msgstr "Моделі автомобілів"
+
+#: core/gutenberg.php:132
+msgid "Call To Action"
+msgstr "Заклик до дії"
+
+#: core/gutenberg.php:140
+msgid "Guarantees"
+msgstr "Гарантії"
+
+#: core/gutenberg.php:148
+msgid "Importantly"
+msgstr "Важливо, що"
+
+#: core/gutenberg.php:156
+msgid "Form"
+msgstr "Форма"
+
+#: core/gutenberg.php:164
+msgid "Contacts"
+msgstr "Контакти"
+
+#: core/gutenberg.php:172
+msgid "FAQ"
+msgstr "Часто задавані питання"
+
+#: core/gutenberg.php:180
+msgid "Prices"
+msgstr "Ціни"
+
+#: core/gutenberg.php:188 core/includes/back/acf-field-button-type.php:200
+msgid "Icon"
+msgstr "Іконка"
+
+#: core/gutenberg.php:196 core/includes/back/dashboard-options.php:293
+msgid "Text"
+msgstr "Текст"
+
+#: core/gutenberg.php:204
+msgid "Hint"
+msgstr "Підказка"
+
+#: core/gutenberg.php:212 core/includes/back/custom-post-types.php:57
 msgid "Pattern"
 msgstr "Патерн"
 
-#: core/gutenberg.php:294
+#: core/gutenberg.php:462
 msgid "Block"
 msgstr "Блок"
 
-#: core/gutenberg.php:295
+#: core/gutenberg.php:463
 msgid "Block from"
 msgstr "Блок від"
+
+#: core/includes/back/acf-field-button-type.php:19
+msgid "Button Type"
+msgstr "Тип кнопки"
+
+#: core/includes/back/acf-field-button-type.php:182
+msgid "Button Style"
+msgstr "Стиль кнопки"
+
+#: core/includes/back/acf-field-button-type.php:188
+msgid "- Select Style -"
+msgstr "- Оберіть Стиль -"
+
+#: core/includes/back/acf-field-button-type.php:208
+msgid "- No Icon -"
+msgstr "- Без іконки -"
+
+#: core/includes/back/acf-field-button-type.php:220
+msgid "Icon Position"
+msgstr "Розташування іконки"
+
+#: core/includes/back/acf-field-button-type.php:226
+msgid "Left"
+msgstr "Зліва"
+
+#: core/includes/back/acf-field-button-type.php:227
+msgid "Right"
+msgstr "Зправа"
+
+#: core/includes/back/acf-field-button-type.php:235
+msgid "Options"
+msgstr "Опції"
+
+#: core/includes/back/acf-field-nav-menu.php:19
+msgid "Nav Menu"
+msgstr "Навігаційне меню"
+
+#: core/includes/back/acf-field-nav-menu.php:38
+msgid "Return Value"
+msgstr "Значення, що повертається"
+
+#: core/includes/back/acf-field-nav-menu.php:39
+msgid "Specify the returned value on front end"
+msgstr "Вкажіть значення, що повертається"
+
+#: core/includes/back/acf-field-nav-menu.php:44
+msgid "Nav Menu Object"
+msgstr "Об'єкт меню"
+
+#: core/includes/back/acf-field-nav-menu.php:45
+msgid "Nav Menu HTML"
+msgstr "HTML меню"
+
+#: core/includes/back/acf-field-nav-menu.php:46
+msgid "Nav Menu ID"
+msgstr "ID меню"
+
+#: core/includes/back/acf-field-nav-menu.php:47
+msgid "All"
+msgstr "Усі"
+
+#: core/includes/back/acf-field-nav-menu.php:53
+msgid "Menu Container"
+msgstr "Контейнер меню"
+
+#: core/includes/back/acf-field-nav-menu.php:54
+msgid "What to wrap the Menu's ul with (when returning HTML only)"
+msgstr "Обгортка для меню"
+
+#: core/includes/back/acf-field-nav-menu.php:62
+msgid "Allow Null?"
+msgstr "Дозволити порожнє значення?"
+
+#: core/includes/back/acf-field-nav-menu.php:67
+msgid "Yes"
+msgstr "Так"
+
+#: core/includes/back/acf-field-nav-menu.php:68
+msgid "No"
+msgstr "Ні"
+
+#: core/includes/back/acf-field-nav-menu.php:81
+#: core/includes/back/system-thumbnails.php:20
+#: core/includes/back/system-thumbnails.php:22
+msgid "None"
+msgstr "Немає"
+
+#: core/includes/back/acf-field-nav-menu.php:128
+msgid "Choose one"
+msgstr "Виберіть"
 
 #: core/includes/back/custom-post-types.php:6
 #: core/includes/back/custom-post-types.php:19
@@ -420,195 +594,118 @@ msgstr "Заголовок"
 msgid "Maintenance mode title for anonymous users"
 msgstr "Заголовок режиму обслуговування для анонімних користувачів"
 
-#: core/includes/back/dashboard-options.php:292
-msgid "Text"
-msgstr "Текст"
-
-#: core/includes/back/dashboard-options.php:293
+#: core/includes/back/dashboard-options.php:294
 msgid "Maintenance mode text for anonymous users"
 msgstr "Текст режиму обслуговування для анонімних користувачів"
 
-#: core/includes/back/dashboard-options.php:308
+#: core/includes/back/dashboard-options.php:310
 msgid "Integrations"
 msgstr "Інтеграції"
 
-#: core/includes/back/dashboard-options.php:309
+#: core/includes/back/dashboard-options.php:311
 msgid "Integrations with third-party services options"
 msgstr "Інтеграція зі сторонніми сервісами"
 
-#: core/includes/back/dashboard-options.php:314
+#: core/includes/back/dashboard-options.php:316
 msgid "Google Maps API key"
 msgstr "Ключ API Карт Google"
 
-#: core/includes/back/dashboard-options.php:315
+#: core/includes/back/dashboard-options.php:317
 msgid "Google Cloud Console"
 msgstr "Google Cloud Консоль"
 
-#: core/includes/back/dashboard-options.php:320
+#: core/includes/back/dashboard-options.php:322
+msgid "Telegram token"
+msgstr "Токен Telegram"
+
+#: core/includes/back/dashboard-options.php:323
+msgid "Telegram token to integrate with Telegram bot"
+msgstr "Токен Telegram для інтеграції з ботом Telegram"
+
+#: core/includes/back/dashboard-options.php:323
+#: core/includes/back/dashboard-options.php:329
+msgid "link"
+msgstr "посилання"
+
+#: core/includes/back/dashboard-options.php:328
+msgid "Telegram chat ID"
+msgstr "Ідентифікатор чату Telegram"
+
+#: core/includes/back/dashboard-options.php:329
+msgid "Telegram chat ID to integrate with Telegram bot"
+msgstr "Ідентифікатор чату Telegram для інтеграції з ботом Telegram"
+
+#: core/includes/back/dashboard-options.php:334
 msgid "Other options"
 msgstr "Інші параметри"
 
-#: core/includes/back/dashboard-options.php:321
+#: core/includes/back/dashboard-options.php:335
 msgid "All other various options"
 msgstr "Інші параметри"
 
-#: core/includes/back/dashboard-options.php:326
+#: core/includes/back/dashboard-options.php:340
 msgid "Disable all updates"
 msgstr "Вимкнути всі оновлення"
 
-#: core/includes/back/dashboard-options.php:327
+#: core/includes/back/dashboard-options.php:341
 msgid "Disable plugins and WordPress core updates"
 msgstr "Вимкнути оновлення плагінів та ядра WordPress"
 
-#: core/includes/back/dashboard-options.php:332
+#: core/includes/back/dashboard-options.php:346
 msgid "Delete child media"
 msgstr "Видаляти вкладення"
 
-#: core/includes/back/dashboard-options.php:333
+#: core/includes/back/dashboard-options.php:347
 msgid "Delete child media when parent post is deleted"
 msgstr "Видалити дочірні медіафайли, коли буде видалено батьківський допис"
 
-#: core/includes/back/dashboard-options.php:338
+#: core/includes/back/dashboard-options.php:352
 msgid "Enable HTML cache"
 msgstr "Увімкнути HTML кешування"
 
-#: core/includes/back/dashboard-options.php:339
+#: core/includes/back/dashboard-options.php:353
 msgid "Enable HTML page cache for anonymous users"
 msgstr "Увімкнути кеш сторінки HTML для анонімних користувачів"
 
-#: core/includes/back/dashboard-options.php:344
+#: core/includes/back/dashboard-options.php:358
 msgid "Enable minify"
 msgstr "Увімкнути мініфікацію"
 
-#: core/includes/back/dashboard-options.php:345
+#: core/includes/back/dashboard-options.php:359
 msgid "Enable HTML minifier on frontend"
 msgstr "Ввімкнути HTML-мініфікатор на фронтенді"
 
-#: core/includes/back/dashboard-options.php:350
+#: core/includes/back/dashboard-options.php:364
 msgid "Hide ACF"
 msgstr "Приховати ACF"
 
-#: core/includes/back/dashboard-options.php:351
+#: core/includes/back/dashboard-options.php:365
 msgid "Hide Advanced Custom Fields from Dashboard"
 msgstr "Приховати ACF з інформаційної панелі"
 
-#: core/includes/back/dashboard-options.php:356
+#: core/includes/back/dashboard-options.php:370
+msgid "Pages to patterns"
+msgstr "Сторінки до патернів"
+
+#: core/includes/back/dashboard-options.php:371
 msgid "Parse all pages blocks as Gutenberg patterns"
 msgstr "Парсити усі блоки сторінок як Гутенберг патерни"
+
+#: core/includes/back/dashboard-options.php:376
+msgid "Translation duplicates"
+msgstr "Дублікати перекладу"
+
+#: core/includes/back/dashboard-options.php:377
+msgid "Create translation duplicates while adding posts"
+msgstr "Створювати дублікати перекладу під час додавання дописів"
 
 #: core/includes/back/dashboard-update-assets-version.php:16
 msgid "Update theme version"
 msgstr "Оновити версію теми"
 
-#: core/includes/back/system-acf-nav-menu-field.php:19
-msgid "Nav Menu"
-msgstr "Навігаційне меню"
-
-#: core/includes/back/system-acf-nav-menu-field.php:38
-msgid "Return Value"
-msgstr "Значення, що повертається"
-
-#: core/includes/back/system-acf-nav-menu-field.php:39
-msgid "Specify the returned value on front end"
-msgstr "Вкажіть значення, що повертається"
-
-#: core/includes/back/system-acf-nav-menu-field.php:44
-msgid "Nav Menu Object"
-msgstr "Об'єкт меню"
-
-#: core/includes/back/system-acf-nav-menu-field.php:45
-msgid "Nav Menu HTML"
-msgstr "HTML меню"
-
-#: core/includes/back/system-acf-nav-menu-field.php:46
-msgid "Nav Menu ID"
-msgstr "ID меню"
-
-#: core/includes/back/system-acf-nav-menu-field.php:47
-msgid "All"
-msgstr "Усі"
-
-#: core/includes/back/system-acf-nav-menu-field.php:53
-msgid "Menu Container"
-msgstr "Контейнер меню"
-
-#: core/includes/back/system-acf-nav-menu-field.php:54
-msgid "What to wrap the Menu's ul with (when returning HTML only)"
-msgstr "Обгортка для меню"
-
-#: core/includes/back/system-acf-nav-menu-field.php:62
-msgid "Allow Null?"
-msgstr "Дозволити порожнє значення?"
-
-#: core/includes/back/system-acf-nav-menu-field.php:67
-msgid "Yes"
-msgstr "Так"
-
-#: core/includes/back/system-acf-nav-menu-field.php:68
-msgid "No"
-msgstr "Ні"
-
-#: core/includes/back/system-acf-nav-menu-field.php:81
-#: core/includes/back/system-thumbnails.php:20
-#: core/includes/back/system-thumbnails.php:22
-msgid "None"
-msgstr "Немає"
-
-#: core/includes/back/system-acf-nav-menu-field.php:128
-msgid "Choose one"
-msgstr "Виберіть"
-
 #: core/includes/back/system-disable-customizer.php:107
 msgid "The Customizer is currently disabled."
 msgstr "Кастомайзер наразі вимкнено."
-
-#: core/includes/back/system-generate-blog-posts.php:10
-#: core/includes/back/system-generate-blog-posts.php:11
-#: core/includes/back/system-generate-blog-posts.php:163
-msgid "Generate Posts"
-msgstr "Генерація постів"
-
-#: core/includes/back/system-generate-blog-posts.php:85
-#, php-format
-msgid "Error generating post %d: %s"
-msgstr "Помилка створення публікації %d: %s"
-
-#: core/includes/back/system-generate-blog-posts.php:112
-#, php-format
-msgid "Successfully generated %d posts!"
-msgstr "Успішно створено %d публікацій!"
-
-#: core/includes/back/system-generate-blog-posts.php:119
-msgid "Errors occurred:"
-msgstr "Виникли помилки:"
-
-#: core/includes/back/system-generate-blog-posts.php:129
-msgid "Generate Random Posts"
-msgstr "Генерація випадкових постів"
-
-#: core/includes/back/system-generate-blog-posts.php:136
-msgid "Number of posts to generate"
-msgstr "Кількість постів для генерації"
-
-#: core/includes/back/system-generate-blog-posts.php:140
-msgid "How many posts should be generated (max 100)"
-msgstr "Скільки постів має бути згенеровано (максимум 100)"
-
-#: core/includes/back/system-generate-blog-posts.php:145
-msgid "Paragraphs per post"
-msgstr "Кількість абзаців"
-
-#: core/includes/back/system-generate-blog-posts.php:149
-msgid "How many paragraphs should be in each post (max 50)"
-msgstr "Скільки абзаців має бути в кожному пості (максимум 50)"
-
-#: core/includes/back/system-generate-blog-posts.php:154
-msgid "Include featured image"
-msgstr "Додати обкладинку посту"
-
-#: core/includes/back/system-generate-blog-posts.php:158
-msgid "Generate and attach a random featured image for each post"
-msgstr "Створюйте та прикріплюйте випадкове зображення для кожного посту"
 
 #: core/includes/back/system-redirect-rules.php:8
 msgid "Redirect Rules Options"
@@ -717,6 +814,44 @@ msgstr "Пароль"
 #: views/password.twig:11
 msgid "Submit"
 msgstr "Надіслати"
+
+#~ msgid "Second screen"
+#~ msgstr "Другий екран"
+
+#~ msgid "Generate Posts"
+#~ msgstr "Генерація постів"
+
+#, php-format
+#~ msgid "Error generating post %d: %s"
+#~ msgstr "Помилка створення публікації %d: %s"
+
+#, php-format
+#~ msgid "Successfully generated %d posts!"
+#~ msgstr "Успішно створено %d публікацій!"
+
+#~ msgid "Errors occurred:"
+#~ msgstr "Виникли помилки:"
+
+#~ msgid "Generate Random Posts"
+#~ msgstr "Генерація випадкових постів"
+
+#~ msgid "Number of posts to generate"
+#~ msgstr "Кількість постів для генерації"
+
+#~ msgid "How many posts should be generated (max 100)"
+#~ msgstr "Скільки постів має бути згенеровано (максимум 100)"
+
+#~ msgid "Paragraphs per post"
+#~ msgstr "Кількість абзаців"
+
+#~ msgid "How many paragraphs should be in each post (max 50)"
+#~ msgstr "Скільки абзаців має бути в кожному пості (максимум 50)"
+
+#~ msgid "Include featured image"
+#~ msgstr "Додати обкладинку посту"
+
+#~ msgid "Generate and attach a random featured image for each post"
+#~ msgstr "Створюйте та прикріплюйте випадкове зображення для кожного посту"
 
 #~ msgid ""
 #~ "In this section, you can enable resizing and optimization of images while "
@@ -945,6 +1080,3 @@ msgstr "Надіслати"
 
 #~ msgid "Your Phone"
 #~ msgstr "Ваш Телефон"
-
-#~ msgid "Options"
-#~ msgstr "Опції"

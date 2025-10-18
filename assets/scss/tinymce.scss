@@ -2,10 +2,12 @@
 -------------------------------------------------------------- */
 
 @import "mixins";
+@import "variables";
 @import "fonts";
 @import "extend";
 
 html .mceContentBody {
+    font-family: var(--font-primary);
     padding: 0 10px !important;
     width: calc(100% - 20px) !important;
     max-width: 800px !important;

@@ -1,0 +1,46 @@
+{
+    "key": "group_675a4e7d8f9b8",
+    "title": "Блок: Приклади цін",
+    "fields": [
+        {
+            "key": "field_675a4e7d8f9b9",
+            "label": "Контент",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/main-price-examples"
+            }
+        ]
+    ],
+    "menu_order": 111,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "display_title": "",
+    "acfml_field_group_mode": "translation",
+    "modified": 1760823363
+}

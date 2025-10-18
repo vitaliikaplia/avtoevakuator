@@ -327,7 +327,10 @@
             "default_value": "",
             "enable_opacity": 1,
             "return_format": "string",
-            "allow_in_bindings": 0
+            "allow_in_bindings": 0,
+            "custom_palette_source": "",
+            "palette_colors": "",
+            "show_color_wheel": true
         },
         {
             "key": "field_67a0f8647ea83",
@@ -347,7 +350,10 @@
             "default_value": "",
             "enable_opacity": 1,
             "return_format": "string",
-            "allow_in_bindings": 0
+            "allow_in_bindings": 0,
+            "custom_palette_source": "",
+            "palette_colors": "",
+            "show_color_wheel": true
         },
         {
             "key": "field_655ed7988812c",
@@ -465,5 +471,7 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1758027717
+    "display_title": "",
+    "acfml_field_group_mode": "translation",
+    "modified": 1760823415
 }

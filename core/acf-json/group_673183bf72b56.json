@@ -1,6 +1,6 @@
 {
     "key": "group_673183bf72b56",
-    "title": "Інші налаштування",
+    "title": "Інше",
     "fields": [
         {
             "key": "field_673189c4dbc1a",
@@ -16,91 +16,344 @@
                 "class": "",
                 "id": ""
             },
+            "wpml_cf_preferences": 0,
             "placement": "top",
             "endpoint": 0,
             "selected": 0
         },
         {
-            "key": "field_635c38094afa6",
-            "label": "",
-            "name": "cookie_popup",
+            "key": "field_635c38224afa8",
+            "label": "Заголовок",
+            "name": "cookie_popup_title",
             "aria-label": "",
-            "type": "group",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "no_label",
+                "class": "",
                 "id": ""
             },
             "wpml_cf_preferences": 2,
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_635c38224afa8",
-                    "label": "Заголовок",
-                    "name": "title",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "allow_in_bindings": 1,
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_635c38274afa9",
-                    "label": "Текст",
-                    "name": "text",
-                    "aria-label": "",
-                    "type": "wysiwyg",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "allow_in_bindings": 1,
-                    "tabs": "visual",
-                    "toolbar": "full",
-                    "media_upload": 0,
-                    "delay": 0
-                },
-                {
-                    "key": "field_635c383f4afaa",
-                    "label": "Кнопка",
-                    "name": "button_title",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "allow_in_bindings": 1,
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                }
-            ]
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 1,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_635c38274afa9",
+            "label": "Текст",
+            "name": "cookie_popup_text",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "allow_in_bindings": 1,
+            "tabs": "visual",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_635c383f4afaa",
+            "label": "Кнопка",
+            "name": "cookie_popup_button_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_68ed768d9b70c",
+            "label": "Тип кнопки",
+            "name": "cookie_popup_button_type",
+            "aria-label": "",
+            "type": "button_type",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "allow_in_bindings": 0,
+            "style": "",
+            "icon": false,
+            "icon_position": "left",
+            "options": []
+        },
+        {
+            "key": "field_68ea64207196e",
+            "label": "Сторінка 404",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_68ea64327196f",
+            "label": "Заголовок",
+            "name": "page_404_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_68ea644771970",
+            "label": "Текст",
+            "name": "page_404_text",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "tabs": "visual",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_68ea645e71971",
+            "label": "Кнопка",
+            "name": "page_404_button",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "return_format": "array",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_68ed76bc9b70d",
+            "label": "Тип кнопки",
+            "name": "page_404_button_type",
+            "aria-label": "",
+            "type": "button_type",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "allow_in_bindings": 0,
+            "style": "",
+            "icon": false,
+            "icon_position": "left",
+            "options": []
+        },
+        {
+            "key": "field_68ea64e5d258b",
+            "label": "Сторінка захищена паролем",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_68ea64f0d258c",
+            "label": "Заголовок",
+            "name": "page_protected_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_68ea64ffd258d",
+            "label": "Текст",
+            "name": "page_protected_text",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "tabs": "visual",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_68ea651ad258e",
+            "label": "Кнопка входу",
+            "name": "page_protected_submit_button",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_68ed76ff9b70e",
+            "label": "Тип кнопки входу",
+            "name": "page_protected_submit_button_type",
+            "aria-label": "",
+            "type": "button_type",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "allow_in_bindings": 0,
+            "style": "",
+            "icon": false,
+            "icon_position": "left",
+            "options": []
+        },
+        {
+            "key": "field_68ea653bd258f",
+            "label": "Кнопка повернення",
+            "name": "page_protected_back_button",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "return_format": "array",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_68ed775d9b70f",
+            "label": "Тип кнопки повернення",
+            "name": "page_protected_back_button_type",
+            "aria-label": "",
+            "type": "button_type",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "allow_in_bindings": 0,
+            "style": "",
+            "icon": false,
+            "icon_position": "left",
+            "options": []
         },
         {
             "key": "field_6731840251d86",
@@ -116,6 +369,7 @@
                 "class": "",
                 "id": ""
             },
+            "wpml_cf_preferences": 0,
             "placement": "top",
             "endpoint": 0,
             "selected": 0
@@ -134,6 +388,7 @@
                 "class": "",
                 "id": ""
             },
+            "wpml_cf_preferences": 1,
             "layout": "table",
             "pagination": 0,
             "min": 0,
@@ -156,10 +411,15 @@
                         "class": "",
                         "id": ""
                     },
+                    "wpml_cf_preferences": 1,
                     "default_value": "",
                     "enable_opacity": 0,
                     "return_format": "string",
                     "allow_in_bindings": 0,
+                    "show_custom_palette": 0,
+                    "show_color_wheel": 1,
+                    "custom_palette_source": "",
+                    "palette_colors": "",
                     "parent_repeater": "field_6731840f51d87"
                 },
                 {
@@ -176,6 +436,7 @@
                         "class": "",
                         "id": ""
                     },
+                    "wpml_cf_preferences": 1,
                     "message": "",
                     "default_value": 1,
                     "allow_in_bindings": 0,
@@ -205,5 +466,7 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1758028238
+    "display_title": "",
+    "acfml_field_group_mode": "advanced",
+    "modified": 1760823426
 }

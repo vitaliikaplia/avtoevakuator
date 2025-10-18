@@ -16,113 +16,10 @@
                 "class": "",
                 "id": ""
             },
+            "wpml_cf_preferences": 1,
             "open": 0,
             "multi_expand": 0,
             "endpoint": 0
-        },
-        {
-            "key": "field_61b8ebc072ecc",
-            "label": "Текст",
-            "name": "text",
-            "aria-label": "",
-            "type": "wysiwyg",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "allow_in_bindings": 1,
-            "tabs": "visual",
-            "toolbar": "full",
-            "media_upload": 0,
-            "delay": 0
-        },
-        {
-            "key": "field_62164b9481e7e",
-            "label": "Фон обгортки",
-            "name": "wrapper_background",
-            "aria-label": "",
-            "type": "color_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "#ef0a0a",
-            "enable_opacity": 0,
-            "return_format": "string",
-            "allow_in_bindings": 1
-        },
-        {
-            "key": "field_62164ba681e7f",
-            "label": "Фон внутрішнього блоку",
-            "name": "inner_background",
-            "aria-label": "",
-            "type": "color_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "#049804",
-            "enable_opacity": 0,
-            "return_format": "string",
-            "allow_in_bindings": 1
-        },
-        {
-            "key": "field_62164bde81e80",
-            "label": "Внутрішній текст",
-            "name": "inner_text",
-            "aria-label": "",
-            "type": "color_picker",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "#fff",
-            "enable_opacity": 0,
-            "return_format": "string",
-            "allow_in_bindings": 1
-        },
-        {
-            "key": "field_674a5b82198fe",
-            "label": "Внутрішнє зображення",
-            "name": "inner_image",
-            "aria-label": "",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "allow_in_bindings": 0,
-            "preview_size": "medium"
         }
     ],
     "location": [
@@ -143,5 +40,7 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1758028001
+    "display_title": "",
+    "acfml_field_group_mode": "translation",
+    "modified": 1760823407
 }
