@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: avtoevakuator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-19 00:17+0300\n"
+"POT-Creation-Date: 2025-10-19 00:46+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
 "Language-Team: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
@@ -191,6 +191,14 @@ msgstr ""
 
 #: core/includes/back/acf-field-button-type.php:235
 msgid "Options"
+msgstr ""
+
+#: core/includes/back/acf-field-icon-select.php:19
+msgid "Icon Select"
+msgstr ""
+
+#: core/includes/back/acf-field-icon-select.php:74
+msgid "- Select Icon -"
 msgstr ""
 
 #: core/includes/back/acf-field-nav-menu.php:19

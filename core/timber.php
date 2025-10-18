@@ -29,16 +29,23 @@ class StarterSite extends Site {
     function add_to_twig( $twig ) {
         /* this is where you can add your own functions to twig */
         $twig->addExtension( new \Twig\Extension\StringLoaderExtension() );
+
         $twig->addFilter( new \Twig\TwigFilter( 'pr', 'pr' ) );
         $twig->addFilter( new \Twig\TwigFilter( 'log', 'write_log' ) );
-        $twig->addFunction( new \Twig\TwigFunction('get_pattern', 'get_pattern'));
         $twig->addFilter( new \Twig\TwigFilter( 'picture', 'render_picture_tag' ) );
         $twig->addFilter( new \Twig\TwigFilter( 'picture_src', 'render_picture_src' ) );
+        $twig->addFilter( new \Twig\TwigFilter( 'svg', 'render_svg_tag' ) );
+
+        $twig->addFunction( new \Twig\TwigFunction('get_pattern', 'get_pattern'));
         $twig->addFunction( new \Twig\TwigFunction('get_option', 'get_option'));
         $twig->addFunction( new \Twig\TwigFunction('wp_editor', 'wp_editor'));
         $twig->addFunction( new \Twig\TwigFunction('checked', 'checked'));
         $twig->addFunction( new \Twig\TwigFunction('get_user_ip', 'get_user_ip'));
         $twig->addFunction( new \Twig\TwigFunction('get_session_info', 'get_session_info'));
+        $twig->addFunction( new \Twig\TwigFunction('is_front_page', 'is_front_page'));
+        $twig->addFunction( new \Twig\TwigFunction('cache_fields', 'cache_fields'));
+        $twig->addFunction( new \Twig\TwigFunction('get_current_language_native_name', 'get_current_language_native_name'));
+        $twig->addFunction( new \Twig\TwigFunction('get_custom_language_selector_flags', 'get_custom_language_selector_flags'));
         return $twig;
     }
 }
