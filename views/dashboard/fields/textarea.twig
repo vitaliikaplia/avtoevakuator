@@ -1,0 +1,6 @@
+<label for="{{ name }}">
+    <textarea name="{{ name }}" id="{{ name }}" rows="4" class="large-text custom-options-{{ val.type }}">{{ value }}</textarea>
+    {% if description %}
+    <p class="description">{{ description }}</p>
+    {% endif %}
+</label>

@@ -1,0 +1,9 @@
+{% if not is_example %}
+    {% block content %}{% endblock %}
+{% else %}
+    {% if block_example %}
+    <div class="block-example">
+        <img src="{{ block_example }}" style="max-width: 100%;height: auto;padding: 0;margin: 0;font-size: 0;">
+    </div>
+    {% endif %}
+{% endif %}

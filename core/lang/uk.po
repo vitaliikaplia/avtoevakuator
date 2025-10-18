@@ -1,0 +1,979 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: avtoevakuator\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-18 20:30+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
+"Language-Team: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
+"Language: uk_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Generator: Poedit 3.7\n"
+"X-Poedit-SearchPath-0: core/lang\n"
+"X-Poedit-SearchPath-1: core\n"
+"X-Poedit-SearchPath-2: .\n"
+"X-Poedit-SearchPathExcluded-0: core/libs/timber\n"
+
+#: core/acf.php:28 core/acf.php:29
+msgid "Header"
+msgstr "Шапка"
+
+#: core/acf.php:32
+msgid "Header options updated"
+msgstr "Параметри шапки оновлено"
+
+#: core/acf.php:33 core/acf.php:41 core/acf.php:49
+msgid "Update"
+msgstr "Оновити"
+
+#: core/acf.php:36 core/acf.php:37
+msgid "Footer"
+msgstr "Підвал"
+
+#: core/acf.php:40
+msgid "Footer options updated"
+msgstr "Параметри підвалу оновлено"
+
+#: core/acf.php:44 core/acf.php:45
+msgid "Other"
+msgstr "Інше"
+
+#: core/acf.php:48
+msgid "Other options updated"
+msgstr "Інші опції оновлено"
+
+#: core/gutenberg.php:14
+msgid "Main blocks"
+msgstr "Основні блоки"
+
+#: core/gutenberg.php:18
+msgid "Logical blocks"
+msgstr "Логічні блоки"
+
+#: core/gutenberg.php:30
+msgid "First screen"
+msgstr "Перший екран"
+
+#: core/gutenberg.php:38
+msgid "Second screen"
+msgstr "Другий екран"
+
+#: core/gutenberg.php:46 core/includes/back/custom-post-types.php:57
+msgid "Pattern"
+msgstr "Патерн"
+
+#: core/gutenberg.php:296
+msgid "Block"
+msgstr "Блок"
+
+#: core/gutenberg.php:297
+msgid "Block from"
+msgstr "Блок від"
+
+#: core/includes/back/custom-post-types.php:6
+#: core/includes/back/custom-post-types.php:19
+#: core/includes/back/custom-post-types.php:21
+msgid "Redirect rules"
+msgstr "Правила перенаправлення"
+
+#: core/includes/back/custom-post-types.php:20
+msgid "Redirect rule"
+msgstr "Правило перенаправлення"
+
+#: core/includes/back/custom-post-types.php:22
+msgid "Add redirect rule"
+msgstr "Додати правило перенаправлення"
+
+#: core/includes/back/custom-post-types.php:23
+msgid "Add new redirect rule"
+msgstr "Додати нове правило перенаправлення"
+
+#: core/includes/back/custom-post-types.php:24
+#: core/includes/back/custom-post-types.php:61
+#: core/includes/back/custom-post-types.php:100
+#: core/includes/back/custom-post-types.php:101
+msgid "Edit"
+msgstr "Редагувати"
+
+#: core/includes/back/custom-post-types.php:25
+msgid "Edit redirect rule"
+msgstr "Редагування правила перенаправлення"
+
+#: core/includes/back/custom-post-types.php:26
+msgid "New redirect rule"
+msgstr "Нове правило перенаправлення"
+
+#: core/includes/back/custom-post-types.php:27
+#: core/includes/back/custom-post-types.php:64
+#: core/includes/back/custom-post-types.php:103
+#: core/includes/back/custom-post-types.php:104
+msgid "View"
+msgstr "Переглянути"
+
+#: core/includes/back/custom-post-types.php:28
+msgid "View redirect rule"
+msgstr "Перегляд правила перенаправлення"
+
+#: core/includes/back/custom-post-types.php:29
+msgid "Search for redirect rules"
+msgstr "Пошук правил перенаправлено"
+
+#: core/includes/back/custom-post-types.php:30
+msgid "No redirect rules found"
+msgstr "Жодних правил перенаправлень не знайдено"
+
+#: core/includes/back/custom-post-types.php:31
+msgid "No redirect rules found in trash"
+msgstr "Жодних правил перенаправлень не знайдено в кошику"
+
+#: core/includes/back/custom-post-types.php:32
+msgid "Parent redirect rule"
+msgstr "Батьківське правило перенаправлення"
+
+#: core/includes/back/custom-post-types.php:38
+#: core/includes/back/custom-post-types.php:56
+#: core/includes/back/custom-post-types.php:58
+msgid "Patterns"
+msgstr "Патерни"
+
+#: core/includes/back/custom-post-types.php:59
+msgid "Add item"
+msgstr "Додати елемент"
+
+#: core/includes/back/custom-post-types.php:60
+msgid "Add new item"
+msgstr "Додати"
+
+#: core/includes/back/custom-post-types.php:62
+msgid "Edit item"
+msgstr "Редагувати оголошення"
+
+#: core/includes/back/custom-post-types.php:63
+msgid "New item"
+msgstr "Нова позиція"
+
+#: core/includes/back/custom-post-types.php:65
+msgid "View item"
+msgstr "Переглянути"
+
+#: core/includes/back/custom-post-types.php:66
+msgid "Search for items"
+msgstr "Пошук"
+
+#: core/includes/back/custom-post-types.php:67
+msgid "No items found"
+msgstr "Елементів не знайдено"
+
+#: core/includes/back/custom-post-types.php:68
+msgid "No items found in trash"
+msgstr "Позицій в кошиику не знайдено"
+
+#: core/includes/back/custom-post-types.php:69
+msgid "Parent item"
+msgstr "Батьківська позииція"
+
+#: core/includes/back/custom-post-types.php:75
+#: core/includes/back/custom-post-types.php:95
+#: core/includes/back/custom-post-types.php:96
+#: core/includes/back/custom-post-types.php:97
+msgid "Mail log"
+msgstr "Email логування"
+
+#: core/includes/back/custom-post-types.php:98
+#: core/includes/back/custom-post-types.php:99
+msgid "Add"
+msgstr "Додати"
+
+#: core/includes/back/custom-post-types.php:102
+msgid "New"
+msgstr "Нове"
+
+#: core/includes/back/custom-post-types.php:105
+msgid "Search for mail logs"
+msgstr "Пошук поштових журналів"
+
+#: core/includes/back/custom-post-types.php:106
+msgid "No mail logs found"
+msgstr "Жодних поштових журналів не знайдено"
+
+#: core/includes/back/custom-post-types.php:107
+msgid "No mail logs found in trash"
+msgstr "Жодних поштових журналів не знайдено в кошику"
+
+#: core/includes/back/custom-post-types.php:108
+msgid "Parent"
+msgstr "Батько"
+
+#: core/includes/back/custom-taxonomies.php:10
+#: core/includes/back/custom-taxonomies.php:18
+msgid "Pattern categories"
+msgstr "Категорії патернів"
+
+#: core/includes/back/custom-taxonomies.php:19
+msgid "Pattern category"
+msgstr "Категорія патерну"
+
+#: core/includes/back/custom-taxonomies.php:20
+msgid "Search categories"
+msgstr "Категорії пошуку"
+
+#: core/includes/back/custom-taxonomies.php:21
+msgid "All categories"
+msgstr "Всі категорії"
+
+#: core/includes/back/custom-taxonomies.php:22
+msgid "Edit category"
+msgstr "Редагувати категорію"
+
+#: core/includes/back/custom-taxonomies.php:23
+msgid "Update category"
+msgstr "Оновити категорію"
+
+#: core/includes/back/custom-taxonomies.php:24
+msgid "Add new category"
+msgstr "Додати нову категорію"
+
+#: core/includes/back/custom-taxonomies.php:25
+msgid "New category name"
+msgstr "Нова назва категорії"
+
+#: core/includes/back/custom-taxonomies.php:26
+msgid "Categories"
+msgstr "Категорії"
+
+#: core/includes/back/dashboard-footer.php:12
+msgid "Powered by"
+msgstr "Працює на"
+
+#: core/includes/back/dashboard-mail-log-meta.php:36
+msgid "Invalid mail log ID"
+msgstr "Невірний ідентифікатор журналу пошти"
+
+#: core/includes/back/dashboard-mail-log-meta.php:53
+msgid "Email log information"
+msgstr "Інформація Email журналу"
+
+#: core/includes/back/dashboard-mail-log-meta.php:74
+msgid "Email preview"
+msgstr "Попередній перегляд листа"
+
+#: core/includes/back/dashboard-mail-log-meta.php:98
+msgid "Recipient"
+msgstr "Одержувач"
+
+#: core/includes/back/dashboard-options.php:8
+msgid "Images"
+msgstr "Зображення"
+
+#: core/includes/back/dashboard-options.php:9
+msgid "Resize and optimize media while upload"
+msgstr "Увімкнути зміну розміру медіа під час завантаження"
+
+#: core/includes/back/dashboard-options.php:10
+msgid ""
+"In this section, you can enable resizing and optimization of images while "
+"uploading them to the media library. You can specify the formats that will "
+"be resized, set the width and height of the resized images, and adjust the "
+"quality of the resized images. Additionally, you can enable the conversion "
+"of images to the WEBP format, which is a modern image format that provides "
+"better compression and quality compared to other formats."
+msgstr ""
+"У цьому розділі ви можете ввімкнути зміну розміру та оптимізацію зображень "
+"під час завантаження їх до медіатеки. Ви можете вказати формати, які буде "
+"змінено, встановити ширину і висоту змінених зображень, а також налаштувати "
+"якість змінених зображень. Крім того, ви можете увімкнути конвертацію "
+"зображень у формат WEBP, який є сучасним форматом зображень, що забезпечує "
+"краще стиснення та якість порівняно з іншими форматами."
+
+#: core/includes/back/dashboard-options.php:15
+#: core/includes/back/dashboard-options.php:110
+#: core/includes/back/dashboard-options.php:145
+#: core/includes/back/dashboard-options.php:274
+msgid "Enable"
+msgstr "Увімкнути"
+
+#: core/includes/back/dashboard-options.php:16
+msgid "Enable resizing media while upload"
+msgstr "Увімкнути зміну розміру медіа під час завантаження"
+
+#: core/includes/back/dashboard-options.php:28
+msgid "Formats"
+msgstr "Формати"
+
+#: core/includes/back/dashboard-options.php:29
+msgid "Resize at upload formats"
+msgstr "Формати змінюваних зображень під час завантаження"
+
+#: core/includes/back/dashboard-options.php:50
+msgid "Width"
+msgstr "Ширина"
+
+#: core/includes/back/dashboard-options.php:51
+msgid "Resize upload width"
+msgstr "Максимальна ширина завантаженого зображення"
+
+#: core/includes/back/dashboard-options.php:72
+msgid "Height"
+msgstr "Висота"
+
+#: core/includes/back/dashboard-options.php:73
+msgid "Resize upload height"
+msgstr "Максимальна висота завантаженого зображення"
+
+#: core/includes/back/dashboard-options.php:94
+msgid "Quality"
+msgstr "Якість"
+
+#: core/includes/back/dashboard-options.php:95
+msgid "Resize upload quality"
+msgstr "Максимальна якість для ресайзу"
+
+#: core/includes/back/dashboard-options.php:111
+msgid "Enable WEBP convert"
+msgstr "Увімкнути перетворення WEBP"
+
+#: core/includes/back/dashboard-options.php:122
+#: core/includes/back/dashboard-options.php:123
+msgid "Webp convert quality"
+msgstr "Якість конвертування Webp"
+
+#: core/includes/back/dashboard-options.php:138
+msgid "SMTP"
+msgstr "SMTP"
+
+#: core/includes/back/dashboard-options.php:139
+msgid "Configure custom SMTP server"
+msgstr "Налаштувати власний сервер SMTP"
+
+#: core/includes/back/dashboard-options.php:140
+msgid ""
+"In this section, you can configure a custom SMTP server to send emails from "
+"your website. You can specify the SMTP host, port, username, password, and "
+"from name. Additionally, you can enable a secure SMTP connection using SSL."
+msgstr ""
+"У цьому розділі ви можете налаштувати власний SMTP-сервер для надсилання "
+"електронних листів з вашого веб-сайту. Ви можете вказати хост SMTP, порт, "
+"ім'я користувача, пароль та ім'я відправника. Крім того, ви можете ввімкнути "
+"безпечне з'єднання SMTP за допомогою SSL."
+
+#: core/includes/back/dashboard-options.php:146
+msgid "Enable custom SMTP server"
+msgstr "Увімкнути власний сервер SMTP"
+
+#: core/includes/back/dashboard-options.php:151
+msgid "SMTP host"
+msgstr "SMTP хост"
+
+#: core/includes/back/dashboard-options.php:166
+msgid "SMTP port"
+msgstr "SMTP порт"
+
+#: core/includes/back/dashboard-options.php:181
+msgid "SMTP username"
+msgstr "SMTP користувач"
+
+#: core/includes/back/dashboard-options.php:196
+msgid "SMTP password"
+msgstr "SMTP пароль"
+
+#: core/includes/back/dashboard-options.php:211
+msgid "SMTP from name"
+msgstr "SMTP імʼя користувача"
+
+#: core/includes/back/dashboard-options.php:226
+msgid "Secure SMTP connection"
+msgstr "Безпечне з’єднання SMTP"
+
+#: core/includes/back/dashboard-options.php:227
+msgid "Use SSL for SMTP connection"
+msgstr "Використовувати безпечне з’єднання SMTP"
+
+#: core/includes/back/dashboard-options.php:242
+msgid "Custom code"
+msgstr "Власний код"
+
+#: core/includes/back/dashboard-options.php:243
+msgid "Custom HTML code for header and footer"
+msgstr "Спеціальний HTML-код для верхнього та нижнього колонтитулів"
+
+#: core/includes/back/dashboard-options.php:244
+msgid ""
+"In this section, you can add custom HTML code to the header and footer of "
+"your website. The custom code will be placed inside the header tag and "
+"before the end of the body tag. You can use this feature to add custom "
+"scripts, styles, meta tags, and other elements to your website."
+msgstr ""
+"У цьому розділі ви можете додати кастомний HTML-код до верхнього та нижнього "
+"колонтитулів вашого сайту. Кастомний код буде розміщено всередині тегу title "
+"у верхньому колонтитулі та перед кінцем тегу body у нижньому колонтитулі."
+
+#: core/includes/back/dashboard-options.php:249
+msgid "Header custom code"
+msgstr "Код в шапку"
+
+#: core/includes/back/dashboard-options.php:250
+msgid "The custom code will be placed inside the header tag"
+msgstr "Кастомний код буде розміщено всередині тегу header"
+
+#: core/includes/back/dashboard-options.php:255
+msgid "After &#x3C;body&#x3E; custom code"
+msgstr "Код після &#x3C;body&#x3E;"
+
+#: core/includes/back/dashboard-options.php:256
+msgid "The special code will be placed after the start of the body tag"
+msgstr "Спеціальний код буде розміщено після початку тегу body"
+
+#: core/includes/back/dashboard-options.php:261
+msgid "Footer custom code"
+msgstr "Код в підвал"
+
+#: core/includes/back/dashboard-options.php:262
+msgid "The special code will be placed before the end of the body tag"
+msgstr "Спеціальний код буде розміщено перед кінцем тегу body"
+
+#: core/includes/back/dashboard-options.php:267
+msgid "Maintenance"
+msgstr "Технічне обслуговування"
+
+#: core/includes/back/dashboard-options.php:268
+msgid "Maintenance mode for anonymous users"
+msgstr "Режим обслуговування для анонімних користувачів"
+
+#: core/includes/back/dashboard-options.php:269
+msgid ""
+"In this section, you can enable maintenance mode for anonymous users, "
+"customize the title and text that will be displayed on the maintenance page."
+msgstr ""
+"У цьому розділі ви можете ввімкнути режим обслуговування для анонімних "
+"користувачів, налаштувати заголовок і текст, який буде відображатися на "
+"сторінці обслуговування."
+
+#: core/includes/back/dashboard-options.php:275
+msgid "Enable maintenance mode for anonymous users"
+msgstr "Режим обслуговування для анонімних користувачів"
+
+#: core/includes/back/dashboard-options.php:280
+msgid "Title"
+msgstr "Заголовок"
+
+#: core/includes/back/dashboard-options.php:281
+msgid "Maintenance mode title for anonymous users"
+msgstr "Заголовок режиму обслуговування для анонімних користувачів"
+
+#: core/includes/back/dashboard-options.php:296
+msgid "Text"
+msgstr "Текст"
+
+#: core/includes/back/dashboard-options.php:297
+msgid "Maintenance mode text for anonymous users"
+msgstr "Текст режиму обслуговування для анонімних користувачів"
+
+#: core/includes/back/dashboard-options.php:312
+msgid "Integrations"
+msgstr "Інтеграції"
+
+#: core/includes/back/dashboard-options.php:313
+msgid "Integrations with third-party services options"
+msgstr "Інтеграція зі сторонніми сервісами"
+
+#: core/includes/back/dashboard-options.php:318
+msgid "Google Maps API key"
+msgstr "Ключ API Карт Google"
+
+#: core/includes/back/dashboard-options.php:319
+msgid "Google Cloud Console"
+msgstr "Google Cloud Консоль"
+
+#: core/includes/back/dashboard-options.php:324
+msgid "Other options"
+msgstr "Інші параметри"
+
+#: core/includes/back/dashboard-options.php:325
+msgid "All other various options"
+msgstr "Інші параметри"
+
+#: core/includes/back/dashboard-options.php:326
+msgid ""
+"In this section, you can enable or disable various options that affect the "
+"functionality of your website. You can disable updates, customizer, src set, "
+"default image sizes, core privacy tools, CYR3LAT transliteration, DNS "
+"prefetch, Rest API, Emojis, Embeds, dashboard widgets, admin top bar, admin "
+"email verification, comments, child media deletion, HTML cache, minify, ACF, "
+"Gutenberg editor, and specify the Google maps API key."
+msgstr ""
+"У цьому розділі ви можете ввімкнути або вимкнути різні параметри, які "
+"впливають на функціональність вашого веб-сайту. Ви можете вимкнути "
+"оновлення, настроювач, набір src, розміри зображень за замовчуванням, "
+"основні інструменти конфіденційності, транслітерацію CYR3LAT, попередню "
+"вибірку DNS, Rest API, Emojis, вбудовування, віджети інформаційної панелі, "
+"верхню панель адміністратора, перевірку електронної пошти адміністратора, "
+"коментарі, видалення дочірніх медіафайлів, кеш HTML , minify, ACF, редактор "
+"Gutenberg і вкажіть ключ API карт Google."
+
+#: core/includes/back/dashboard-options.php:331
+msgid "Disable all updates"
+msgstr "Вимкнути всі оновлення"
+
+#: core/includes/back/dashboard-options.php:332
+msgid "Disable plugins and WordPress core updates"
+msgstr "Вимкнути оновлення плагінів та ядра WordPress"
+
+#: core/includes/back/dashboard-options.php:337
+msgid "Disable customizer"
+msgstr "Вимкнути кастомайзер"
+
+#: core/includes/back/dashboard-options.php:338
+msgid "Disable WordPress customizer"
+msgstr "Вимкнути WordPress кастомайзер"
+
+#: core/includes/back/dashboard-options.php:343
+msgid "Disable src set"
+msgstr "Вимкнути src set"
+
+#: core/includes/back/dashboard-options.php:344
+msgid "Disable src set for images"
+msgstr "Вимкнути src set для зображень"
+
+#: core/includes/back/dashboard-options.php:349
+msgid "Remove default image sizes"
+msgstr "Вимкнути стандартні розміри зображень"
+
+#: core/includes/back/dashboard-options.php:350
+msgid "Remove default image sizes in WordPress"
+msgstr "Вимкнути стандартні розміри зображень у WordPress"
+
+#: core/includes/back/dashboard-options.php:355
+msgid "Disable core privacy tools"
+msgstr "Вимкнути інструменти конфіденціальності"
+
+#: core/includes/back/dashboard-options.php:356
+msgid "Disable default WordPress core privacy tools"
+msgstr ""
+"Вимкніть основні інструменти конфіденційності WordPress за замовчуванням"
+
+#: core/includes/back/dashboard-options.php:361
+msgid "Enable CYR3LAT"
+msgstr "Активувати CYR3LAT"
+
+#: core/includes/back/dashboard-options.php:362
+msgid "Enable CYR3LAT transliteration"
+msgstr "Увімкнути транслітерацію CYR3LAT"
+
+#: core/includes/back/dashboard-options.php:367
+msgid "Disable DNS prefetch"
+msgstr "Приховати DNS prefetch"
+
+#: core/includes/back/dashboard-options.php:368
+msgid "Disable DNS prefetch for external resources"
+msgstr "Вимкнути попередню вибірку DNS для зовнішніх ресурсів"
+
+#: core/includes/back/dashboard-options.php:373
+msgid "Disable Rest API"
+msgstr "Вимкнути Rest API"
+
+#: core/includes/back/dashboard-options.php:374
+msgid "Disable Rest API for anonymous users"
+msgstr "Вимкнути Rest API для анонімних користувачів"
+
+#: core/includes/back/dashboard-options.php:379
+msgid "Disable Emojis"
+msgstr "Вимкнути Emoji"
+
+#: core/includes/back/dashboard-options.php:380
+msgid "Disable default WordPress Emojis"
+msgstr "Вимкнути WordPress Emojis за замовчуванням"
+
+#: core/includes/back/dashboard-options.php:385
+msgid "Disable Embeds"
+msgstr "Вимкнути Embeds"
+
+#: core/includes/back/dashboard-options.php:386
+msgid "Disable default WordPress Embeds"
+msgstr "Вимкніть стандартні ембеди WordPress"
+
+#: core/includes/back/dashboard-options.php:391
+msgid "Disable dashboard widgets"
+msgstr "Приховати системні віджети консолі"
+
+#: core/includes/back/dashboard-options.php:392
+msgid "Disable default WordPress dashboard widgets"
+msgstr "Вимкніть стандартні віджети інформаційної панелі WordPress"
+
+#: core/includes/back/dashboard-options.php:397
+msgid "Hide admin top bar"
+msgstr "Вимкнути панель адміністратора"
+
+#: core/includes/back/dashboard-options.php:398
+msgid "Hide admin top bar for all users on front-end"
+msgstr ""
+"Приховати верхню панель адміністратора для всіх користувачів на фронтенді"
+
+#: core/includes/back/dashboard-options.php:403
+msgid "Disable admin email verification"
+msgstr "Вимкнути E-mail верифікацію для адмінів"
+
+#: core/includes/back/dashboard-options.php:404
+msgid "Disable default WordPress admin email verification"
+msgstr ""
+"Вимкнути стандартну перевірку електронної пошти адміністратора WordPress"
+
+#: core/includes/back/dashboard-options.php:409
+msgid "Disable comments"
+msgstr "Вимкнути коментарі"
+
+#: core/includes/back/dashboard-options.php:410
+msgid "Disable comments on all posts and pages"
+msgstr "Вимкнути коментарі до всіх публікацій і сторінок"
+
+#: core/includes/back/dashboard-options.php:415
+msgid "Delete child media"
+msgstr "Видаляти вкладення"
+
+#: core/includes/back/dashboard-options.php:416
+msgid "Delete child media when parent post is deleted"
+msgstr "Видалити дочірні медіафайли, коли буде видалено батьківський допис"
+
+#: core/includes/back/dashboard-options.php:421
+msgid "Enable HTML cache"
+msgstr "Увімкнути HTML кешування"
+
+#: core/includes/back/dashboard-options.php:422
+msgid "Enable HTML page cache for anonymous users"
+msgstr "Увімкнути кеш сторінки HTML для анонімних користувачів"
+
+#: core/includes/back/dashboard-options.php:427
+msgid "Enable minify"
+msgstr "Увімкнути мініфікацію"
+
+#: core/includes/back/dashboard-options.php:428
+msgid "Enable HTML minifier on frontend"
+msgstr "Ввімкнути HTML-мініфікатор на фронтенді"
+
+#: core/includes/back/dashboard-options.php:433
+msgid "Hide ACF"
+msgstr "Приховати ACF"
+
+#: core/includes/back/dashboard-options.php:434
+msgid "Hide Advanced Custom Fields from Dashboard"
+msgstr "Приховати ACF з інформаційної панелі"
+
+#: core/includes/back/dashboard-options.php:439
+msgid "Disable Gutenberg editor everywhere"
+msgstr "Вимкніть редактор Gutenberg всюди"
+
+#: core/includes/back/dashboard-options.php:444
+msgid "Disable Gutenberg editor for Blog"
+msgstr "Вимкнути редактор Gutenberg для блогу"
+
+#: core/includes/back/dashboard-options.php:449
+msgid "Parse all pages blocks as Gutenberg patterns"
+msgstr "Парсити усі блоки сторінок як Гутенберг патерни"
+
+#: core/includes/back/dashboard-update-assets-version.php:16
+msgid "Update theme version"
+msgstr "Оновити версію теми"
+
+#: core/includes/back/system-acf-nav-menu-field.php:19
+msgid "Nav Menu"
+msgstr "Навігаційне меню"
+
+#: core/includes/back/system-acf-nav-menu-field.php:38
+msgid "Return Value"
+msgstr "Значення, що повертається"
+
+#: core/includes/back/system-acf-nav-menu-field.php:39
+msgid "Specify the returned value on front end"
+msgstr "Вкажіть значення, що повертається"
+
+#: core/includes/back/system-acf-nav-menu-field.php:44
+msgid "Nav Menu Object"
+msgstr "Об'єкт меню"
+
+#: core/includes/back/system-acf-nav-menu-field.php:45
+msgid "Nav Menu HTML"
+msgstr "HTML меню"
+
+#: core/includes/back/system-acf-nav-menu-field.php:46
+msgid "Nav Menu ID"
+msgstr "ID меню"
+
+#: core/includes/back/system-acf-nav-menu-field.php:47
+msgid "All"
+msgstr "Усі"
+
+#: core/includes/back/system-acf-nav-menu-field.php:53
+msgid "Menu Container"
+msgstr "Контейнер меню"
+
+#: core/includes/back/system-acf-nav-menu-field.php:54
+msgid "What to wrap the Menu's ul with (when returning HTML only)"
+msgstr "Обгортка для меню"
+
+#: core/includes/back/system-acf-nav-menu-field.php:62
+msgid "Allow Null?"
+msgstr "Дозволити порожнє значення?"
+
+#: core/includes/back/system-acf-nav-menu-field.php:67
+msgid "Yes"
+msgstr "Так"
+
+#: core/includes/back/system-acf-nav-menu-field.php:68
+msgid "No"
+msgstr "Ні"
+
+#: core/includes/back/system-acf-nav-menu-field.php:81
+#: core/includes/back/system-thumbnails.php:20
+#: core/includes/back/system-thumbnails.php:22
+msgid "None"
+msgstr "Немає"
+
+#: core/includes/back/system-acf-nav-menu-field.php:128
+msgid "Choose one"
+msgstr "Виберіть"
+
+#: core/includes/back/system-disable-customizer.php:109
+msgid "The Customizer is currently disabled."
+msgstr "Кастомайзер наразі вимкнено."
+
+#: core/includes/back/system-generate-blog-posts.php:10
+#: core/includes/back/system-generate-blog-posts.php:11
+#: core/includes/back/system-generate-blog-posts.php:163
+msgid "Generate Posts"
+msgstr "Генерація постів"
+
+#: core/includes/back/system-generate-blog-posts.php:85
+#, php-format
+msgid "Error generating post %d: %s"
+msgstr "Помилка створення публікації %d: %s"
+
+#: core/includes/back/system-generate-blog-posts.php:112
+#, php-format
+msgid "Successfully generated %d posts!"
+msgstr "Успішно створено %d публікацій!"
+
+#: core/includes/back/system-generate-blog-posts.php:119
+msgid "Errors occurred:"
+msgstr "Виникли помилки:"
+
+#: core/includes/back/system-generate-blog-posts.php:129
+msgid "Generate Random Posts"
+msgstr "Генерація випадкових постів"
+
+#: core/includes/back/system-generate-blog-posts.php:136
+msgid "Number of posts to generate"
+msgstr "Кількість постів для генерації"
+
+#: core/includes/back/system-generate-blog-posts.php:140
+msgid "How many posts should be generated (max 100)"
+msgstr "Скільки постів має бути згенеровано (максимум 100)"
+
+#: core/includes/back/system-generate-blog-posts.php:145
+msgid "Paragraphs per post"
+msgstr "Кількість абзаців"
+
+#: core/includes/back/system-generate-blog-posts.php:149
+msgid "How many paragraphs should be in each post (max 50)"
+msgstr "Скільки абзаців має бути в кожному пості (максимум 50)"
+
+#: core/includes/back/system-generate-blog-posts.php:154
+msgid "Include featured image"
+msgstr "Додати обкладинку посту"
+
+#: core/includes/back/system-generate-blog-posts.php:158
+msgid "Generate and attach a random featured image for each post"
+msgstr "Створюйте та прикріплюйте випадкове зображення для кожного посту"
+
+#: core/includes/back/system-redirect-rules.php:8
+msgid "Redirect Rules Options"
+msgstr "Правила перенаправлення"
+
+#: core/includes/back/system-redirect-rules.php:61
+msgid ""
+"Invalid redirect rule: Old URL and New URL must be different and not empty."
+msgstr ""
+"Неправильне правило перенаправлення: Стара URL-адреса та Нова URL-адреса "
+"повинні відрізнятися і не бути порожніми."
+
+#: core/includes/back/system-redirect-rules.php:80
+msgid "Conflict detected: A redirect rule with this Old URL already exists."
+msgstr ""
+"Виявлено конфлікт: Правило перенаправлення з цією старою URL-адресою вже "
+"існує."
+
+#: core/includes/back/system-redirect-rules.php:88
+msgid ""
+"Invalid redirect rule: Old URL must contain the current WordPress domain."
+msgstr ""
+"Неправильне правило перенаправлення: Стара URL-адреса повинна містити "
+"поточний домен WordPress."
+
+#: core/includes/back/system-send-email.php:34
+msgid "Test"
+msgstr "Тест"
+
+#: core/includes/back/system-thumbnails.php:9
+msgid "Thumbnail"
+msgstr "Мініатюра"
+
+#: core/init.php:59
+msgid "Website under Maintenance"
+msgstr "Веб-сайт на технічному обслуговуванні"
+
+#: core/init.php:60
+msgid ""
+"We are performing scheduled maintenance. We will be back online shortly."
+msgstr ""
+"Ми проводимо планове технічне обслуговування. Ми проводимо планове технічне "
+"обслуговування. Незабаром ми знову будемо онлайн."
+
+#: core/init.php:171
+msgid "Please, install Advanced Custom Fields PRO version"
+msgstr "Будь ласка, встановіть PRO версію Advanced Custom Fields"
+
+#: core/vendor/timber/timber/src/Archives.php:188
+#, php-format
+msgid "%1$s %2$d"
+msgstr "%1$s %2$d"
+
+#: core/vendor/timber/timber/src/DateTimeHelper.php:84
+#, php-format
+msgid "%s ago"
+msgstr "%s тому"
+
+#: core/vendor/timber/timber/src/DateTimeHelper.php:89
+#, php-format
+msgid "%s from now"
+msgstr "%s відтепер"
+
+#: core/vendor/timber/timber/src/PagesMenu.php:84
+msgid "Pages"
+msgstr "Сторінки"
+
+#: core/vendor/timber/timber/src/Pagination.php:144
+msgid "&laquo; Previous"
+msgstr "&laquo; Назад"
+
+#: core/vendor/timber/timber/src/Pagination.php:145
+msgid "Next &raquo;"
+msgstr "Вперед &raquo;"
+
+#: core/vendor/timber/timber/src/Pagination.php:221
+#: core/vendor/timber/timber/src/TextHelper.php:47
+msgid "&hellip;"
+msgstr "&hellip;"
+
+#: views/blocks/logical/pattern.twig:8
+msgid "No pattern selected"
+msgstr "Патерн не обрано"
+
+#: views/dashboard/email-log-meta.twig:7
+msgid "Log ID"
+msgstr "Ідентифікатор журналу"
+
+#: views/dashboard/fields/link.twig:3
+msgid "Edit Link"
+msgstr "Редагувати посилання"
+
+#: views/dashboard/fields/link.twig:10
+msgid "(new tab)"
+msgstr "(нова вкладка)"
+
+#: views/dashboard/fields/link.twig:11
+msgid "Remove Link"
+msgstr "Видалити посилання"
+
+#: views/dashboard/redirects-meta.twig:2
+msgid "Old URL:"
+msgstr "Стара адреса:"
+
+#: views/dashboard/redirects-meta.twig:10
+msgid "Code:"
+msgstr "Код:"
+
+#: views/email/base.twig:385
+msgid "Session information"
+msgstr "Інформація про сеанс"
+
+#: views/password.twig:10
+msgid "Password"
+msgstr "Пароль"
+
+#: views/password.twig:11
+msgid "Submit"
+msgstr "Надіслати"
+
+#~ msgid "Google maps API key to integrate with Advanced Custom Fields"
+#~ msgstr "Ключ API карт Google для інтеграції з Advanced Custom Fields"
+
+#~ msgid "New URL:"
+#~ msgstr "Нова адреса:"
+
+#~ msgid "Main"
+#~ msgstr "Головний"
+
+#~ msgid "System tweaks"
+#~ msgstr "Системні налаштування"
+
+#~ msgid "Maintenance mode title"
+#~ msgstr "Заголовок режиму обслуговування"
+
+#~ msgid "Maintenance mode text"
+#~ msgstr "Текст режиму обслуговування"
+
+#~ msgid "Resize at upload"
+#~ msgstr "Змінити розмір під час завантаження"
+
+#~ msgid "SMTP options"
+#~ msgstr "SMTP options"
+
+#~ msgid "Your Email"
+#~ msgstr "Ваш Email"
+
+#~ msgid "Your password"
+#~ msgstr "Ваш пароль"
+
+#~ msgid "Website options"
+#~ msgstr "Налаштування сайту"
+
+#~ msgid "Inline scripts and styles"
+#~ msgstr "Інлайнові скрипти та стилі"
+
+#~ msgid "Host"
+#~ msgstr "Хост"
+
+#~ msgid "Port"
+#~ msgstr "Порт"
+
+#~ msgid "Username"
+#~ msgstr "Ім'я користувача"
+
+#~ msgid "From name"
+#~ msgstr "Ім'я Від кого"
+
+#~ msgid "Secure"
+#~ msgstr "Захищено"
+
+#~ msgid "Relational"
+#~ msgstr "Реляційний"
+
+#~ msgid "Framework"
+#~ msgstr "Фреймворк"
+
+#~ msgid "User additional fields"
+#~ msgstr "Додаткові поля користувача"
+
+#~ msgid "Additional system options"
+#~ msgstr "Додаткові параметри системи"
+
+#~ msgid "Your Phone"
+#~ msgstr "Ваш Телефон"
+
+#~ msgid "Options"
+#~ msgstr "Опції"

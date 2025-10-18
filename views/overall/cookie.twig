@@ -1,0 +1,25 @@
+{% if general_fields.cookie_popup.title and general_fields.cookie_popup.text and general_fields.cookie_popup.button_title %}
+<div class="cookiePopupBg"></div>
+<div class="cookiePopupWrapper">
+    <div class="cookiePopup">
+        {% if general_fields.cookie_popup.title %}
+        <p class="title">{{ general_fields.cookie_popup.title }}</p>
+        {% endif %}
+        <div class="cls">
+            {% if general_fields.cookie_popup.text %}
+            <div class="message typo">{{ general_fields.cookie_popup.text }}</div>
+            {% endif %}
+            {% if general_fields.cookie_popup.button_title %}
+            <p class="overallButton primary">
+                <a href="#close" class="close">
+                    <span>{{ general_fields.cookie_popup.button_title }}</span>
+{#                    <svg>#}
+{#                        <use href="{{ svg_sprite }}#icon-button-ok"></use>#}
+{#                    </svg>#}
+                </a>
+            </p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endif %}

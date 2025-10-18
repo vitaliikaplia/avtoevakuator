@@ -1,0 +1,104 @@
+{% if not is_example %}
+{% block wrapper_before %}{% endblock %}
+<div
+class="
+customBlockWrapper
+{{ block_class }}
+{% block wrapper_classes %}{% endblock %}
+{{ fields.responsive_options | join(' ') }}
+"
+id="{{ block.id }}"
+{% if fields.anchor %} data-anchor="{{ fields.anchor }}"{% endif %}
+{% block wrapper_tag_params %}{% endblock %}
+>
+{% if is_preview %}
+<div class="blockInfo">
+<svg class="desktop">
+<use href="{{ svg_sprite }}#device-desktop"></use>
+</svg>
+<svg class="mobile">
+<use href="{{ svg_sprite }}#device-mobile"></use>
+</svg>
+{% if fields.anchor %}<span class="anchor">#{{ fields.anchor }}</span>{% endif %}
+</div>
+{% endif %}
+<div
+class="
+customBlock
+{% block inner_classes %}{% endblock %}
+"
+{% block inner_tag_params %}{% endblock %}
+>
+{% block inner_before %}{% endblock %}
+{% block content %}{% endblock %}
+{% block inner_after %}{% endblock %}
+</div>
+</div>
+{% block wrapper_after %}{% endblock %}
+{% if
+fields.custom_margin_bottom and (fields.margin_bottom_desktop_tablet or fields.margin_bottom_mobile)
+or
+fields.custom_padding_top_enable and (fields.padding_top_desktop_tablet or fields.padding_top_mobile)
+or
+fields.custom_padding_bottom_enable and (fields.padding_bottom_desktop_tablet or fields.padding_bottom_mobile)
+or
+fields.bg_color_desktop_tablet or fields.bg_color_mobile
+%}
+<style>
+{% if fields.margin_bottom_desktop_tablet %}
+#{{ block.id }}{
+margin-bottom: {{ fields.margin_bottom_desktop_tablet }}px;
+}
+{% endif %}
+{% if fields.margin_bottom_mobile %}
+@media (max-width: 768px) {
+#{{ block.id }}{
+margin-bottom: {{ fields.margin_bottom_mobile }}px;
+}
+}
+{% endif %}
+{% if fields.padding_top_desktop_tablet %}
+#{{ block.id }} .customBlock{
+padding-top: {{ fields.padding_top_desktop_tablet }}px;
+}
+{% endif %}
+{% if fields.padding_top_mobile %}
+@media (max-width: 768px) {
+#{{ block.id }} .customBlock{
+padding-top: {{ fields.padding_top_mobile }}px;
+}
+}
+{% endif %}
+{% if fields.padding_bottom_desktop_tablet %}
+#{{ block.id }} .customBlock{
+padding-bottom: {{ fields.padding_bottom_desktop_tablet }}px;
+}
+{% endif %}
+{% if fields.padding_bottom_mobile %}
+@media (max-width: 768px) {
+#{{ block.id }} .customBlock{
+padding-bottom: {{ fields.padding_bottom_mobile }}px;
+}
+}
+{% endif %}
+{% if fields.bg_color_desktop_tablet %}
+#{{ block.id }}{
+background-color: {{ fields.bg_color_desktop_tablet }};
+}
+{% endif %}
+{% if fields.bg_color_mobile %}
+@media (max-width: 768px) {
+#{{ block.id }}{
+background-color: {{ fields.bg_color_mobile }};
+}
+}
+{% endif %}
+</style>
+{% endif %}
+{% else %}
+{% if block_example %}
+<div class="block-example">
+<img src="{{ block_example }}" style="max-width: 100%;height: auto;padding: 0;margin: 0;font-size: 0;">
+</div>
+{% endif %}
+{% endif %}

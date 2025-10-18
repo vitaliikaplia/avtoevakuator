@@ -1,0 +1,16 @@
+<div class="label">
+    <input type="text" id="{{ name }}_html" class="custom-options-{{ val.type }}" style="display: none;" />
+    <button type="button" class="button custom-button-link-button{% if value.url %} hide{% endif %}" id="{{ name }}">{{ __('Edit Link', TEXTDOMAIN) }}</button>
+    <input type="hidden" name="{{ name }}[url]" id="{{ name }}_url" class="url" value="{{ value.url }}" >
+    <input type="hidden" name="{{ name }}[title]" id="{{ name }}_title" class="title" value="{{ value.title }}" >
+    <input type="hidden" name="{{ name }}[target]" id="{{ name }}_target" class="target" value="{{ value.target }}" >
+    <p class="linkPreview{% if value.url %} show{% endif %}">
+        <span class="title{% if value.title %} show{% endif %}">{{ value.title  }}</span>
+        <span class="url {% if value.url %} show{% endif %}">{{ value.url }}</span>
+        <span class="target{% if value.target %} show{% endif %}" data-localized="{{ __('(new tab)', TEXTDOMAIN) }}">{% if value.target %}{{ __('(new tab)', TEXTDOMAIN) }}{% endif %}</span>
+        <button type="button" class="button remove-link-button">{{ __('Remove Link', TEXTDOMAIN) }}</button>
+    </p>
+    {% if description %}
+    <p class="description">{{ description }}</p>
+    {% endif %}
+</div>

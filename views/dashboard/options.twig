@@ -1,0 +1,19 @@
+{% if options is iterable %}
+<table class="form-table" role="presentation">
+    <tbody>
+    {% for key,val in options %}
+    <tr
+        {% if val.conditional_logic and val.conditional_logic is iterable %}
+        data-conditional-logic='true'
+        data-conditional-logic-action='{{ val.conditional_logic.action }}'
+        data-conditional-logic-rules='{{ val.conditional_logic.rules|json_encode|e('html_attr') }}'
+        {% endif %}>
+        <th scope="row"><label for="{{ val.name }}">{{ val.label }} {% if val.required %} *{% endif %}</label></th>
+        <td>
+            {% include 'dashboard/fields/' ~ val.type ~ '.twig' with {'name': val.name, 'description': val.description, 'value': get_option(val.name), 'required': val.required ?? false} %}
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endif %}

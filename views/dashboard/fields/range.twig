@@ -1,0 +1,22 @@
+<label for="{{ name }}">
+    <input type="range"
+        class="custom-options-{{ val.type }}"
+        name="{{ name }}"
+        id="{{ name }}"
+        value="{{ value }}"
+        min="{{ val.tweaks.min }}"
+        max="{{ val.tweaks.max }}"
+        step="{{ val.tweaks.step }}"
+    />
+    <input
+        type="number"
+        class="val_{{ name }}_display"
+        value="{{ value }}"
+        min="{{ val.tweaks.min }}"
+        max="{{ val.tweaks.max }}"
+        step="{{ val.tweaks.step }}"
+    > <span class="suffix">{{ val.tweaks.suffix }}</span>
+    {% if description %}
+    <p class="description">{{ description }}</p>
+    {% endif %}
+</label>

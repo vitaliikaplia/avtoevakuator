@@ -1,0 +1,22 @@
+{% extends "base-clean.twig" %}
+
+{% block content %}
+
+    <p class="code">404</p>
+    {% if general_fields.page_404.title %}
+    <h1 class="title">{{ general_fields.page_404.title }}</h1>
+    {% endif %}
+    {% if general_fields.page_404.text %}
+    <div class="typo">
+        {{ general_fields.page_404.text }}
+    </div>
+    {% endif %}
+    {% if general_fields.page_404.button.url and general_fields.page_404.button.title %}
+    <p class="overallButton primary">
+        <a href="{{ general_fields.page_404.button.url }}" target="{{ general_fields.page_404.button.target }}">
+            <span>{{ general_fields.page_404.button.title }}</span>
+        </a>
+    </p>
+    {% endif %}
+
+{% endblock %}

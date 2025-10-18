@@ -1,0 +1,109 @@
+/* main
+-------------------------------------------------------------- */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    overflow-x: hidden;
+    font-size: 14px;
+    line-height: 1.6;
+    font-feature-settings: "pnum" on,"lnum" on;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.cookiePopupBg{
+    position: fixed;
+    z-index: 112233;
+    @include transform(translateZ(112233px));
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    @include opacity(0);
+    visibility: hidden;
+    background-color: rgba(#000, .65);
+    @include transition(all .4s);
+
+    &.show{
+        @include opacity(1);
+        visibility: visible;
+    }
+}
+
+.cookiePopupWrapper{
+    position: fixed;
+    z-index: 112244;
+    @include transform(translateZ(112244px));
+    bottom: -600px;
+    @include opacity(0);
+    visibility: hidden;
+    left: 0;
+    right: 0;
+    padding: 32px 20px;
+    background-color: #fff;
+    background-size: 15px;
+    background-position: -2px 7px;
+    background-repeat: repeat;
+    @include box-shadow(0 0 10px rgba(black, .25));
+    @include transition(all .4s);
+
+    @media (max-width: 1024px){
+        padding: 20px;
+    }
+
+    &.show{
+        @include opacity(1);
+        visibility: visible;
+        bottom: 0;
+    }
+
+    .cookiePopup{
+        width: 100%;
+        max-width: 1620px;
+        margin: 0 auto;
+        text-align: left;
+        position: relative;
+
+        .title{
+            font-weight: 800;
+            font-size: 24px;
+            margin-bottom: 12px;
+            color: black;
+            font-family: "Unbounded", serif;
+
+            @media (max-width: 1024px){
+                font-size: 20px;
+                line-height: 1.2;
+                margin-bottom: 18px;
+                text-align: center;
+            }
+        }
+
+        .cls{
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+
+            @media (max-width: 1024px){
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+
+        .message{
+            @media (max-width: 1024px) {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+        }
+
+        .overallButton{
+            flex-shrink: 0;
+
+            @media (max-width: 1024px){
+            }
+        }
+    }
+}

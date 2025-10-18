@@ -1,0 +1,6 @@
+<label for="{{ name }}">
+    <input type="number" class="regular-text custom-options-{{ val.type }}" name="{{ name }}" id="{{ name }}" value="{{ value }}" step="1" />
+    {% if description %}
+    <p class="description">{{ description }}</p>
+    {% endif %}
+</label>

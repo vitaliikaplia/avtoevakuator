@@ -1,0 +1,6 @@
+<label for="{{ name }}">
+    {{ wp_editor(value, name, { textarea_name: name, media_buttons: false, quicktags: false, tinymce: { height: 100 } }) }}
+    {% if description %}
+    <p class="description">{{ description }}</p>
+    {% endif %}
+</label>

@@ -1,0 +1,6 @@
+<label for="{{ name }}">
+    <input type="text" class="regular-text custom-options-{{ val.type }}" name="{{ name }}" id="{{ name }}" value="{{ value }}" autocomplete="off"{% if required %} required {% endif %} />
+    {% if description %}
+    <p class="description">{{ description }}</p>
+    {% endif %}
+</label>

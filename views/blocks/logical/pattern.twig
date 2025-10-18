@@ -1,0 +1,11 @@
+{% extends "block-simple-base.twig" %}
+
+{% block content %}
+
+    {% if fields.pattern %}
+        {{ get_pattern(fields.pattern) }}
+    {% else %}
+    <p class="no-pattern-selected">{{ __('No pattern selected', TEXTDOMAIN) }}</p>
+    {% endif %}
+
+{% endblock %}

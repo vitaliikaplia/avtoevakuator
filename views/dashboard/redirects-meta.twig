@@ -1,0 +1,19 @@
+<p>
+    <label for="old_url">{{ __('Old URL:', TEXTDOMAIN) }}</label>
+    <input type="url" id="old_url" name="old_url" value="{{ old_url }}" style="width: 100%;" placeholder="{{ protocol }}://{{ BLOGINFO_JUST_DOMAIN }}/..." required>
+</p>
+<p>
+    <label for="new_url"><?php echo __('New URL:', TEXTDOMAIN); ?></label>
+    <input type="url" id="new_url" name="new_url" value="{{ new_url }}" style="width: 100%;" placeholder="{{ protocol }}://{{ BLOGINFO_JUST_DOMAIN }}/..." required>
+</p>
+<p>
+    <label>{{ __('Code:', TEXTDOMAIN) }}</label><br>
+    <label>
+        <input type="radio" name="code" value="301" {{ checked(code, '301')}} required>
+        301
+    </label>
+    <label>
+        <input type="radio" name="code" value="302" {{ checked(code, '302')}} required>
+        302
+    </label>
+</p>

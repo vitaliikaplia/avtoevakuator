@@ -1,0 +1,8 @@
+<select name="{{ val.name }}" id="{{ val.name }}">
+    {% set menus = wp_get_nav_menus() %}
+    {% for menu in menus %}
+    <option value="{{ menu.term_id }}"{% if menu.term_id == get_option(val.name) %} selected{% endif %}>
+        {{ menu.name }}
+    </option>
+    {% endfor %}
+</select>
