@@ -3,7 +3,7 @@
 if(!defined('ABSPATH')){exit;}
 
 /** disable Json from head */
-if(get_option('disable_rest_api') && !is_user_logged_in()){
+if(!is_user_logged_in()){
 
 	add_filter( 'rest_enabled', '__return_false' );
 

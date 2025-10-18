@@ -18,12 +18,10 @@ function sl_dashboard_tweaks_render() {
 add_action( 'wp_before_admin_bar_render', 'sl_dashboard_tweaks_render' );
 
 /** hide admin top bar */
-if(get_option('hide_admin_top_bar')){
-	add_action( 'admin_print_styles-profile.php', 'global_profile_hide_admin_bar' );
-	add_action( 'admin_print_styles-user-edit.php', 'global_profile_hide_admin_bar' );
-	function global_profile_hide_admin_bar() {
-		echo '<style type="text/css">.show-admin-bar { display: none !important; }</style>';
-		return;
-	}
-	add_filter( 'show_admin_bar', '__return_false' );
+add_action( 'admin_print_styles-profile.php', 'global_profile_hide_admin_bar' );
+add_action( 'admin_print_styles-user-edit.php', 'global_profile_hide_admin_bar' );
+function global_profile_hide_admin_bar() {
+    echo '<style type="text/css">.show-admin-bar { display: none !important; }</style>';
+    return;
 }
+add_filter( 'show_admin_bar', '__return_false' );

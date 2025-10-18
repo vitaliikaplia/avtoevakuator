@@ -33,18 +33,16 @@ function add_picture_tag_to_images($content) {
 }
 add_filter('the_content', 'add_picture_tag_to_images', 99999);
 
-if(get_option('remove_default_image_sizes')){
-    function remove_default_image_sizes( $sizes) {
-        unset( $sizes['large']);
-        unset( $sizes['thumbnail']);
-        unset( $sizes['medium']);
-        unset( $sizes['medium_large']);
-        unset( $sizes['1536x1536']);
-        unset( $sizes['2048x2048']);
-        return $sizes;
-    }
-    add_filter('intermediate_image_sizes_advanced', 'remove_default_image_sizes');
+function remove_default_image_sizes( $sizes) {
+    unset( $sizes['large']);
+    unset( $sizes['thumbnail']);
+    unset( $sizes['medium']);
+    unset( $sizes['medium_large']);
+    unset( $sizes['1536x1536']);
+    unset( $sizes['2048x2048']);
+    return $sizes;
 }
+add_filter('intermediate_image_sizes_advanced', 'remove_default_image_sizes');
 
 function resize_images_at_upload($image_data){
 

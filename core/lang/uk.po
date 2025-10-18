@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: avtoevakuator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-18 20:30+0300\n"
+"POT-Creation-Date: 2025-10-18 22:20+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
 "Language-Team: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
@@ -49,31 +49,31 @@ msgstr "Інше"
 msgid "Other options updated"
 msgstr "Інші опції оновлено"
 
-#: core/gutenberg.php:14
+#: core/gutenberg.php:12
 msgid "Main blocks"
 msgstr "Основні блоки"
 
-#: core/gutenberg.php:18
+#: core/gutenberg.php:16
 msgid "Logical blocks"
 msgstr "Логічні блоки"
 
-#: core/gutenberg.php:30
+#: core/gutenberg.php:28
 msgid "First screen"
 msgstr "Перший екран"
 
-#: core/gutenberg.php:38
+#: core/gutenberg.php:36
 msgid "Second screen"
 msgstr "Другий екран"
 
-#: core/gutenberg.php:46 core/includes/back/custom-post-types.php:57
+#: core/gutenberg.php:44 core/includes/back/custom-post-types.php:57
 msgid "Pattern"
 msgstr "Патерн"
 
-#: core/gutenberg.php:296
+#: core/gutenberg.php:294
 msgid "Block"
 msgstr "Блок"
 
-#: core/gutenberg.php:297
+#: core/gutenberg.php:295
 msgid "Block from"
 msgstr "Блок від"
 
@@ -276,403 +276,223 @@ msgstr "Зображення"
 msgid "Resize and optimize media while upload"
 msgstr "Увімкнути зміну розміру медіа під час завантаження"
 
-#: core/includes/back/dashboard-options.php:10
-msgid ""
-"In this section, you can enable resizing and optimization of images while "
-"uploading them to the media library. You can specify the formats that will "
-"be resized, set the width and height of the resized images, and adjust the "
-"quality of the resized images. Additionally, you can enable the conversion "
-"of images to the WEBP format, which is a modern image format that provides "
-"better compression and quality compared to other formats."
-msgstr ""
-"У цьому розділі ви можете ввімкнути зміну розміру та оптимізацію зображень "
-"під час завантаження їх до медіатеки. Ви можете вказати формати, які буде "
-"змінено, встановити ширину і висоту змінених зображень, а також налаштувати "
-"якість змінених зображень. Крім того, ви можете увімкнути конвертацію "
-"зображень у формат WEBP, який є сучасним форматом зображень, що забезпечує "
-"краще стиснення та якість порівняно з іншими форматами."
-
-#: core/includes/back/dashboard-options.php:15
-#: core/includes/back/dashboard-options.php:110
-#: core/includes/back/dashboard-options.php:145
-#: core/includes/back/dashboard-options.php:274
+#: core/includes/back/dashboard-options.php:14
+#: core/includes/back/dashboard-options.php:109
+#: core/includes/back/dashboard-options.php:143
+#: core/includes/back/dashboard-options.php:270
 msgid "Enable"
 msgstr "Увімкнути"
 
-#: core/includes/back/dashboard-options.php:16
+#: core/includes/back/dashboard-options.php:15
 msgid "Enable resizing media while upload"
 msgstr "Увімкнути зміну розміру медіа під час завантаження"
 
-#: core/includes/back/dashboard-options.php:28
+#: core/includes/back/dashboard-options.php:27
 msgid "Formats"
 msgstr "Формати"
 
-#: core/includes/back/dashboard-options.php:29
+#: core/includes/back/dashboard-options.php:28
 msgid "Resize at upload formats"
 msgstr "Формати змінюваних зображень під час завантаження"
 
-#: core/includes/back/dashboard-options.php:50
+#: core/includes/back/dashboard-options.php:49
 msgid "Width"
 msgstr "Ширина"
 
-#: core/includes/back/dashboard-options.php:51
+#: core/includes/back/dashboard-options.php:50
 msgid "Resize upload width"
 msgstr "Максимальна ширина завантаженого зображення"
 
-#: core/includes/back/dashboard-options.php:72
+#: core/includes/back/dashboard-options.php:71
 msgid "Height"
 msgstr "Висота"
 
-#: core/includes/back/dashboard-options.php:73
+#: core/includes/back/dashboard-options.php:72
 msgid "Resize upload height"
 msgstr "Максимальна висота завантаженого зображення"
 
-#: core/includes/back/dashboard-options.php:94
+#: core/includes/back/dashboard-options.php:93
 msgid "Quality"
 msgstr "Якість"
 
-#: core/includes/back/dashboard-options.php:95
+#: core/includes/back/dashboard-options.php:94
 msgid "Resize upload quality"
 msgstr "Максимальна якість для ресайзу"
 
-#: core/includes/back/dashboard-options.php:111
+#: core/includes/back/dashboard-options.php:110
 msgid "Enable WEBP convert"
 msgstr "Увімкнути перетворення WEBP"
 
+#: core/includes/back/dashboard-options.php:121
 #: core/includes/back/dashboard-options.php:122
-#: core/includes/back/dashboard-options.php:123
 msgid "Webp convert quality"
 msgstr "Якість конвертування Webp"
 
-#: core/includes/back/dashboard-options.php:138
+#: core/includes/back/dashboard-options.php:137
 msgid "SMTP"
 msgstr "SMTP"
 
-#: core/includes/back/dashboard-options.php:139
+#: core/includes/back/dashboard-options.php:138
 msgid "Configure custom SMTP server"
 msgstr "Налаштувати власний сервер SMTP"
 
-#: core/includes/back/dashboard-options.php:140
-msgid ""
-"In this section, you can configure a custom SMTP server to send emails from "
-"your website. You can specify the SMTP host, port, username, password, and "
-"from name. Additionally, you can enable a secure SMTP connection using SSL."
-msgstr ""
-"У цьому розділі ви можете налаштувати власний SMTP-сервер для надсилання "
-"електронних листів з вашого веб-сайту. Ви можете вказати хост SMTP, порт, "
-"ім'я користувача, пароль та ім'я відправника. Крім того, ви можете ввімкнути "
-"безпечне з'єднання SMTP за допомогою SSL."
-
-#: core/includes/back/dashboard-options.php:146
+#: core/includes/back/dashboard-options.php:144
 msgid "Enable custom SMTP server"
 msgstr "Увімкнути власний сервер SMTP"
 
-#: core/includes/back/dashboard-options.php:151
+#: core/includes/back/dashboard-options.php:149
 msgid "SMTP host"
 msgstr "SMTP хост"
 
-#: core/includes/back/dashboard-options.php:166
+#: core/includes/back/dashboard-options.php:164
 msgid "SMTP port"
 msgstr "SMTP порт"
 
-#: core/includes/back/dashboard-options.php:181
+#: core/includes/back/dashboard-options.php:179
 msgid "SMTP username"
 msgstr "SMTP користувач"
 
-#: core/includes/back/dashboard-options.php:196
+#: core/includes/back/dashboard-options.php:194
 msgid "SMTP password"
 msgstr "SMTP пароль"
 
-#: core/includes/back/dashboard-options.php:211
+#: core/includes/back/dashboard-options.php:209
 msgid "SMTP from name"
 msgstr "SMTP імʼя користувача"
 
-#: core/includes/back/dashboard-options.php:226
+#: core/includes/back/dashboard-options.php:224
 msgid "Secure SMTP connection"
 msgstr "Безпечне з’єднання SMTP"
 
-#: core/includes/back/dashboard-options.php:227
+#: core/includes/back/dashboard-options.php:225
 msgid "Use SSL for SMTP connection"
 msgstr "Використовувати безпечне з’єднання SMTP"
 
-#: core/includes/back/dashboard-options.php:242
+#: core/includes/back/dashboard-options.php:240
 msgid "Custom code"
 msgstr "Власний код"
 
-#: core/includes/back/dashboard-options.php:243
+#: core/includes/back/dashboard-options.php:241
 msgid "Custom HTML code for header and footer"
 msgstr "Спеціальний HTML-код для верхнього та нижнього колонтитулів"
 
-#: core/includes/back/dashboard-options.php:244
-msgid ""
-"In this section, you can add custom HTML code to the header and footer of "
-"your website. The custom code will be placed inside the header tag and "
-"before the end of the body tag. You can use this feature to add custom "
-"scripts, styles, meta tags, and other elements to your website."
-msgstr ""
-"У цьому розділі ви можете додати кастомний HTML-код до верхнього та нижнього "
-"колонтитулів вашого сайту. Кастомний код буде розміщено всередині тегу title "
-"у верхньому колонтитулі та перед кінцем тегу body у нижньому колонтитулі."
-
-#: core/includes/back/dashboard-options.php:249
+#: core/includes/back/dashboard-options.php:246
 msgid "Header custom code"
 msgstr "Код в шапку"
 
-#: core/includes/back/dashboard-options.php:250
+#: core/includes/back/dashboard-options.php:247
 msgid "The custom code will be placed inside the header tag"
 msgstr "Кастомний код буде розміщено всередині тегу header"
 
-#: core/includes/back/dashboard-options.php:255
+#: core/includes/back/dashboard-options.php:252
 msgid "After &#x3C;body&#x3E; custom code"
 msgstr "Код після &#x3C;body&#x3E;"
 
-#: core/includes/back/dashboard-options.php:256
+#: core/includes/back/dashboard-options.php:253
 msgid "The special code will be placed after the start of the body tag"
 msgstr "Спеціальний код буде розміщено після початку тегу body"
 
-#: core/includes/back/dashboard-options.php:261
+#: core/includes/back/dashboard-options.php:258
 msgid "Footer custom code"
 msgstr "Код в підвал"
 
-#: core/includes/back/dashboard-options.php:262
+#: core/includes/back/dashboard-options.php:259
 msgid "The special code will be placed before the end of the body tag"
 msgstr "Спеціальний код буде розміщено перед кінцем тегу body"
 
-#: core/includes/back/dashboard-options.php:267
+#: core/includes/back/dashboard-options.php:264
 msgid "Maintenance"
 msgstr "Технічне обслуговування"
 
-#: core/includes/back/dashboard-options.php:268
+#: core/includes/back/dashboard-options.php:265
 msgid "Maintenance mode for anonymous users"
 msgstr "Режим обслуговування для анонімних користувачів"
 
-#: core/includes/back/dashboard-options.php:269
-msgid ""
-"In this section, you can enable maintenance mode for anonymous users, "
-"customize the title and text that will be displayed on the maintenance page."
-msgstr ""
-"У цьому розділі ви можете ввімкнути режим обслуговування для анонімних "
-"користувачів, налаштувати заголовок і текст, який буде відображатися на "
-"сторінці обслуговування."
-
-#: core/includes/back/dashboard-options.php:275
+#: core/includes/back/dashboard-options.php:271
 msgid "Enable maintenance mode for anonymous users"
 msgstr "Режим обслуговування для анонімних користувачів"
 
-#: core/includes/back/dashboard-options.php:280
+#: core/includes/back/dashboard-options.php:276
 msgid "Title"
 msgstr "Заголовок"
 
-#: core/includes/back/dashboard-options.php:281
+#: core/includes/back/dashboard-options.php:277
 msgid "Maintenance mode title for anonymous users"
 msgstr "Заголовок режиму обслуговування для анонімних користувачів"
 
-#: core/includes/back/dashboard-options.php:296
+#: core/includes/back/dashboard-options.php:292
 msgid "Text"
 msgstr "Текст"
 
-#: core/includes/back/dashboard-options.php:297
+#: core/includes/back/dashboard-options.php:293
 msgid "Maintenance mode text for anonymous users"
 msgstr "Текст режиму обслуговування для анонімних користувачів"
 
-#: core/includes/back/dashboard-options.php:312
+#: core/includes/back/dashboard-options.php:308
 msgid "Integrations"
 msgstr "Інтеграції"
 
-#: core/includes/back/dashboard-options.php:313
+#: core/includes/back/dashboard-options.php:309
 msgid "Integrations with third-party services options"
 msgstr "Інтеграція зі сторонніми сервісами"
 
-#: core/includes/back/dashboard-options.php:318
+#: core/includes/back/dashboard-options.php:314
 msgid "Google Maps API key"
 msgstr "Ключ API Карт Google"
 
-#: core/includes/back/dashboard-options.php:319
+#: core/includes/back/dashboard-options.php:315
 msgid "Google Cloud Console"
 msgstr "Google Cloud Консоль"
 
-#: core/includes/back/dashboard-options.php:324
+#: core/includes/back/dashboard-options.php:320
 msgid "Other options"
 msgstr "Інші параметри"
 
-#: core/includes/back/dashboard-options.php:325
+#: core/includes/back/dashboard-options.php:321
 msgid "All other various options"
 msgstr "Інші параметри"
 
 #: core/includes/back/dashboard-options.php:326
-msgid ""
-"In this section, you can enable or disable various options that affect the "
-"functionality of your website. You can disable updates, customizer, src set, "
-"default image sizes, core privacy tools, CYR3LAT transliteration, DNS "
-"prefetch, Rest API, Emojis, Embeds, dashboard widgets, admin top bar, admin "
-"email verification, comments, child media deletion, HTML cache, minify, ACF, "
-"Gutenberg editor, and specify the Google maps API key."
-msgstr ""
-"У цьому розділі ви можете ввімкнути або вимкнути різні параметри, які "
-"впливають на функціональність вашого веб-сайту. Ви можете вимкнути "
-"оновлення, настроювач, набір src, розміри зображень за замовчуванням, "
-"основні інструменти конфіденційності, транслітерацію CYR3LAT, попередню "
-"вибірку DNS, Rest API, Emojis, вбудовування, віджети інформаційної панелі, "
-"верхню панель адміністратора, перевірку електронної пошти адміністратора, "
-"коментарі, видалення дочірніх медіафайлів, кеш HTML , minify, ACF, редактор "
-"Gutenberg і вкажіть ключ API карт Google."
-
-#: core/includes/back/dashboard-options.php:331
 msgid "Disable all updates"
 msgstr "Вимкнути всі оновлення"
 
-#: core/includes/back/dashboard-options.php:332
+#: core/includes/back/dashboard-options.php:327
 msgid "Disable plugins and WordPress core updates"
 msgstr "Вимкнути оновлення плагінів та ядра WordPress"
 
-#: core/includes/back/dashboard-options.php:337
-msgid "Disable customizer"
-msgstr "Вимкнути кастомайзер"
-
-#: core/includes/back/dashboard-options.php:338
-msgid "Disable WordPress customizer"
-msgstr "Вимкнути WordPress кастомайзер"
-
-#: core/includes/back/dashboard-options.php:343
-msgid "Disable src set"
-msgstr "Вимкнути src set"
-
-#: core/includes/back/dashboard-options.php:344
-msgid "Disable src set for images"
-msgstr "Вимкнути src set для зображень"
-
-#: core/includes/back/dashboard-options.php:349
-msgid "Remove default image sizes"
-msgstr "Вимкнути стандартні розміри зображень"
-
-#: core/includes/back/dashboard-options.php:350
-msgid "Remove default image sizes in WordPress"
-msgstr "Вимкнути стандартні розміри зображень у WordPress"
-
-#: core/includes/back/dashboard-options.php:355
-msgid "Disable core privacy tools"
-msgstr "Вимкнути інструменти конфіденціальності"
-
-#: core/includes/back/dashboard-options.php:356
-msgid "Disable default WordPress core privacy tools"
-msgstr ""
-"Вимкніть основні інструменти конфіденційності WordPress за замовчуванням"
-
-#: core/includes/back/dashboard-options.php:361
-msgid "Enable CYR3LAT"
-msgstr "Активувати CYR3LAT"
-
-#: core/includes/back/dashboard-options.php:362
-msgid "Enable CYR3LAT transliteration"
-msgstr "Увімкнути транслітерацію CYR3LAT"
-
-#: core/includes/back/dashboard-options.php:367
-msgid "Disable DNS prefetch"
-msgstr "Приховати DNS prefetch"
-
-#: core/includes/back/dashboard-options.php:368
-msgid "Disable DNS prefetch for external resources"
-msgstr "Вимкнути попередню вибірку DNS для зовнішніх ресурсів"
-
-#: core/includes/back/dashboard-options.php:373
-msgid "Disable Rest API"
-msgstr "Вимкнути Rest API"
-
-#: core/includes/back/dashboard-options.php:374
-msgid "Disable Rest API for anonymous users"
-msgstr "Вимкнути Rest API для анонімних користувачів"
-
-#: core/includes/back/dashboard-options.php:379
-msgid "Disable Emojis"
-msgstr "Вимкнути Emoji"
-
-#: core/includes/back/dashboard-options.php:380
-msgid "Disable default WordPress Emojis"
-msgstr "Вимкнути WordPress Emojis за замовчуванням"
-
-#: core/includes/back/dashboard-options.php:385
-msgid "Disable Embeds"
-msgstr "Вимкнути Embeds"
-
-#: core/includes/back/dashboard-options.php:386
-msgid "Disable default WordPress Embeds"
-msgstr "Вимкніть стандартні ембеди WordPress"
-
-#: core/includes/back/dashboard-options.php:391
-msgid "Disable dashboard widgets"
-msgstr "Приховати системні віджети консолі"
-
-#: core/includes/back/dashboard-options.php:392
-msgid "Disable default WordPress dashboard widgets"
-msgstr "Вимкніть стандартні віджети інформаційної панелі WordPress"
-
-#: core/includes/back/dashboard-options.php:397
-msgid "Hide admin top bar"
-msgstr "Вимкнути панель адміністратора"
-
-#: core/includes/back/dashboard-options.php:398
-msgid "Hide admin top bar for all users on front-end"
-msgstr ""
-"Приховати верхню панель адміністратора для всіх користувачів на фронтенді"
-
-#: core/includes/back/dashboard-options.php:403
-msgid "Disable admin email verification"
-msgstr "Вимкнути E-mail верифікацію для адмінів"
-
-#: core/includes/back/dashboard-options.php:404
-msgid "Disable default WordPress admin email verification"
-msgstr ""
-"Вимкнути стандартну перевірку електронної пошти адміністратора WordPress"
-
-#: core/includes/back/dashboard-options.php:409
-msgid "Disable comments"
-msgstr "Вимкнути коментарі"
-
-#: core/includes/back/dashboard-options.php:410
-msgid "Disable comments on all posts and pages"
-msgstr "Вимкнути коментарі до всіх публікацій і сторінок"
-
-#: core/includes/back/dashboard-options.php:415
+#: core/includes/back/dashboard-options.php:332
 msgid "Delete child media"
 msgstr "Видаляти вкладення"
 
-#: core/includes/back/dashboard-options.php:416
+#: core/includes/back/dashboard-options.php:333
 msgid "Delete child media when parent post is deleted"
 msgstr "Видалити дочірні медіафайли, коли буде видалено батьківський допис"
 
-#: core/includes/back/dashboard-options.php:421
+#: core/includes/back/dashboard-options.php:338
 msgid "Enable HTML cache"
 msgstr "Увімкнути HTML кешування"
 
-#: core/includes/back/dashboard-options.php:422
+#: core/includes/back/dashboard-options.php:339
 msgid "Enable HTML page cache for anonymous users"
 msgstr "Увімкнути кеш сторінки HTML для анонімних користувачів"
 
-#: core/includes/back/dashboard-options.php:427
+#: core/includes/back/dashboard-options.php:344
 msgid "Enable minify"
 msgstr "Увімкнути мініфікацію"
 
-#: core/includes/back/dashboard-options.php:428
+#: core/includes/back/dashboard-options.php:345
 msgid "Enable HTML minifier on frontend"
 msgstr "Ввімкнути HTML-мініфікатор на фронтенді"
 
-#: core/includes/back/dashboard-options.php:433
+#: core/includes/back/dashboard-options.php:350
 msgid "Hide ACF"
 msgstr "Приховати ACF"
 
-#: core/includes/back/dashboard-options.php:434
+#: core/includes/back/dashboard-options.php:351
 msgid "Hide Advanced Custom Fields from Dashboard"
 msgstr "Приховати ACF з інформаційної панелі"
 
-#: core/includes/back/dashboard-options.php:439
-msgid "Disable Gutenberg editor everywhere"
-msgstr "Вимкніть редактор Gutenberg всюди"
-
-#: core/includes/back/dashboard-options.php:444
-msgid "Disable Gutenberg editor for Blog"
-msgstr "Вимкнути редактор Gutenberg для блогу"
-
-#: core/includes/back/dashboard-options.php:449
+#: core/includes/back/dashboard-options.php:356
 msgid "Parse all pages blocks as Gutenberg patterns"
 msgstr "Парсити усі блоки сторінок як Гутенберг патерни"
 
@@ -738,7 +558,7 @@ msgstr "Немає"
 msgid "Choose one"
 msgstr "Виберіть"
 
-#: core/includes/back/system-disable-customizer.php:109
+#: core/includes/back/system-disable-customizer.php:107
 msgid "The Customizer is currently disabled."
 msgstr "Кастомайзер наразі вимкнено."
 
@@ -822,18 +642,7 @@ msgstr "Тест"
 msgid "Thumbnail"
 msgstr "Мініатюра"
 
-#: core/init.php:59
-msgid "Website under Maintenance"
-msgstr "Веб-сайт на технічному обслуговуванні"
-
-#: core/init.php:60
-msgid ""
-"We are performing scheduled maintenance. We will be back online shortly."
-msgstr ""
-"Ми проводимо планове технічне обслуговування. Ми проводимо планове технічне "
-"обслуговування. Незабаром ми знову будемо онлайн."
-
-#: core/init.php:171
+#: core/init.php:109
 msgid "Please, install Advanced Custom Fields PRO version"
 msgstr "Будь ласка, встановіть PRO версію Advanced Custom Fields"
 
@@ -908,6 +717,168 @@ msgstr "Пароль"
 #: views/password.twig:11
 msgid "Submit"
 msgstr "Надіслати"
+
+#~ msgid ""
+#~ "In this section, you can enable resizing and optimization of images while "
+#~ "uploading them to the media library. You can specify the formats that "
+#~ "will be resized, set the width and height of the resized images, and "
+#~ "adjust the quality of the resized images. Additionally, you can enable "
+#~ "the conversion of images to the WEBP format, which is a modern image "
+#~ "format that provides better compression and quality compared to other "
+#~ "formats."
+#~ msgstr ""
+#~ "У цьому розділі ви можете ввімкнути зміну розміру та оптимізацію "
+#~ "зображень під час завантаження їх до медіатеки. Ви можете вказати "
+#~ "формати, які буде змінено, встановити ширину і висоту змінених зображень, "
+#~ "а також налаштувати якість змінених зображень. Крім того, ви можете "
+#~ "увімкнути конвертацію зображень у формат WEBP, який є сучасним форматом "
+#~ "зображень, що забезпечує краще стиснення та якість порівняно з іншими "
+#~ "форматами."
+
+#~ msgid ""
+#~ "In this section, you can configure a custom SMTP server to send emails "
+#~ "from your website. You can specify the SMTP host, port, username, "
+#~ "password, and from name. Additionally, you can enable a secure SMTP "
+#~ "connection using SSL."
+#~ msgstr ""
+#~ "У цьому розділі ви можете налаштувати власний SMTP-сервер для надсилання "
+#~ "електронних листів з вашого веб-сайту. Ви можете вказати хост SMTP, порт, "
+#~ "ім'я користувача, пароль та ім'я відправника. Крім того, ви можете "
+#~ "ввімкнути безпечне з'єднання SMTP за допомогою SSL."
+
+#~ msgid ""
+#~ "In this section, you can add custom HTML code to the header and footer of "
+#~ "your website. The custom code will be placed inside the header tag and "
+#~ "before the end of the body tag. You can use this feature to add custom "
+#~ "scripts, styles, meta tags, and other elements to your website."
+#~ msgstr ""
+#~ "У цьому розділі ви можете додати кастомний HTML-код до верхнього та "
+#~ "нижнього колонтитулів вашого сайту. Кастомний код буде розміщено "
+#~ "всередині тегу title у верхньому колонтитулі та перед кінцем тегу body у "
+#~ "нижньому колонтитулі."
+
+#~ msgid ""
+#~ "In this section, you can enable maintenance mode for anonymous users, "
+#~ "customize the title and text that will be displayed on the maintenance "
+#~ "page."
+#~ msgstr ""
+#~ "У цьому розділі ви можете ввімкнути режим обслуговування для анонімних "
+#~ "користувачів, налаштувати заголовок і текст, який буде відображатися на "
+#~ "сторінці обслуговування."
+
+#~ msgid ""
+#~ "In this section, you can enable or disable various options that affect "
+#~ "the functionality of your website. You can disable updates, customizer, "
+#~ "src set, default image sizes, core privacy tools, CYR3LAT "
+#~ "transliteration, DNS prefetch, Rest API, Emojis, Embeds, dashboard "
+#~ "widgets, admin top bar, admin email verification, comments, child media "
+#~ "deletion, HTML cache, minify, ACF, Gutenberg editor, and specify the "
+#~ "Google maps API key."
+#~ msgstr ""
+#~ "У цьому розділі ви можете ввімкнути або вимкнути різні параметри, які "
+#~ "впливають на функціональність вашого веб-сайту. Ви можете вимкнути "
+#~ "оновлення, настроювач, набір src, розміри зображень за замовчуванням, "
+#~ "основні інструменти конфіденційності, транслітерацію CYR3LAT, попередню "
+#~ "вибірку DNS, Rest API, Emojis, вбудовування, віджети інформаційної "
+#~ "панелі, верхню панель адміністратора, перевірку електронної пошти "
+#~ "адміністратора, коментарі, видалення дочірніх медіафайлів, кеш HTML , "
+#~ "minify, ACF, редактор Gutenberg і вкажіть ключ API карт Google."
+
+#~ msgid "Disable customizer"
+#~ msgstr "Вимкнути кастомайзер"
+
+#~ msgid "Disable WordPress customizer"
+#~ msgstr "Вимкнути WordPress кастомайзер"
+
+#~ msgid "Disable src set"
+#~ msgstr "Вимкнути src set"
+
+#~ msgid "Disable src set for images"
+#~ msgstr "Вимкнути src set для зображень"
+
+#~ msgid "Remove default image sizes"
+#~ msgstr "Вимкнути стандартні розміри зображень"
+
+#~ msgid "Remove default image sizes in WordPress"
+#~ msgstr "Вимкнути стандартні розміри зображень у WordPress"
+
+#~ msgid "Disable core privacy tools"
+#~ msgstr "Вимкнути інструменти конфіденціальності"
+
+#~ msgid "Disable default WordPress core privacy tools"
+#~ msgstr ""
+#~ "Вимкніть основні інструменти конфіденційності WordPress за замовчуванням"
+
+#~ msgid "Enable CYR3LAT"
+#~ msgstr "Активувати CYR3LAT"
+
+#~ msgid "Enable CYR3LAT transliteration"
+#~ msgstr "Увімкнути транслітерацію CYR3LAT"
+
+#~ msgid "Disable DNS prefetch"
+#~ msgstr "Приховати DNS prefetch"
+
+#~ msgid "Disable DNS prefetch for external resources"
+#~ msgstr "Вимкнути попередню вибірку DNS для зовнішніх ресурсів"
+
+#~ msgid "Disable Rest API"
+#~ msgstr "Вимкнути Rest API"
+
+#~ msgid "Disable Rest API for anonymous users"
+#~ msgstr "Вимкнути Rest API для анонімних користувачів"
+
+#~ msgid "Disable Emojis"
+#~ msgstr "Вимкнути Emoji"
+
+#~ msgid "Disable default WordPress Emojis"
+#~ msgstr "Вимкнути WordPress Emojis за замовчуванням"
+
+#~ msgid "Disable Embeds"
+#~ msgstr "Вимкнути Embeds"
+
+#~ msgid "Disable default WordPress Embeds"
+#~ msgstr "Вимкніть стандартні ембеди WordPress"
+
+#~ msgid "Disable dashboard widgets"
+#~ msgstr "Приховати системні віджети консолі"
+
+#~ msgid "Disable default WordPress dashboard widgets"
+#~ msgstr "Вимкніть стандартні віджети інформаційної панелі WordPress"
+
+#~ msgid "Hide admin top bar"
+#~ msgstr "Вимкнути панель адміністратора"
+
+#~ msgid "Hide admin top bar for all users on front-end"
+#~ msgstr ""
+#~ "Приховати верхню панель адміністратора для всіх користувачів на фронтенді"
+
+#~ msgid "Disable admin email verification"
+#~ msgstr "Вимкнути E-mail верифікацію для адмінів"
+
+#~ msgid "Disable default WordPress admin email verification"
+#~ msgstr ""
+#~ "Вимкнути стандартну перевірку електронної пошти адміністратора WordPress"
+
+#~ msgid "Disable comments"
+#~ msgstr "Вимкнути коментарі"
+
+#~ msgid "Disable comments on all posts and pages"
+#~ msgstr "Вимкнути коментарі до всіх публікацій і сторінок"
+
+#~ msgid "Disable Gutenberg editor everywhere"
+#~ msgstr "Вимкніть редактор Gutenberg всюди"
+
+#~ msgid "Disable Gutenberg editor for Blog"
+#~ msgstr "Вимкнути редактор Gutenberg для блогу"
+
+#~ msgid "Website under Maintenance"
+#~ msgstr "Веб-сайт на технічному обслуговуванні"
+
+#~ msgid ""
+#~ "We are performing scheduled maintenance. We will be back online shortly."
+#~ msgstr ""
+#~ "Ми проводимо планове технічне обслуговування. Ми проводимо планове "
+#~ "технічне обслуговування. Незабаром ми знову будемо онлайн."
 
 #~ msgid "Google maps API key to integrate with Advanced Custom Fields"
 #~ msgstr "Ключ API карт Google для інтеграції з Advanced Custom Fields"

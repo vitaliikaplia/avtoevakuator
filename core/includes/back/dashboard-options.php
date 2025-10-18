@@ -7,7 +7,6 @@ function get_custom_options(){
         'images'   =>  Array(
             'label' => __('Images', TEXTDOMAIN),
             'title' => __('Resize and optimize media while upload', TEXTDOMAIN),
-            'description' => __('In this section, you can enable resizing and optimization of images while uploading them to the media library. You can specify the formats that will be resized, set the width and height of the resized images, and adjust the quality of the resized images. Additionally, you can enable the conversion of images to the WEBP format, which is a modern image format that provides better compression and quality compared to other formats.', TEXTDOMAIN),
             'fields' => Array(
                 array (
                     'type'          => 'checkbox',
@@ -137,7 +136,6 @@ function get_custom_options(){
         'smtp'   =>  Array(
             'label' => __('SMTP', TEXTDOMAIN),
             'title' => __('Configure custom SMTP server', TEXTDOMAIN),
-            'description' => __('In this section, you can configure a custom SMTP server to send emails from your website. You can specify the SMTP host, port, username, password, and from name. Additionally, you can enable a secure SMTP connection using SSL.', TEXTDOMAIN),
             'fields' => Array(
                 array (
                     'type'          => 'checkbox',
@@ -241,7 +239,6 @@ function get_custom_options(){
         'custom_code'   =>  Array(
             'label' => __('Custom code', TEXTDOMAIN),
             'title' => __('Custom HTML code for header and footer', TEXTDOMAIN),
-            'description' => __('In this section, you can add custom HTML code to the header and footer of your website. The custom code will be placed inside the header tag and before the end of the body tag. You can use this feature to add custom scripts, styles, meta tags, and other elements to your website.', TEXTDOMAIN),
             'fields' => Array(
                 array (
                     'type'          => 'code',
@@ -266,7 +263,6 @@ function get_custom_options(){
         'maintenance'   =>  Array(
             'label' => __('Maintenance', TEXTDOMAIN),
             'title' => __('Maintenance mode for anonymous users', TEXTDOMAIN),
-            'description' => __('In this section, you can enable maintenance mode for anonymous users, customize the title and text that will be displayed on the maintenance page.', TEXTDOMAIN),
             'fields' => Array(
                 array (
                     'type'          => 'checkbox',
@@ -279,6 +275,7 @@ function get_custom_options(){
                     'name'          => 'maintenance_mode_title',
                     'label'         => __('Title', TEXTDOMAIN),
                     'description'   => __('Maintenance mode title for anonymous users', TEXTDOMAIN),
+                    'localize'      => true,
                     'conditional_logic' => array(
                         'action' => 'show',
                         'rules' => array(
@@ -295,6 +292,7 @@ function get_custom_options(){
                     'name'          => 'maintenance_mode_text',
                     'label'         => __('Text', TEXTDOMAIN),
                     'description'   => __('Maintenance mode text for anonymous users', TEXTDOMAIN),
+                    'localize'      => true,
                     'conditional_logic' => array(
                         'action' => 'show',
                         'rules' => array(
@@ -323,91 +321,12 @@ function get_custom_options(){
         'various'   =>  Array(
             'label' => __('Other options', TEXTDOMAIN),
             'title' => __('All other various options', TEXTDOMAIN),
-            'description' => __('In this section, you can enable or disable various options that affect the functionality of your website. You can disable updates, customizer, src set, default image sizes, core privacy tools, CYR3LAT transliteration, DNS prefetch, Rest API, Emojis, Embeds, dashboard widgets, admin top bar, admin email verification, comments, child media deletion, HTML cache, minify, ACF, Gutenberg editor, and specify the Google maps API key.', TEXTDOMAIN),
             'fields' => Array(
                 array (
                     'type'          => 'checkbox',
                     'name'          => 'disable_all_updates',
                     'label'         => __("Disable all updates", TEXTDOMAIN),
                     'description'   => __("Disable plugins and WordPress core updates", TEXTDOMAIN),
-                ),
-                array (
-                    'type'          => 'checkbox',
-                    'name'          => 'disable_customizer',
-                    'label'         => __("Disable customizer", TEXTDOMAIN),
-                    'description'   => __("Disable WordPress customizer", TEXTDOMAIN),
-                ),
-                array (
-                    'type'          => 'checkbox',
-                    'name'          => 'disable_src_set',
-                    'label'         => __("Disable src set", TEXTDOMAIN),
-                    'description'   => __("Disable src set for images", TEXTDOMAIN),
-                ),
-                array (
-                    'type'          => 'checkbox',
-                    'name'          => 'remove_default_image_sizes',
-                    'label'         => __("Remove default image sizes", TEXTDOMAIN),
-                    'description'   => __("Remove default image sizes in WordPress", TEXTDOMAIN),
-                ),
-                array (
-                    'type'          => 'checkbox',
-                    'name'          => 'disable_core_privacy_tools',
-                    'label'         => __("Disable core privacy tools", TEXTDOMAIN),
-                    'description'   => __("Disable default WordPress core privacy tools", TEXTDOMAIN),
-                ),
-                array (
-                    'type'          => 'checkbox',
-                    'name'          => 'enable_cyr3lat',
-                    'label'         => __("Enable CYR3LAT", TEXTDOMAIN),
-                    'description'   => __("Enable CYR3LAT transliteration", TEXTDOMAIN),
-                ),
-                array (
-                    'type'          => 'checkbox',
-                    'name'          => 'disable_dns_prefetch',
-                    'label'         => __("Disable DNS prefetch", TEXTDOMAIN),
-                    'description'   => __("Disable DNS prefetch for external resources", TEXTDOMAIN),
-                ),
-                array (
-                    'type'          => 'checkbox',
-                    'name'          => 'disable_rest_api',
-                    'label'         => __("Disable Rest API", TEXTDOMAIN),
-                    'description'   => __("Disable Rest API for anonymous users", TEXTDOMAIN),
-                ),
-                array (
-                    'type'          => 'checkbox',
-                    'name'          => 'disable_emojis',
-                    'label'         => __("Disable Emojis", TEXTDOMAIN),
-                    'description'   => __("Disable default WordPress Emojis", TEXTDOMAIN),
-                ),
-                array (
-                    'type'          => 'checkbox',
-                    'name'          => 'disable_embeds',
-                    'label'         => __("Disable Embeds", TEXTDOMAIN),
-                    'description'   => __("Disable default WordPress Embeds", TEXTDOMAIN),
-                ),
-                array (
-                    'type'          => 'checkbox',
-                    'name'          => 'hide_dashboard_widgets',
-                    'label'         => __("Disable dashboard widgets", TEXTDOMAIN),
-                    'description'   => __("Disable default WordPress dashboard widgets", TEXTDOMAIN),
-                ),
-                array (
-                    'type'          => 'checkbox',
-                    'name'          => 'hide_admin_top_bar',
-                    'label'         => __("Hide admin top bar", TEXTDOMAIN),
-                    'description'   => __("Hide admin top bar for all users on front-end", TEXTDOMAIN),
-                ),
-                array (
-                    'type'          => 'checkbox',
-                    'name'          => 'disable_admin_email_verification',
-                    'label'         => __("Disable admin email verification", TEXTDOMAIN),
-                    'description'   => __("Disable default WordPress admin email verification", TEXTDOMAIN),
-                ),
-                array (
-                    'type'          => 'checkbox',
-                    'name'          => 'disable_comments',
-                    'label'         => __("Disable comments", TEXTDOMAIN),
-                    'description'   => __("Disable comments on all posts and pages", TEXTDOMAIN),
                 ),
                 array (
                     'type'          => 'checkbox',
@@ -432,16 +351,6 @@ function get_custom_options(){
                     'name'          => 'hide_acf',
                     'label'         => __("Hide ACF", TEXTDOMAIN),
                     'description'   => __("Hide Advanced Custom Fields from Dashboard", TEXTDOMAIN)
-                ),
-                array (
-                    'type'          => 'checkbox',
-                    'name'          => 'disable_gutenberg_everywhere',
-                    'label'         => __("Disable Gutenberg editor everywhere", TEXTDOMAIN),
-                ),
-                array (
-                    'type'          => 'checkbox',
-                    'name'          => 'disable_gutenberg_for_blog',
-                    'label'         => __("Disable Gutenberg editor for Blog", TEXTDOMAIN),
                 ),
                 array (
                     'type'          => 'checkbox',
@@ -492,3 +401,45 @@ add_action('admin_init', function() {
         }
     }
 });
+
+if( defined('ICL_LANGUAGE_CODE' ) ){
+    add_action( 'init', function() {
+        foreach (get_custom_options() as $key=>$value) {
+            foreach ($value['fields'] as $field) {
+                if (isset($field['localize']) && $field['localize']) {
+                    do_action( 'wpml_multilingual_options', $field['name'] );
+                }
+            }
+        }
+    });
+    do_action( 'wpml_multilingual_options', 'blogname' );
+    do_action( 'wpml_multilingual_options', 'blogdescription' );
+    add_filter('pre_option', function($pre_option, $option, $default) {
+        if (is_admin() || $pre_option !== false) {
+            return $pre_option;
+        }
+
+        global $sitepress, $wpdb;
+
+        if (!$sitepress) {
+            return $pre_option;
+        }
+
+        $current_lang = $sitepress->get_current_language();
+        $default_lang = $sitepress->get_default_language();
+
+        if ($current_lang !== $default_lang) {
+            $localized_option = $option . '_' . $current_lang;
+            $localized_value = $wpdb->get_var($wpdb->prepare(
+                "SELECT option_value FROM {$wpdb->options} WHERE option_name = %s LIMIT 1",
+                $localized_option
+            ));
+
+            if ($localized_value !== null) {
+                return maybe_unserialize($localized_value);
+            }
+        }
+
+        return $pre_option;
+    }, 10, 3);
+}
