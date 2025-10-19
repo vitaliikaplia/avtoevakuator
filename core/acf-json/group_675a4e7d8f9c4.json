@@ -16,7 +16,7 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 0,
+            "wpml_cf_preferences": 1,
             "open": 0,
             "multi_expand": 0,
             "endpoint": 0
@@ -42,5 +42,5 @@
     "show_in_rest": 0,
     "display_title": "",
     "acfml_field_group_mode": "translation",
-    "modified": 1760823371
+    "modified": 1760837743
 }

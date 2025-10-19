@@ -37,31 +37,25 @@ function my_mce_before_init_insert_formats( $init_array ) {
         array(
             'title' => __("Text sizes", TEXTDOMAIN),
             'items' => array(
-                array(
-                    'title' => __("Very Small", TEXTDOMAIN),
-                    'inline' => 'span',
-                    'classes' => $mce_style_prefix.'text-size-very-small'
-                ),
-                array(
-                    'title' => __("Small", TEXTDOMAIN),
-                    'inline' => 'span',
-                    'classes' => $mce_style_prefix.'text-size-small'
-                ),
-                array(
-                    'title' => __("Normal", TEXTDOMAIN),
-                    'inline' => 'span',
-                    'classes' => $mce_style_prefix.'text-size-normal'
-                ),
-                array(
-                    'title' => __("Large", TEXTDOMAIN),
-                    'inline' => 'span',
-                    'classes' => $mce_style_prefix.'text-size-large'
-                ),
-                array(
-                    'title' => __("Very Large", TEXTDOMAIN),
-                    'inline' => 'span',
-                    'classes' => $mce_style_prefix.'text-size-very-large'
-                ),
+                array( 'title' => '10px', 'inline' => 'span', 'classes' => $mce_style_prefix.'text-size-10' ),
+                array( 'title' => '11px', 'inline' => 'span', 'classes' => $mce_style_prefix.'text-size-11' ),
+                array( 'title' => '12px', 'inline' => 'span', 'classes' => $mce_style_prefix.'text-size-12' ),
+                array( 'title' => '13px', 'inline' => 'span', 'classes' => $mce_style_prefix.'text-size-13' ),
+                array( 'title' => '14px', 'inline' => 'span', 'classes' => $mce_style_prefix.'text-size-14' ),
+                array( 'title' => '15px', 'inline' => 'span', 'classes' => $mce_style_prefix.'text-size-15' ),
+                array( 'title' => '16px', 'inline' => 'span', 'classes' => $mce_style_prefix.'text-size-16' ),
+                array( 'title' => '17px', 'inline' => 'span', 'classes' => $mce_style_prefix.'text-size-17' ),
+                array( 'title' => '18px', 'inline' => 'span', 'classes' => $mce_style_prefix.'text-size-18' ),
+                array( 'title' => '19px', 'inline' => 'span', 'classes' => $mce_style_prefix.'text-size-19' ),
+                array( 'title' => '20px', 'inline' => 'span', 'classes' => $mce_style_prefix.'text-size-20' ),
+                array( 'title' => '22px', 'inline' => 'span', 'classes' => $mce_style_prefix.'text-size-22' ),
+                array( 'title' => '24px', 'inline' => 'span', 'classes' => $mce_style_prefix.'text-size-24' ),
+                array( 'title' => '26px', 'inline' => 'span', 'classes' => $mce_style_prefix.'text-size-26' ),
+                array( 'title' => '28px', 'inline' => 'span', 'classes' => $mce_style_prefix.'text-size-28' ),
+                array( 'title' => '32px', 'inline' => 'span', 'classes' => $mce_style_prefix.'text-size-32' ),
+                array( 'title' => '36px', 'inline' => 'span', 'classes' => $mce_style_prefix.'text-size-36' ),
+                array( 'title' => '42px', 'inline' => 'span', 'classes' => $mce_style_prefix.'text-size-42' ),
+                array( 'title' => '48px', 'inline' => 'span', 'classes' => $mce_style_prefix.'text-size-48' ),
             )
         ),
         array(

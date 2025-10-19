@@ -433,8 +433,9 @@ if( defined('ICL_LANGUAGE_CODE' ) ){
     });
     do_action( 'wpml_multilingual_options', 'blogname' );
     do_action( 'wpml_multilingual_options', 'blogdescription' );
+
     add_filter('pre_option', function($pre_option, $option, $default) {
-        if (is_admin() || $pre_option !== false) {
+        if ((defined('REST_REQUEST') && REST_REQUEST) || is_admin() || $pre_option !== false) {
             return $pre_option;
         }
 
@@ -461,4 +462,5 @@ if( defined('ICL_LANGUAGE_CODE' ) ){
 
         return $pre_option;
     }, 10, 3);
+
 }

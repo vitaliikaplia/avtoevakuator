@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: avtoevakuator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-19 01:35+0300\n"
+"POT-Creation-Date: 2025-10-19 04:41+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
 "Language-Team: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
@@ -95,11 +95,11 @@ msgstr "Розрахунок вартості"
 
 #: core/gutenberg.php:100
 msgid "Call examples"
-msgstr "Приклади дзвінків"
+msgstr "Приклади викликів"
 
 #: core/gutenberg.php:108
 msgid "Price examples"
-msgstr "Приклади цін"
+msgstr "Приклади розрахунків"
 
 #: core/gutenberg.php:116
 msgid "Special offers"
@@ -137,7 +137,7 @@ msgstr "Часто задавані питання"
 msgid "Prices"
 msgstr "Ціни"
 
-#: core/gutenberg.php:188 core/includes/back/acf-field-button-type.php:200
+#: core/gutenberg.php:188 core/includes/back/acf-field-button-type.php:201
 msgid "Icon"
 msgstr "Іконка"
 
@@ -149,15 +149,19 @@ msgstr "Текст"
 msgid "Hint"
 msgstr "Підказка"
 
-#: core/gutenberg.php:212 core/includes/back/custom-post-types.php:57
+#: core/gutenberg.php:212
+msgid "Buttons"
+msgstr "Кнопки"
+
+#: core/gutenberg.php:220 core/includes/back/custom-post-types.php:57
 msgid "Pattern"
 msgstr "Патерн"
 
-#: core/gutenberg.php:462
+#: core/gutenberg.php:470
 msgid "Block"
 msgstr "Блок"
 
-#: core/gutenberg.php:463
+#: core/gutenberg.php:471
 msgid "Block from"
 msgstr "Блок від"
 
@@ -165,31 +169,31 @@ msgstr "Блок від"
 msgid "Button Type"
 msgstr "Тип кнопки"
 
-#: core/includes/back/acf-field-button-type.php:182
+#: core/includes/back/acf-field-button-type.php:183
 msgid "Button Style"
 msgstr "Стиль кнопки"
 
-#: core/includes/back/acf-field-button-type.php:188
+#: core/includes/back/acf-field-button-type.php:189
 msgid "- Select Style -"
 msgstr "- Оберіть Стиль -"
 
-#: core/includes/back/acf-field-button-type.php:208
+#: core/includes/back/acf-field-button-type.php:210
 msgid "- No Icon -"
 msgstr "- Без іконки -"
 
-#: core/includes/back/acf-field-button-type.php:220
+#: core/includes/back/acf-field-button-type.php:222
 msgid "Icon Position"
 msgstr "Розташування іконки"
 
-#: core/includes/back/acf-field-button-type.php:226
+#: core/includes/back/acf-field-button-type.php:228
 msgid "Left"
 msgstr "Зліва"
 
-#: core/includes/back/acf-field-button-type.php:227
+#: core/includes/back/acf-field-button-type.php:229
 msgid "Right"
 msgstr "Зправа"
 
-#: core/includes/back/acf-field-button-type.php:235
+#: core/includes/back/acf-field-button-type.php:237
 msgid "Options"
 msgstr "Опції"
 
@@ -197,7 +201,7 @@ msgstr "Опції"
 msgid "Icon Select"
 msgstr "Вибір іконки"
 
-#: core/includes/back/acf-field-icon-select.php:74
+#: core/includes/back/acf-field-icon-select.php:75
 msgid "- Select Icon -"
 msgstr "- Виберіть Іконку -"
 
@@ -751,83 +755,61 @@ msgstr "Мініатюра"
 msgid "Text sizes"
 msgstr "Розміри тексту"
 
-#: core/includes/back/system-tiny-mce.php:41
-msgid "Very Small"
-msgstr "Дуже маленький"
-
-#: core/includes/back/system-tiny-mce.php:46
-msgid "Small"
-msgstr "Маленький"
-
-#: core/includes/back/system-tiny-mce.php:51
-msgid "Normal"
-msgstr "Нормальний"
-
-#: core/includes/back/system-tiny-mce.php:56
-msgid "Large"
-msgstr "Великий"
-
-#: core/includes/back/system-tiny-mce.php:61
-msgid "Very Large"
-msgstr "Дуже великий"
-
-#: core/includes/back/system-tiny-mce.php:68
+#: core/includes/back/system-tiny-mce.php:62
 msgid "Text colors"
 msgstr "Кольори тексту"
 
-#: core/includes/back/system-tiny-mce.php:70
-#: core/includes/back/system-tiny-mce.php:85
+#: core/includes/back/system-tiny-mce.php:64
+#: core/includes/back/system-tiny-mce.php:79
 msgid "Accent Teal"
 msgstr "Акцентний бірюзовий"
 
-#: core/includes/back/system-tiny-mce.php:71
-#: core/includes/back/system-tiny-mce.php:86
+#: core/includes/back/system-tiny-mce.php:65
+#: core/includes/back/system-tiny-mce.php:80
 msgid "Accent Orange"
 msgstr "Акцентний помаранчевий"
 
-#: core/includes/back/system-tiny-mce.php:72
-#: core/includes/back/system-tiny-mce.php:87
+#: core/includes/back/system-tiny-mce.php:66
+#: core/includes/back/system-tiny-mce.php:81
 msgid "Accent Yellow"
 msgstr "Акцентний жовтий"
 
-#: core/includes/back/system-tiny-mce.php:73
-#: core/includes/back/system-tiny-mce.php:88
-#| msgid "Text sizes"
+#: core/includes/back/system-tiny-mce.php:67
+#: core/includes/back/system-tiny-mce.php:82
 msgid "Text White"
 msgstr "Білий текст"
 
-#: core/includes/back/system-tiny-mce.php:74
-#: core/includes/back/system-tiny-mce.php:89
+#: core/includes/back/system-tiny-mce.php:68
+#: core/includes/back/system-tiny-mce.php:83
 msgid "White 80%"
 msgstr "Білий 80%"
 
-#: core/includes/back/system-tiny-mce.php:75
-#: core/includes/back/system-tiny-mce.php:90
+#: core/includes/back/system-tiny-mce.php:69
+#: core/includes/back/system-tiny-mce.php:84
 msgid "White 60%"
 msgstr "Білий 60%"
 
-#: core/includes/back/system-tiny-mce.php:76
-#: core/includes/back/system-tiny-mce.php:91
+#: core/includes/back/system-tiny-mce.php:70
+#: core/includes/back/system-tiny-mce.php:85
 msgid "White 40%"
 msgstr "Білий 40%"
 
-#: core/includes/back/system-tiny-mce.php:77
-#: core/includes/back/system-tiny-mce.php:92
-#| msgid "Main"
+#: core/includes/back/system-tiny-mce.php:71
+#: core/includes/back/system-tiny-mce.php:86
 msgid "BG Main"
 msgstr "Основний фон"
 
-#: core/includes/back/system-tiny-mce.php:78
-#: core/includes/back/system-tiny-mce.php:93
+#: core/includes/back/system-tiny-mce.php:72
+#: core/includes/back/system-tiny-mce.php:87
 msgid "BG Secondary"
 msgstr "Вторинний фон"
 
-#: core/includes/back/system-tiny-mce.php:79
-#: core/includes/back/system-tiny-mce.php:94
+#: core/includes/back/system-tiny-mce.php:73
+#: core/includes/back/system-tiny-mce.php:88
 msgid "BG Darkest"
 msgstr "Найтемніший фон"
 
-#: core/includes/back/system-tiny-mce.php:83
+#: core/includes/back/system-tiny-mce.php:77
 msgid "Background text colors"
 msgstr "Кольори фонового тексту"
 
@@ -906,6 +888,21 @@ msgstr "Пароль"
 #: views/password.twig:11
 msgid "Submit"
 msgstr "Надіслати"
+
+#~ msgid "Very Small"
+#~ msgstr "Дуже маленький"
+
+#~ msgid "Small"
+#~ msgstr "Маленький"
+
+#~ msgid "Normal"
+#~ msgstr "Нормальний"
+
+#~ msgid "Large"
+#~ msgstr "Великий"
+
+#~ msgid "Very Large"
+#~ msgstr "Дуже великий"
 
 #~ msgid "Second screen"
 #~ msgstr "Другий екран"

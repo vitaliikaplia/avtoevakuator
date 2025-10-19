@@ -68,9 +68,10 @@ if (class_exists('ACF')) {
         public function render_field( $field ) {
             $icons = $this->get_icons();
             $current_value = esc_attr($field['value']);
+            $field_id = 'acf-icon-select-' . $field['id'];
             ?>
             <div class="acf-icon-select-field">
-                <select name="<?php echo esc_attr($field['name']); ?>" style="width: 100%;">
+                <select id="<?php echo esc_attr($field_id); ?>" name="<?php echo esc_attr($field['name']); ?>" style="width: 100%;">
                     <option value=""><?php _e('- Select Icon -', TEXTDOMAIN); ?></option>
                     <?php foreach ($icons as $icon_key => $icon_name) : ?>
                         <option value="<?php echo esc_attr($icon_key); ?>" <?php selected($current_value, $icon_key); ?>>
@@ -79,6 +80,44 @@ if (class_exists('ACF')) {
                     <?php endforeach; ?>
                 </select>
             </div>
+            <script type="text/javascript">
+                (function($) {
+                    function initialize_icon_select_field($field) {
+                        var $select = $field.find('select');
+
+                        // Prevent re-initialization
+                        if ($select.hasClass('select2-hidden-accessible')) {
+                            return;
+                        }
+
+                        if(typeof $.fn.select2 === 'undefined') {
+                            return;
+                        }
+
+                        function formatIconState(state) {
+                            if (!state.id) {
+                                return state.text;
+                            }
+                            var baseUrl = "<?php echo SVG_SPRITE_URL; ?>";
+                            var $state = $(
+                                '<span><svg style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;"><use xlink:href="' + baseUrl + '#' + state.element.value.toLowerCase() + '"></use></svg>' + state.text + '</span>'
+                            );
+                            return $state;
+                        };
+
+                        $select.select2({
+                            width: '100%',
+                            templateResult: formatIconState,
+                            templateSelection: formatIconState
+                        });
+                    }
+
+                    if (window.acf) {
+                        acf.add_action('ready_field/key=<?php echo $field['key']; ?>', initialize_icon_select_field);
+                        acf.add_action('append_field/key=<?php echo $field['key']; ?>', initialize_icon_select_field);
+                    }
+                })(jQuery);
+            </script>
             <?php
         }
 

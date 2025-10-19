@@ -173,6 +173,7 @@ if (class_exists('ACF')) {
                 $selected_options = isset($current_value['options']) && is_array($current_value['options']) ? $current_value['options'] : array();
             }
 
+            $field_id = 'acf-button-type-icon-' . $field['id'];
             ?>
             <div class="acf-button-type-field" style="display: flex; gap: 15px; align-items: flex-start; flex-wrap: wrap;">
 
@@ -200,6 +201,7 @@ if (class_exists('ACF')) {
                         <?php _e('Icon', TEXTDOMAIN); ?>
                     </label>
                     <select
+                        id="<?php echo esc_attr($field_id); ?>"
                         name="<?php echo esc_attr($field['name']); ?>[icon]"
                         class="acf-button-type-icon-select"
                         style="width: 100%;"
@@ -254,9 +256,16 @@ if (class_exists('ACF')) {
             </div>
             <script type="text/javascript">
             (function($) {
-                $(document).ready(function() {
-                    // Handle icon select change
-                    $(document).on('change', '.acf-button-type-icon-select', function() {
+                function initialize_button_type_field($field) {
+                    var $select = $field.find('.acf-button-type-icon-select');
+
+                    // Prevent re-initialization
+                    if ($select.hasClass('select2-hidden-accessible')) {
+                        return;
+                    }
+
+                    // Handle icon select change to show/hide position dropdown
+                    $select.on('change', function() {
                         var $this = $(this);
                         var $wrapper = $this.closest('.acf-button-type-field');
                         var $iconPosition = $wrapper.find('.acf-button-type-icon-position');
@@ -267,7 +276,34 @@ if (class_exists('ACF')) {
                             $iconPosition.hide();
                         }
                     });
-                });
+
+                    // Initialize Select2 if available
+                    if(typeof $.fn.select2 === 'undefined') {
+                        return;
+                    }
+
+                    function formatIconState(state) {
+                        if (!state.id) {
+                            return state.text;
+                        }
+                        var baseUrl = "<?php echo SVG_SPRITE_URL; ?>";
+                        var $state = $(
+                            '<span><svg style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle;"><use xlink:href="' + baseUrl + '#' + state.element.value.toLowerCase() + '"></use></svg>' + state.text + '</span>'
+                        );
+                        return $state;
+                    };
+
+                    $select.select2({
+                        width: '100%',
+                        templateResult: formatIconState,
+                        templateSelection: formatIconState
+                    });
+                }
+
+                if (window.acf) {
+                    acf.add_action('ready_field/key=<?php echo $field['key']; ?>', initialize_button_type_field);
+                    acf.add_action('append_field/key=<?php echo $field['key']; ?>', initialize_button_type_field);
+                }
             })(jQuery);
             </script>
             <?php

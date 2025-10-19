@@ -208,6 +208,14 @@ function get_custom_gutenberg_blocks_array(){
             )
         ),
         array(
+            "name" => "buttons",
+            "label" => __( "Buttons", TEXTDOMAIN ),
+            "category" => "main",
+            'defaults' => array(
+                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
+            )
+        ),
+        array(
             "name" => "pattern",
             "label" => __( "Pattern", TEXTDOMAIN ),
             "category" => "logical",

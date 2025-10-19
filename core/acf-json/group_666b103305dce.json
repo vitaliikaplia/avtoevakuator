@@ -68,5 +68,7 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1758028072
+    "display_title": "",
+    "modified": 1760837744,
+    "acfml_field_group_mode": "advanced"
 }

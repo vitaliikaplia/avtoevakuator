@@ -4,16 +4,50 @@ if(!defined('ABSPATH')){exit;}
 
 if(is_admin() && is_user_logged_in()){
 
+    /**
+     * Get system color presets from SCSS variables and cache them.
+     *
+     * @return array Array of hex color codes.
+     */
     function get_system_color_presets(){
-        $favorite_colors = get_field('favorite_colors', 'options');
+        $cached_colors = get_transient('system_color_presets');
+        if (false !== $cached_colors) {
+            return $cached_colors;
+        }
+
         $colors = [];
-        if(!empty($favorite_colors)){
-            foreach ($favorite_colors as $color) {
-                if(!empty($color['color']) && !empty($color['enable_color'])){
-                    $colors[] = $color['color'];
+        $scss_file_path = get_theme_file_path('/assets/scss/_variables.scss');
+
+        if (file_exists($scss_file_path)) {
+            $scss_content = file_get_contents($scss_file_path);
+            // Regex to find variables starting with --color-
+            preg_match_all('/--color-[\w-]+:\s*(.*?);/i', $scss_content, $matches);
+
+            if (!empty($matches[1])) {
+                foreach ($matches[1] as $value) {
+                    $value = trim($value);
+                    if (strpos($value, '#') === 0) {
+                        // It's a hex color
+                        $colors[] = strtoupper($value);
+                    } elseif (strpos($value, 'rgba') === 0) {
+                        // It's an rgba color, e.g., rgba(255,255,255,0.8)
+                        preg_match('/rgba\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/i', $value, $rgb_matches);
+                        if (count($rgb_matches) === 4) {
+                            $r = intval($rgb_matches[1]);
+                            $g = intval($rgb_matches[2]);
+                            $b = intval($rgb_matches[3]);
+                            $colors[] = sprintf('#%02X%02X%02X', $r, $g, $b);
+                        }
+                    }
                 }
             }
         }
+
+        $colors = array_values(array_unique($colors));
+        sort($colors);
+
+        set_transient('system_color_presets', $colors, DAY_IN_SECONDS);
+
         return $colors;
     }
 
@@ -44,3 +78,5 @@ if(is_admin() && is_user_logged_in()){
     add_filter('tiny_mce_before_init', 'my_tiny_mce_custom_colors');
 
 }
+
+//pr(get_system_color_presets());

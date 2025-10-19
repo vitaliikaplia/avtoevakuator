@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: avtoevakuator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-19 01:35+0300\n"
+"POT-Creation-Date: 2025-10-19 04:40+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
 "Language-Team: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
@@ -137,7 +137,7 @@ msgstr ""
 msgid "Prices"
 msgstr ""
 
-#: core/gutenberg.php:188 core/includes/back/acf-field-button-type.php:200
+#: core/gutenberg.php:188 core/includes/back/acf-field-button-type.php:201
 msgid "Icon"
 msgstr ""
 
@@ -149,15 +149,19 @@ msgstr ""
 msgid "Hint"
 msgstr ""
 
-#: core/gutenberg.php:212 core/includes/back/custom-post-types.php:57
+#: core/gutenberg.php:212
+msgid "Buttons"
+msgstr ""
+
+#: core/gutenberg.php:220 core/includes/back/custom-post-types.php:57
 msgid "Pattern"
 msgstr ""
 
-#: core/gutenberg.php:462
+#: core/gutenberg.php:470
 msgid "Block"
 msgstr ""
 
-#: core/gutenberg.php:463
+#: core/gutenberg.php:471
 msgid "Block from"
 msgstr ""
 
@@ -165,31 +169,31 @@ msgstr ""
 msgid "Button Type"
 msgstr ""
 
-#: core/includes/back/acf-field-button-type.php:182
+#: core/includes/back/acf-field-button-type.php:183
 msgid "Button Style"
 msgstr ""
 
-#: core/includes/back/acf-field-button-type.php:188
+#: core/includes/back/acf-field-button-type.php:189
 msgid "- Select Style -"
 msgstr ""
 
-#: core/includes/back/acf-field-button-type.php:208
+#: core/includes/back/acf-field-button-type.php:210
 msgid "- No Icon -"
 msgstr ""
 
-#: core/includes/back/acf-field-button-type.php:220
+#: core/includes/back/acf-field-button-type.php:222
 msgid "Icon Position"
 msgstr ""
 
-#: core/includes/back/acf-field-button-type.php:226
+#: core/includes/back/acf-field-button-type.php:228
 msgid "Left"
 msgstr ""
 
-#: core/includes/back/acf-field-button-type.php:227
+#: core/includes/back/acf-field-button-type.php:229
 msgid "Right"
 msgstr ""
 
-#: core/includes/back/acf-field-button-type.php:235
+#: core/includes/back/acf-field-button-type.php:237
 msgid "Options"
 msgstr ""
 
@@ -197,7 +201,7 @@ msgstr ""
 msgid "Icon Select"
 msgstr ""
 
-#: core/includes/back/acf-field-icon-select.php:74
+#: core/includes/back/acf-field-icon-select.php:75
 msgid "- Select Icon -"
 msgstr ""
 
@@ -745,81 +749,61 @@ msgstr ""
 msgid "Text sizes"
 msgstr ""
 
-#: core/includes/back/system-tiny-mce.php:41
-msgid "Very Small"
+#: core/includes/back/system-tiny-mce.php:62
+msgid "Text colors"
 msgstr ""
 
-#: core/includes/back/system-tiny-mce.php:46
-msgid "Small"
+#: core/includes/back/system-tiny-mce.php:64
+#: core/includes/back/system-tiny-mce.php:79
+msgid "Accent Teal"
 msgstr ""
 
-#: core/includes/back/system-tiny-mce.php:51
-msgid "Normal"
+#: core/includes/back/system-tiny-mce.php:65
+#: core/includes/back/system-tiny-mce.php:80
+msgid "Accent Orange"
 msgstr ""
 
-#: core/includes/back/system-tiny-mce.php:56
-msgid "Large"
+#: core/includes/back/system-tiny-mce.php:66
+#: core/includes/back/system-tiny-mce.php:81
+msgid "Accent Yellow"
 msgstr ""
 
-#: core/includes/back/system-tiny-mce.php:61
-msgid "Very Large"
+#: core/includes/back/system-tiny-mce.php:67
+#: core/includes/back/system-tiny-mce.php:82
+msgid "Text White"
 msgstr ""
 
 #: core/includes/back/system-tiny-mce.php:68
-msgid "Text colors"
+#: core/includes/back/system-tiny-mce.php:83
+msgid "White 80%"
+msgstr ""
+
+#: core/includes/back/system-tiny-mce.php:69
+#: core/includes/back/system-tiny-mce.php:84
+msgid "White 60%"
 msgstr ""
 
 #: core/includes/back/system-tiny-mce.php:70
 #: core/includes/back/system-tiny-mce.php:85
-msgid "Accent Teal"
+msgid "White 40%"
 msgstr ""
 
 #: core/includes/back/system-tiny-mce.php:71
 #: core/includes/back/system-tiny-mce.php:86
-msgid "Accent Orange"
+msgid "BG Main"
 msgstr ""
 
 #: core/includes/back/system-tiny-mce.php:72
 #: core/includes/back/system-tiny-mce.php:87
-msgid "Accent Yellow"
+msgid "BG Secondary"
 msgstr ""
 
 #: core/includes/back/system-tiny-mce.php:73
 #: core/includes/back/system-tiny-mce.php:88
-msgid "Text White"
-msgstr ""
-
-#: core/includes/back/system-tiny-mce.php:74
-#: core/includes/back/system-tiny-mce.php:89
-msgid "White 80%"
-msgstr ""
-
-#: core/includes/back/system-tiny-mce.php:75
-#: core/includes/back/system-tiny-mce.php:90
-msgid "White 60%"
-msgstr ""
-
-#: core/includes/back/system-tiny-mce.php:76
-#: core/includes/back/system-tiny-mce.php:91
-msgid "White 40%"
-msgstr ""
-
-#: core/includes/back/system-tiny-mce.php:77
-#: core/includes/back/system-tiny-mce.php:92
-msgid "BG Main"
-msgstr ""
-
-#: core/includes/back/system-tiny-mce.php:78
-#: core/includes/back/system-tiny-mce.php:93
-msgid "BG Secondary"
-msgstr ""
-
-#: core/includes/back/system-tiny-mce.php:79
-#: core/includes/back/system-tiny-mce.php:94
 msgid "BG Darkest"
 msgstr ""
 
-#: core/includes/back/system-tiny-mce.php:83
+#: core/includes/back/system-tiny-mce.php:77
 msgid "Background text colors"
 msgstr ""
 

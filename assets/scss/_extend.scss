@@ -12,6 +12,7 @@
         font-weight: bold;
     }
     p{
+        font-size: 16px;
         margin-bottom: 16px;
 
         &:last-child{
@@ -36,7 +37,9 @@
     h4,
     h5,
     h6{
+        font-size: 16px;
         margin-bottom: 16px;
+        font-weight: normal;
 
         &:last-child{
             margin-bottom: 0;
@@ -196,11 +199,25 @@
     }
     .mce-{
 
-        &text-size-very-small{ font-size: 12px; }
-        &text-size-small{ font-size: 14px; }
-        &text-size-normal{ font-size: 16px; }
-        &text-size-large{ font-size: 20px; }
-        &text-size-very-large{ font-size: 24px; }
+        &text-size-10{ font-size: 10px; }
+        &text-size-11{ font-size: 11px; }
+        &text-size-12{ font-size: 12px; }
+        &text-size-13{ font-size: 13px; }
+        &text-size-14{ font-size: 14px; }
+        &text-size-15{ font-size: 15px; }
+        &text-size-16{ font-size: 16px; }
+        &text-size-17{ font-size: 17px; }
+        &text-size-18{ font-size: 18px; }
+        &text-size-19{ font-size: 19px; }
+        &text-size-20{ font-size: 20px; }
+        &text-size-22{ font-size: 22px; }
+        &text-size-24{ font-size: 24px; }
+        &text-size-26{ font-size: 26px; }
+        &text-size-28{ font-size: 28px; }
+        &text-size-32{ font-size: 32px; }
+        &text-size-36{ font-size: 36px; }
+        &text-size-42{ font-size: 42px; }
+        &text-size-48{ font-size: 48px; }
 
         &text-color-accent-teal{ color: var(--color-accent-teal); }
         &text-color-accent-orange{ color: var(--color-accent-orange); }
@@ -228,6 +245,21 @@
             &-bg-main{ background-color: var(--color-bg-main); }
             &-bg-secondary{ background-color: var(--color-bg-secondary); }
             &-bg-darkest{ background-color: var(--color-bg-darkest); }
+        }
+    }
+    @media (max-width: 1024px) {
+        .mce-{
+            &text-size-18{ font-size: 17px; }
+            &text-size-19{ font-size: 18px; }
+            &text-size-20{ font-size: 18px; }
+            &text-size-22{ font-size: 20px; }
+            &text-size-24{ font-size: 22px; }
+            &text-size-26{ font-size: 24px; }
+            &text-size-28{ font-size: 26px; }
+            &text-size-32{ font-size: 28px; }
+            &text-size-36{ font-size: 32px; }
+            &text-size-42{ font-size: 36px; }
+            &text-size-48{ font-size: 42px; }
         }
     }
 }
