@@ -4,19 +4,26 @@
 (function ($) {
     $(document).ready(function () {
 
-        /** Cookie Pop-Up */
-        if(!$.cookie("user-cookies-accepted") && $('.cookiePopupBg').length && $('.cookiePopupWrapper').length){
+        /** cookie popup */
+        if(!$.cookie("user-cookies-accepted") && $('.cookiePopupWrapper').length){
             setTimeout(function(){
+                $('*').blur();
                 $('.cookiePopupWrapper').addClass('show');
-                $('.cookiePopupBg').addClass('show');
             }, 3000);
-            $('.cookiePopupWrapper a.close').click(function(){
-                $.cookie("user-cookies-accepted", true);
+            $('.cookiePopupWrapper .overallButton').click(function(){
+                $.cookie("user-cookies-accepted", true, cookieParamsAdd);
                 $('.cookiePopupWrapper').removeClass('show');
-                $('.cookiePopupBg').removeClass('show');
                 return false;
             });
         }
+
+        /** header */
+        $("body").headroom({
+            tolerance: {
+                up: 14,
+                down: 26,
+            }
+        });
 
     });
 })(jQuery);

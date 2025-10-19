@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: avtoevakuator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-19 04:40+0300\n"
+"POT-Creation-Date: 2025-10-19 14:33+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
 "Language-Team: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
@@ -843,7 +843,7 @@ msgid "Next &raquo;"
 msgstr "Следующий &raquo;"
 
 #: core/vendor/timber/timber/src/Pagination.php:221
-#: core/vendor/timber/timber/src/TextHelper.php:47
+#: core/vendor/timber/timber/src/TextHelper.php:51
 msgid "&hellip;"
 msgstr "&hellip;"
 
@@ -878,6 +878,10 @@ msgstr "Код:"
 #: views/email/base.twig:385
 msgid "Session information"
 msgstr "Информация о сеансе"
+
+#: views/overall/cookie.twig:17
+msgid "Tell me more about cookies"
+msgstr "Расскажите мне больше о куках"
 
 #: views/password.twig:10
 msgid "Password"
