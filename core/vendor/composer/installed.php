@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
-        'name' => 'vitaliikaplia/blank',
-        'pretty_version' => 'dev-main',
-        'version' => 'dev-main',
-        'reference' => '9a4236cb827abb9187a55addfcaf7da4ce6b4893',
+        'name' => 'vitaliikaplia/avtoevakuator',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '4f69faeab8cb64380147d50ecdb269fbcae235ea',
         'type' => 'theme',
         'install_path' => __DIR__ . '/../../../',
         'aliases' => array(),
@@ -74,9 +74,9 @@
             'dev_requirement' => false,
         ),
         'timber/timber' => array(
-            'pretty_version' => 'v2.3.2',
-            'version' => '2.3.2.0',
-            'reference' => '08ce601167a03ed7a4fa7da740481c17ed650ef0',
+            'pretty_version' => 'v2.3.3',
+            'version' => '2.3.3.0',
+            'reference' => '7a87ac27c0b9deedffe419388b63a0c95d8798ca',
             'type' => 'library',
             'install_path' => __DIR__ . '/../timber/timber',
             'aliases' => array(),
@@ -91,10 +91,10 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'vitaliikaplia/blank' => array(
-            'pretty_version' => 'dev-main',
-            'version' => 'dev-main',
-            'reference' => '9a4236cb827abb9187a55addfcaf7da4ce6b4893',
+        'vitaliikaplia/avtoevakuator' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '4f69faeab8cb64380147d50ecdb269fbcae235ea',
             'type' => 'theme',
             'install_path' => __DIR__ . '/../../../',
             'aliases' => array(),

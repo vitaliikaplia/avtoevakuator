@@ -42,7 +42,7 @@ use WP_User;
  */
 class Timber
 {
-    public static $version = '2.3.2'; // x-release-please-version
+    public static $version = '2.3.3'; // x-release-please-version
 
     public static $locations;
 
@@ -1207,16 +1207,9 @@ class Timber
 
         if (\is_singular()) {
             // NOTE: this also handles the is_front_page() case.
-            $context['post'] = Timber::get_post()->setup();
+            $context['post'] = Timber::get_post()?->setup();
         } elseif (\is_home()) {
-            $post = Timber::get_post();
-
-            // When no page_on_front is set, there’s no post we can set up.
-            if ($post) {
-                $post->setup();
-            }
-
-            $context['post'] = $post;
+            $context['post'] = Timber::get_post()?->setup();
             $context['posts'] = Timber::get_posts();
         } elseif (\is_category() || \is_tag() || \is_tax()) {
             $context['term'] = Timber::get_term();
@@ -1527,6 +1520,10 @@ class Timber
 
     /**
      * Compile a string.
+     *
+     * This function compiles a string with Twig variables and returns the output.
+     * Please be aware that this function might cause a security risk if you pass untrusted data into this function.
+     * If you want to minimize the risk, you could remove fn from the Timber function array. See https://timber.github.io/docs/v2/hooks/filters/#timber/twig/functions
      *
      * @api
      * @example

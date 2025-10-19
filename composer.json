@@ -1,11 +1,11 @@
 {
-    "name": "vitaliikaplia/blank",
-    "description": "blank WordPress template",
+    "name": "vitaliikaplia/avtoevakuator",
+    "description": "АвтоЕвакуатор На Київщині",
     "type": "theme",
     "license": "none",
     "autoload": {
         "psr-4": {
-            "Vitaliikaplia\\blank\\": "src/"
+            "Vitaliikaplia\\avtoevakuator\\": "src/"
         }
     },
     "authors": [
