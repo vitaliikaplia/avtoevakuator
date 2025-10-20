@@ -20,6 +20,77 @@
             "open": 0,
             "multi_expand": 0,
             "endpoint": 0
+        },
+        {
+            "key": "field_68f641d77a2e3",
+            "label": "Часто задавані питання",
+            "name": "faq",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "field_68f641df7a2e4",
+            "button_label": "Додати запитання",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_68f641df7a2e4",
+                    "label": "Запитання",
+                    "name": "question",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": 2,
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_68f641d77a2e3"
+                },
+                {
+                    "key": "field_68f641f17a2e5",
+                    "label": "Відповідь",
+                    "name": "answer",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "allow_in_bindings": 0,
+                    "tabs": "visual",
+                    "toolbar": "full",
+                    "media_upload": 0,
+                    "delay": 0,
+                    "parent_repeater": "field_68f641d77a2e3"
+                }
+            ]
         }
     ],
     "location": [
@@ -31,7 +102,7 @@
             }
         ]
     ],
-    "menu_order": 119,
+    "menu_order": 118,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -42,5 +113,5 @@
     "show_in_rest": 0,
     "display_title": "",
     "acfml_field_group_mode": "translation",
-    "modified": 1760837743
+    "modified": 1760969611
 }

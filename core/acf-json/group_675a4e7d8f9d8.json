@@ -20,6 +20,47 @@
             "open": 0,
             "multi_expand": 0,
             "endpoint": 0
+        },
+        {
+            "key": "field_68f6424b59f57",
+            "label": "Іконка",
+            "name": "icon",
+            "aria-label": "",
+            "type": "icon_select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_68f6425459f58",
+            "label": "Колір",
+            "name": "color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string",
+            "allow_in_bindings": 0,
+            "show_custom_palette": 0,
+            "show_color_wheel": 1,
+            "custom_palette_source": "",
+            "palette_colors": ""
         }
     ],
     "location": [
@@ -31,7 +72,7 @@
             }
         ]
     ],
-    "menu_order": 121,
+    "menu_order": 120,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -42,5 +83,5 @@
     "show_in_rest": 0,
     "display_title": "",
     "acfml_field_group_mode": "translation",
-    "modified": 1760837744
+    "modified": 1760969618
 }

@@ -1,0 +1,57 @@
+<header>
+    <div class="inner">
+        <div class="col">
+            {% if general_fields.header_logo %}
+                {% if not is_front_page() %}
+                <a href="{{ site.url }}" class="logo">
+                {% else %}
+                <figure class="logo">
+                {% endif %}
+                <span class="picture">
+                    {{ general_fields.header_logo | picture }}
+                </span>
+                <span class="lines">
+                    <span class="name">{{ site.title }}</span>
+                    <span class="description">{{ site.description }}</span>
+                </span>
+                {% if is_front_page() %}
+                </figure>
+                {% else %}
+                </a>
+                {% endif %}
+            {% endif %}
+        </div>
+        <nav class="col">
+            {% if general_fields.header_menu %}
+            <ul class="menu">
+                {{ general_fields.header_menu.html }}
+            </ul>
+            {% endif %}
+        </nav>
+        <div class="col">
+            {% if general_fields.header_language_switcher %}
+            <ul class="languageSwitcher">
+                <li>
+                    <span>{{ get_current_language_native_name() }}</span>
+                    <svg>
+                        <use href="{{ svg_sprite }}#icon-arrow"></use>
+                    </svg>
+                    <ul>
+                        {{ get_custom_language_selector_flags() }}
+                    </ul>
+                </li>
+            </ul>
+            {% endif %}
+            {% if general_fields.header_phone %}
+            <div class="phone">
+                <a href="tel:{{ fn('fix_phone_format', general_fields.header_phone) }}">
+                    <svg>
+                        <use href="{{ svg_sprite }}#icon-phone"></use>
+                    </svg>
+                    <span>{{ fn('nice_phone_format', general_fields.header_phone) }}</span>
+                </a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</header>

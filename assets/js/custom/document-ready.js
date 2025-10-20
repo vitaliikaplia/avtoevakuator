@@ -25,5 +25,24 @@
             }
         });
 
+        /** desktop current menu items */
+        $('header .menu > li').each(function(){
+            let thisLiEl = $(this),
+                thisAel = thisLiEl.find('> a'),
+                thisHref = thisAel.attr('href');
+            thisLiEl.removeClass('current-menu-item');
+            if(thisHref == window.location.href){
+                thisLiEl.addClass('current-menu-item');
+            }
+        });
+        // $('header .menus .main > li > ul > li').each(function(){
+        //     let thisLiEl = $(this),
+        //         thisAel = thisLiEl.find('> a'),
+        //         thisHref = thisAel.attr('href');
+        //     if(thisHref == window.location.href){
+        //         thisLiEl.parent().parent().addClass('current-menu-ancestor');
+        //     }
+        // });
+
     });
 })(jQuery);

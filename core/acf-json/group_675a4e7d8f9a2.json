@@ -48,7 +48,9 @@
             "min": "",
             "max": "",
             "allow_in_bindings": 0,
-            "elements": "",
+            "elements": [
+                "featured_image"
+            ],
             "bidirectional": 0,
             "bidirectional_target": []
         }
@@ -73,5 +75,5 @@
     "show_in_rest": 0,
     "display_title": "",
     "acfml_field_group_mode": "translation",
-    "modified": 1760837740
+    "modified": 1760968022
 }

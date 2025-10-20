@@ -35,7 +35,9 @@ class StarterSite extends Site {
         $twig->addFilter( new \Twig\TwigFilter( 'picture', 'render_picture_tag' ) );
         $twig->addFilter( new \Twig\TwigFilter( 'picture_src', 'render_picture_src' ) );
         $twig->addFilter( new \Twig\TwigFilter( 'svg', 'render_svg_tag' ) );
-
+        $twig->addFilter(new \Twig\TwigFilter('ceil', function($number) {
+            return ceil($number);
+        }));
         $twig->addFunction( new \Twig\TwigFunction('get_pattern', 'get_pattern'));
         $twig->addFunction( new \Twig\TwigFunction('get_option', 'get_option'));
         $twig->addFunction( new \Twig\TwigFunction('wp_editor', 'wp_editor'));
@@ -46,6 +48,8 @@ class StarterSite extends Site {
         $twig->addFunction( new \Twig\TwigFunction('cache_fields', 'cache_fields'));
         $twig->addFunction( new \Twig\TwigFunction('get_current_language_native_name', 'get_current_language_native_name'));
         $twig->addFunction( new \Twig\TwigFunction('get_custom_language_selector_flags', 'get_custom_language_selector_flags'));
+        $twig->addFunction( new \Twig\TwigFunction('fix_phone_format', 'fix_phone_format'));
+        $twig->addFunction( new \Twig\TwigFunction('short_phone_format', 'short_phone_format'));
         return $twig;
     }
 }

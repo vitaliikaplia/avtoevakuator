@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: avtoevakuator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-19 14:33+0300\n"
+"POT-Creation-Date: 2025-10-20 16:30+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
 "Language-Team: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-Basepath: ../..\n"
-"X-Generator: Poedit 3.7\n"
+"X-Generator: Poedit 3.8\n"
 "X-Poedit-SearchPath-0: core/lang\n"
 "X-Poedit-SearchPath-1: core\n"
 "X-Poedit-SearchPath-2: .\n"
@@ -811,6 +811,10 @@ msgstr "Самый темный фон"
 msgid "Background text colors"
 msgstr "Цвета фонового текста"
 
+#: core/includes/front/wpseo-fix.php:42
+msgid "Error 404: Page not found"
+msgstr "Ошибка 404: Страница не найдена"
+
 #: core/init.php:109
 msgid "Please, install Advanced Custom Fields PRO version"
 msgstr "Пожалуйста, установите PRO версию Advanced Custom Fields"
@@ -883,13 +887,20 @@ msgstr "Информация о сеансе"
 msgid "Tell me more about cookies"
 msgstr "Расскажите мне больше о куках"
 
-#: views/password.twig:10
+#: views/overall/footer.twig:43
+msgid "Quick Links"
+msgstr "Быстрые ссылки"
+
+#: views/overall/footer.twig:103
+msgid "Website Development"
+msgstr "Разработка сайта"
+
+#: views/password.twig:17
 msgid "Password"
 msgstr "Пароль"
 
-#: views/password.twig:11
-msgid "Submit"
-msgstr "Отправить"
+#~ msgid "Submit"
+#~ msgstr "Отправить"
 
 #~ msgid "Very Small"
 #~ msgstr "Очень маленький"
@@ -1151,9 +1162,6 @@ msgstr "Отправить"
 
 #~ msgid "Your password"
 #~ msgstr "Ваш пароль"
-
-#~ msgid "Website options"
-#~ msgstr "Настройки сайта"
 
 #~ msgid "Inline scripts and styles"
 #~ msgstr "Онлайновые скрипты и стили"

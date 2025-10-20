@@ -20,6 +20,54 @@
             "open": 0,
             "multi_expand": 0,
             "endpoint": 0
+        },
+        {
+            "key": "field_68f6401cd8088",
+            "label": "Гарантії",
+            "name": "guarantees",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Додати гарантію",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_68f6402ed8089",
+                    "label": "Гарантія",
+                    "name": "guarantee",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_68f6401cd8088"
+                }
+            ]
         }
     ],
     "location": [
@@ -31,7 +79,7 @@
             }
         ]
     ],
-    "menu_order": 115,
+    "menu_order": 114,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -42,5 +90,5 @@
     "show_in_rest": 0,
     "display_title": "",
     "acfml_field_group_mode": "translation",
-    "modified": 1760837743
+    "modified": 1760968804
 }

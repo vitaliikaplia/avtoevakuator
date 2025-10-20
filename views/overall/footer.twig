@@ -1,0 +1,108 @@
+<footer>
+    <div class="inner">
+        <div class="col">
+            {% if general_fields.footer_logo %}
+                {% if not is_front_page() %}
+                <a href="{{ site.url }}" class="logo">
+                {% else %}
+                <figure class="logo">
+                {% endif %}
+                <span class="picture">
+                    {{ general_fields.footer_logo | picture }}
+                </span>
+                <span class="lines">
+                    <span class="name">{{ site.title }}</span>
+                    <span class="description">{{ site.description }}</span>
+                </span>
+                {% if is_front_page() %}
+                </figure>
+                {% else %}
+                </a>
+                {% endif %}
+            {% endif %}
+            {% if general_fields.footer_small_description %}
+            <div class="typo">
+                {{ general_fields.footer_small_description }}
+            </div>
+            {% endif %}
+            {% if general_fields.footer_messengers and general_fields.footer_messengers is iterable %}
+            <ul class="messengers">
+                {% for val in general_fields.footer_messengers %}
+                <li class="type-{{ val.type }}">
+                    <a href="{{ val.link }}" target="_blank">
+                        <svg>
+                            <use href="{{ svg_sprite }}#icon-social-{{ val.type }}"></use>
+                        </svg>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+        <div class="col">
+            <p class="menuLabel">{{ __('Quick Links', TEXTDOMAIN) }}</p>
+            {% if general_fields.footer_menu_1 %}
+            <ul class="menu">
+                {{ general_fields.footer_menu_1.html }}
+            </ul>
+            {% endif %}
+        </div>
+        <div class="col">
+            <p class="menuLabel">{{ __('Services', TEXTDOMAIN) }}</p>
+            {% if general_fields.footer_menu_2 %}
+                <ul class="menu">
+                    {{ general_fields.footer_menu_2.html }}
+                </ul>
+            {% endif %}
+        </div>
+        <div class="col">
+            <p class="menuLabel">{{ __('Contacts', TEXTDOMAIN) }}</p>
+            {% if general_fields.footer_phone %}
+            <p class="phone">
+                <a href="tel:{{ fn('fix_phone_format', general_fields.footer_phone) }}">
+                    <svg>
+                        <use href="{{ svg_sprite }}#icon-phone"></use>
+                    </svg>
+                    <span class="lines">
+                        <span>{{ fn('nice_phone_format', general_fields.footer_phone) }}</span>
+                        <span>{{ general_fields.footer_phone_time }}</span>
+                    </span>
+                </a>
+            </p>
+            {% endif %}
+            {% if general_fields.footer_email %}
+            <p class="email">
+                <a href="mailto:{{ general_fields.footer_email }}" target="_blank">
+                    <svg>
+                        <use href="{{ svg_sprite }}#icon-email"></use>
+                    </svg>
+                    <span>{{ general_fields.footer_email }}</span>
+                </a>
+            </p>
+            {% endif %}
+            {% if general_fields.footer_address %}
+            <p class="address">
+                <svg>
+                    <use href="{{ svg_sprite }}#icon-map-pin"></use>
+                </svg>
+                <span>{{ general_fields.footer_address }}</span>
+            </p>
+            {% endif %}
+        </div>
+    </div>
+    <div class="inner">
+        <div class="col">
+            {% if general_fields.footer_copy_line %}
+            <p class="copy">{{ general_fields.footer_copy_line | shortcodes }}</p>
+            {% endif %}
+        </div>
+        <div class="col">
+            {% if general_fields.footer_menu_3 %}
+            <ul class="menu">
+                {{ general_fields.footer_menu_3.html }}
+                <li><a href="https://vitaliikaplia.com/" target="_blank">{{ __('Website Development', TEXTDOMAIN) }}</a></li>
+            </ul>
+            {% endif %}
+        </div>
+    </div>
+</footer>

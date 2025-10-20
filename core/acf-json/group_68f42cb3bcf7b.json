@@ -20,6 +20,72 @@
             "open": 0,
             "multi_expand": 0,
             "endpoint": 0
+        },
+        {
+            "key": "field_68f64298e319b",
+            "label": "Кнопки",
+            "name": "buttons",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Додати кнопку",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_68f642abe319c",
+                    "label": "Кнопка",
+                    "name": "button",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 1,
+                    "return_format": "array",
+                    "allow_in_bindings": 0,
+                    "parent_repeater": "field_68f64298e319b"
+                },
+                {
+                    "key": "field_68f642b7e319e",
+                    "label": "Тип кнопки",
+                    "name": "button_type",
+                    "aria-label": "",
+                    "type": "button_type",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "allow_in_bindings": 0,
+                    "style": "",
+                    "icon": false,
+                    "icon_position": "left",
+                    "options": [],
+                    "parent_repeater": "field_68f64298e319b"
+                }
+            ]
         }
     ],
     "location": [
@@ -31,7 +97,7 @@
             }
         ]
     ],
-    "menu_order": 124,
+    "menu_order": 123,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -42,5 +108,5 @@
     "show_in_rest": 0,
     "display_title": "",
     "acfml_field_group_mode": "translation",
-    "modified": 1760837744
+    "modified": 1760969628
 }

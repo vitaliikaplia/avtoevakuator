@@ -75,29 +75,6 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_68f3f310f8c04",
-                    "label": "Посилання",
-                    "name": "link",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "wpml_cf_preferences": 1,
-                    "default_value": "",
-                    "maxlength": "",
-                    "allow_in_bindings": 0,
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_68f3f2dcf8c03"
-                },
-                {
                     "key": "field_68f3f33af8c05",
                     "label": "Тип",
                     "name": "type",
@@ -128,6 +105,29 @@
                     "placeholder": "",
                     "create_options": 0,
                     "save_options": 0,
+                    "parent_repeater": "field_68f3f2dcf8c03"
+                },
+                {
+                    "key": "field_68f3f310f8c04",
+                    "label": "Посилання",
+                    "name": "link",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 1,
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
                     "parent_repeater": "field_68f3f2dcf8c03"
                 }
             ]
@@ -322,5 +322,5 @@
     "show_in_rest": 0,
     "display_title": "",
     "acfml_field_group_mode": "advanced",
-    "modified": 1760823432
+    "modified": 1760964029
 }

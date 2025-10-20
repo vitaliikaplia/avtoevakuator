@@ -128,14 +128,6 @@ function get_custom_gutenberg_blocks_array(){
             )
         ),
         array(
-            "name" => "cta",
-            "label" => __( "Call To Action", TEXTDOMAIN ),
-            "category" => "main",
-            'defaults' => array(
-                'field_5es3eaf348ca151aff27' => array('desktop_tablet','mobile')
-            )
-        ),
-        array(
             "name" => "guarantees",
             "label" => __( "Guarantees", TEXTDOMAIN ),
             "category" => "main",

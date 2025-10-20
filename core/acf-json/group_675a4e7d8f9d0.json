@@ -3,11 +3,11 @@
     "title": "Блок: Форма",
     "fields": [
         {
-            "key": "field_675a4e7d8f9d1",
-            "label": "Контент",
+            "key": "field_68f6435989219",
+            "label": "",
             "name": "",
             "aria-label": "",
-            "type": "accordion",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,10 +16,13 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 1,
-            "open": 0,
-            "multi_expand": 0,
-            "endpoint": 0
+            "wpml_cf_preferences": 0,
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -31,7 +34,7 @@
             }
         ]
     ],
-    "menu_order": 117,
+    "menu_order": 116,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -42,5 +45,5 @@
     "show_in_rest": 0,
     "display_title": "",
     "acfml_field_group_mode": "translation",
-    "modified": 1760837743
+    "modified": 1760969604
 }
