@@ -1,6 +1,58 @@
 @import "../../mixins";
 
 .main-importantly{
+    padding: 0 40px;
+
+    @media (max-width: 1024px){
+        padding: 0 20px;
+    }
+
     .customBlock{
+        margin: 0 auto;
+        max-width: var(--inner-max-width-sm);
+
+        .orangeBox{
+            background-color: rgba(var(--color-accent-orange-rgb), .1);
+            border: solid 1px var(--color-accent-orange);
+            border-radius: 12px;
+            padding: 24px;
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+            font-size: 15px;
+            line-height: 1.5;
+            color: var(--color-text-white);
+
+            figure{
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgba(var(--color-accent-orange-rgb), .2);
+                color: var(--color-accent-orange);
+                flex-shrink: 0;
+
+                svg{
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+
+            .meta{
+                display: inline-flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .title{
+                    font-size: 28px;
+                    font-weight: 500;
+                }
+                .typo{
+                    line-height: 1.5;
+                }
+            }
+        }
     }
 }

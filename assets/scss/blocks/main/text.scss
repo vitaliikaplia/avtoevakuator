@@ -1,6 +1,35 @@
 @import "../../mixins";
 
 .main-text{
+    padding: 0 40px;
+
+    @media (max-width: 1024px){
+        padding: 0 20px;
+    }
+
     .customBlock{
+        margin: 0 auto;
+        max-width: var(--inner-max-width);
+
+        .typo{
+            margin: 0 auto;
+        }
+
+        &.middle-text{
+            .typo{
+                text-align: center;
+            }
+        }
+
+        &.text-box{
+            .typo{
+                padding: 28px 32px;
+                border-radius: 18px;
+                @include linearTopGradient(rgba(var(--color-bg-secondary-rgb), .75), rgba(var(--color-bg-main-rgb), .75));
+                @include box-shadow(0 0 10px var(--color-accent-teal-10));
+                backdrop-filter: blur(8px);
+                border: solid 1px var(--color-accent-teal-10);
+            }
+        }
     }
 }

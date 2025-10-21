@@ -2,6 +2,12 @@
 
 {% block content %}
 
-    <p>{{ block.name }}</p>
+    {% if fields.buttons and fields.buttons is iterable %}
+    <div class="buttons">
+        {% for val in fields.buttons %}
+            {% include 'overall/button.twig' with {'link': val.button, 'type': val.button_type} %}
+        {% endfor %}
+    </div>
+    {% endif %}
 
 {% endblock %}

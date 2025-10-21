@@ -1,6 +1,61 @@
 @import "../../mixins";
 
 .main-features{
+    padding: 0 40px;
+
+    @media (max-width: 1024px){
+        padding: 0 20px;
+    }
+
     .customBlock{
+        margin: 0 auto;
+        max-width: var(--inner-max-width-sm);
+
+        .features{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: flex-start;
+            align-items: stretch;
+
+            .feature{
+                flex: 1 1 calc(calc(50% - 20px) - 40px);
+                @include linearTopGradient(rgba(var(--color-white-rgb), .01), rgba(var(--color-white-rgb), .04));
+                @include box-shadow(0 0 4px var(--color-accent-teal-10));
+                border: solid 1px var(--color-accent-teal-10);
+                display: flex;
+                align-items: center;
+                text-align: left;
+                gap: 18px;
+                transition: all .35s;
+                transform: translateZ(10px);
+                border-radius: 18px;
+                padding: 18px;
+                line-height: 1.3;
+                font-size: 16px;
+
+                &:hover{
+                    transform: scale(1.05) translateZ(10px);
+                    @include box-shadow(0 0 4px var(--color-accent-teal-20));
+                }
+
+                figure{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--color-accent-teal);
+                    background-color: rgba(var(--color-accent-teal-rgb), 0.1);
+                    flex-shrink: 0;
+
+                    svg{
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+        }
     }
 }

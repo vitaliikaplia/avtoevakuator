@@ -2,6 +2,36 @@
 
 {% block content %}
 
-    <p>{{ block.name }}</p>
+    {% if fields.tiles and fields.tiles is iterable %}
+    <div class="tiles">
+        {% for val in fields.tiles %}
+        <div class="tile">
 
+            {% if val.icon and val.icon_color %}
+            <figure class="icon" style="color: {{ val.icon_color }}; background-color: rgba({{ hex_to_rgb(val.icon_color) }}, 0.2);">
+                <svg>
+                    <use href="{{ svg_sprite }}#{{ val.icon }}"></use>
+                </svg>
+            </figure>
+            {% endif %}
+
+            {% if val.title %}
+            <p class="title">{{ val.title }}</p>
+            {% endif %}
+
+            {% if val.subtitle %}
+            <p class="subtitle">{{ val.subtitle }}</p>
+            {% endif %}
+
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+{% endblock %}
+
+{% block inner_classes %}
+{% if fields.centered_tiles %}
+centered-tiles
+{% endif %}
 {% endblock %}

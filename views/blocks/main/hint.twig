@@ -2,6 +2,22 @@
 
 {% block content %}
 
-    <p>{{ block.name }}</p>
+<div class="tealBox">
+    <figure>
+        <svg>
+            <use href="{{ svg_sprite }}#icon-tip"></use>
+        </svg>
+    </figure>
+    <div class="meta">
+        {% if fields.title %}
+        <p class="title">{{ fields.title }}</p>
+        {% endif %}
+        {% if fields.tip %}
+        <div class="typo">
+            {{ fields.tip }}
+        </div>
+        {% endif %}
+    </div>
+</div>
 
 {% endblock %}

@@ -1,6 +1,130 @@
 @import "../../mixins";
 
 .main-first-screen{
-    .customBlock{
+    position: relative;
+    padding: 0 40px;
+
+    @media (max-width: 1024px){
+        padding: 0 20px;
     }
+
+    .customBlock{
+        display: flex !important;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        text-align: center;
+        gap: 38px;
+        min-height: 440px;
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        z-index: 10;
+        transform: translateZ(10px);
+
+        .icon{
+            display: block;
+            max-width: 96px;
+            font-size: 0;
+            margin: 0 auto;
+
+            svg{
+                width: 96px;
+                height: 96px;
+            }
+        }
+
+        .typo{
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .buttons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+    }
+
+    .scroll{
+        position: absolute;
+        bottom: 20px;
+        width: 28px;
+        height: 42px;
+        left: 50%;
+        z-index: 12;
+        transform: translateX(-50%) translateZ(12px);
+        border: solid 1px rgba(var(--color-white-rgb),1);
+        border-radius: 18px;
+        pointer-events: none;
+
+        .wheel{
+            position: absolute;
+            top: 6px;
+            left: 50%;
+            width: 4px;
+            height: 4px;
+            background-color: rgba(var(--color-white-rgb),1);
+            border-radius: 50%;
+            transform: translateX(-50%);
+            animation: scroll-wheel 1.5s infinite;
+        }
+    }
+
+    .overlay{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(var(--color-bg-secondary-rgb),.875);
+        z-index: 8;
+        transform: translateZ(8px);
+        border-bottom: solid 1px var(--color-white-10);
+    }
+
+    .background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 6;
+        transform: translateZ(6px);
+
+        &-image{
+            background-position: center;
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+
+        &-slider{
+            font-size: 0;
+
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-video{
+            video{
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+    }
+
+    @for $i from 50 through 100 {
+        &.height-#{$i} {
+            @include height-variant(#{$i}vh);
+        }
+    }
+
 }

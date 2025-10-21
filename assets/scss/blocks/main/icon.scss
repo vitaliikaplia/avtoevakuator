@@ -1,6 +1,26 @@
 @import "../../mixins";
 
 .main-icon{
+    padding: 0 40px;
+
+    @media (max-width: 1024px){
+        padding: 0 20px;
+    }
+
     .customBlock{
+        margin: 0 auto;
+        max-width: var(--inner-max-width);
+
+        .icon{
+            display: block;
+            max-width: 52px;
+            font-size: 0;
+            margin: 0 auto;
+
+            svg{
+                width: 52px;
+                height: 52px;
+            }
+        }
     }
 }

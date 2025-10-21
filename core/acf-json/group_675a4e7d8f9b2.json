@@ -49,7 +49,7 @@
                     "label": "Особливість",
                     "name": "feature",
                     "aria-label": "",
-                    "type": "wysiwyg",
+                    "type": "textarea",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -60,11 +60,11 @@
                     },
                     "wpml_cf_preferences": 2,
                     "default_value": "",
+                    "maxlength": "",
                     "allow_in_bindings": 0,
-                    "tabs": "visual",
-                    "toolbar": "full",
-                    "media_upload": 0,
-                    "delay": 0,
+                    "rows": 2,
+                    "placeholder": "",
+                    "new_lines": "",
                     "parent_repeater": "field_68f42fc3d7023"
                 }
             ]
@@ -90,5 +90,5 @@
     "show_in_rest": 0,
     "display_title": "",
     "acfml_field_group_mode": "translation",
-    "modified": 1760968234
+    "modified": 1760999964
 }

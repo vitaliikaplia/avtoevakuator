@@ -2,6 +2,37 @@
 
 {% block content %}
 
-    <p>{{ block.name }}</p>
+    <div class="costCalculation">
+
+        {% if fields.title %}
+        <p class="title">{{ fields.title }}</p>
+        {% endif %}
+
+        {% if fields.text %}
+        <div class="typo">
+            {{ fields.text }}
+        </div>
+        {% endif %}
+
+        {% if fields.columns and fields.columns is iterable %}
+        <div class="columns">
+            {% for val in fields.columns %}
+            <div class="column">
+                {% if val.title %}
+                <p class="cTitle" style="color: {{ val.title_color }};">{{ val.title }}</p>
+                {% endif %}
+                {% if val.subtitle %}
+                <p class="cSubtitle">{{ val.subtitle }}</p>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if fields.button and fields.button_type %}
+            {% include 'overall/button.twig' with {'link': fields.button, 'type': fields.button_type} %}
+        {% endif %}
+
+    </div>
 
 {% endblock %}

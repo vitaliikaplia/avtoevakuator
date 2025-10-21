@@ -2,6 +2,39 @@
 
 {% block content %}
 
-    <p>{{ block.name }}</p>
+    {% if fields.reviews and fields.reviews is iterable %}
+    <div class="reviews swiper" data-slider-timer="3">
+        <div class="swiper-wrapper">
+            {% for review in fields.reviews %}
+            <div class="swiper-slide">
+                {% if review.rating %}
+                <div class="rating">
+                    {% for i in 1..review.rating %}
+                    <span class="star">
+                        <svg>
+                            <use href="{{ svg_sprite }}#icon-star-filled"></use>
+                        </svg>
+                    </span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                {% if review.photo %}
+                <figure class="photo">
+                    {{ review.photo | picture('medium') }}
+                </figure>
+                {% endif %}
+                {% if review.name %}
+                <p class="name">— {{ review.name }}</p>
+                {% endif %}
+                {% if review.review %}
+                <div class="typo">
+                    {{ review.review }}
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
 
 {% endblock %}

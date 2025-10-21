@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: avtoevakuator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-20 16:30+0300\n"
+"POT-Creation-Date: 2025-10-21 04:30+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
 "Language-Team: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
@@ -48,6 +48,34 @@ msgstr "Інше"
 #: core/acf.php:48
 msgid "Other options updated"
 msgstr "Інші опції оновлено"
+
+#: core/ajax/contact_form_submit.php:27
+msgid "New contact form message"
+msgstr "Нове повідомлення з контактної форми"
+
+#: core/ajax/contact_form_submit.php:28
+msgid "Name"
+msgstr "Ім’я"
+
+#: core/ajax/contact_form_submit.php:29
+msgid "Phone"
+msgstr "Телефон"
+
+#: core/ajax/contact_form_submit.php:31
+msgid "Email"
+msgstr "Email"
+
+#: core/ajax/contact_form_submit.php:34
+msgid "Message"
+msgstr "Повідомлення"
+
+#: core/ajax/contact_form_submit.php:39
+msgid "Your message has been sent"
+msgstr "Ваше повідомлення відправлене"
+
+#: core/ajax/contact_form_submit.php:40
+msgid "Thank you for contacting us. We will get back to you shortly."
+msgstr "Дякуємо, що звернулися до нас. Ми зв'яжемося з вами найближчим часом."
 
 #: core/gutenberg.php:12
 msgid "Main blocks"
@@ -110,58 +138,54 @@ msgid "Car Models"
 msgstr "Моделі автомобілів"
 
 #: core/gutenberg.php:132
-msgid "Call To Action"
-msgstr "Заклик до дії"
-
-#: core/gutenberg.php:140
 msgid "Guarantees"
 msgstr "Гарантії"
 
-#: core/gutenberg.php:148
+#: core/gutenberg.php:140
 msgid "Importantly"
-msgstr "Важливо, що"
+msgstr "Важливо"
 
-#: core/gutenberg.php:156
+#: core/gutenberg.php:148
 msgid "Form"
 msgstr "Форма"
 
-#: core/gutenberg.php:164
+#: core/gutenberg.php:156
 msgid "Contacts"
 msgstr "Контакти"
 
-#: core/gutenberg.php:172
+#: core/gutenberg.php:164
 msgid "FAQ"
 msgstr "Часто задавані питання"
 
-#: core/gutenberg.php:180
+#: core/gutenberg.php:172
 msgid "Prices"
 msgstr "Ціни"
 
-#: core/gutenberg.php:188 core/includes/back/acf-field-button-type.php:201
+#: core/gutenberg.php:180 core/includes/back/acf-field-button-type.php:201
 msgid "Icon"
 msgstr "Іконка"
 
-#: core/gutenberg.php:196 core/includes/back/dashboard-options.php:293
+#: core/gutenberg.php:188 core/includes/back/dashboard-options.php:293
 msgid "Text"
 msgstr "Текст"
 
-#: core/gutenberg.php:204
+#: core/gutenberg.php:196
 msgid "Hint"
 msgstr "Підказка"
 
-#: core/gutenberg.php:212
+#: core/gutenberg.php:204
 msgid "Buttons"
 msgstr "Кнопки"
 
-#: core/gutenberg.php:220 core/includes/back/custom-post-types.php:57
+#: core/gutenberg.php:212 core/includes/back/custom-post-types.php:57
 msgid "Pattern"
 msgstr "Патерн"
 
-#: core/gutenberg.php:470
+#: core/gutenberg.php:462
 msgid "Block"
 msgstr "Блок"
 
-#: core/gutenberg.php:471
+#: core/gutenberg.php:463
 msgid "Block from"
 msgstr "Блок від"
 
@@ -752,70 +776,90 @@ msgid "Thumbnail"
 msgstr "Мініатюра"
 
 #: core/includes/back/system-tiny-mce.php:38
+msgid "Fonts"
+msgstr "Шрифти"
+
+#: core/includes/back/system-tiny-mce.php:45
 msgid "Text sizes"
 msgstr "Розміри тексту"
 
-#: core/includes/back/system-tiny-mce.php:62
+#: core/includes/back/system-tiny-mce.php:74
 msgid "Text colors"
 msgstr "Кольори тексту"
 
-#: core/includes/back/system-tiny-mce.php:64
-#: core/includes/back/system-tiny-mce.php:79
+#: core/includes/back/system-tiny-mce.php:76
+#: core/includes/back/system-tiny-mce.php:91
 msgid "Accent Teal"
 msgstr "Акцентний бірюзовий"
 
-#: core/includes/back/system-tiny-mce.php:65
-#: core/includes/back/system-tiny-mce.php:80
+#: core/includes/back/system-tiny-mce.php:77
+#: core/includes/back/system-tiny-mce.php:92
 msgid "Accent Orange"
 msgstr "Акцентний помаранчевий"
 
-#: core/includes/back/system-tiny-mce.php:66
-#: core/includes/back/system-tiny-mce.php:81
+#: core/includes/back/system-tiny-mce.php:78
+#: core/includes/back/system-tiny-mce.php:93
 msgid "Accent Yellow"
 msgstr "Акцентний жовтий"
 
-#: core/includes/back/system-tiny-mce.php:67
-#: core/includes/back/system-tiny-mce.php:82
+#: core/includes/back/system-tiny-mce.php:79
+#: core/includes/back/system-tiny-mce.php:94
 msgid "Text White"
 msgstr "Білий текст"
 
-#: core/includes/back/system-tiny-mce.php:68
-#: core/includes/back/system-tiny-mce.php:83
+#: core/includes/back/system-tiny-mce.php:80
+#: core/includes/back/system-tiny-mce.php:95
 msgid "White 80%"
 msgstr "Білий 80%"
 
-#: core/includes/back/system-tiny-mce.php:69
-#: core/includes/back/system-tiny-mce.php:84
+#: core/includes/back/system-tiny-mce.php:81
+#: core/includes/back/system-tiny-mce.php:96
 msgid "White 60%"
 msgstr "Білий 60%"
 
-#: core/includes/back/system-tiny-mce.php:70
-#: core/includes/back/system-tiny-mce.php:85
+#: core/includes/back/system-tiny-mce.php:82
+#: core/includes/back/system-tiny-mce.php:97
 msgid "White 40%"
 msgstr "Білий 40%"
 
-#: core/includes/back/system-tiny-mce.php:71
-#: core/includes/back/system-tiny-mce.php:86
+#: core/includes/back/system-tiny-mce.php:83
+#: core/includes/back/system-tiny-mce.php:98
 msgid "BG Main"
 msgstr "Основний фон"
 
-#: core/includes/back/system-tiny-mce.php:72
-#: core/includes/back/system-tiny-mce.php:87
+#: core/includes/back/system-tiny-mce.php:84
+#: core/includes/back/system-tiny-mce.php:99
 msgid "BG Secondary"
 msgstr "Вторинний фон"
 
-#: core/includes/back/system-tiny-mce.php:73
-#: core/includes/back/system-tiny-mce.php:88
+#: core/includes/back/system-tiny-mce.php:85
+#: core/includes/back/system-tiny-mce.php:100
 msgid "BG Darkest"
 msgstr "Найтемніший фон"
 
-#: core/includes/back/system-tiny-mce.php:77
+#: core/includes/back/system-tiny-mce.php:89
 msgid "Background text colors"
 msgstr "Кольори фонового тексту"
 
-#: core/includes/front/wpseo-fix.php:42
+#: core/includes/front/wpseo-fix.php:29 core/includes/front/wpseo-fix.php:42
 msgid "Error 404: Page not found"
 msgstr "Помилка 404: Сторінка не знайдена"
+
+#: core/includes/front/wpseo-fix.php:30
+msgid "Archives for"
+msgstr "Архіви для"
+
+#: core/includes/front/wpseo-fix.php:31
+msgid "You searched for"
+msgstr "Ваш пошуковий запит"
+
+#: core/includes/front/wpseo-fix.php:32
+msgid "Page"
+msgstr "Сторінка"
+
+#: core/includes/front/wpseo-fix.php:33
+msgid "Home"
+msgstr "Головна"
 
 #: core/init.php:109
 msgid "Please, install Advanced Custom Fields PRO version"
@@ -857,6 +901,54 @@ msgstr "&hellip;"
 msgid "No pattern selected"
 msgstr "Патерн не обрано"
 
+#: views/blocks/main/call-examples.twig:25 views/blocks/main/cities.twig:30
+msgid "Supply"
+msgstr "Подача"
+
+#: views/blocks/main/cities.twig:22 views/blocks/main/price-examples.twig:25
+msgid "Distance"
+msgstr "Відстань"
+
+#: views/blocks/main/form.twig:7
+msgid "Your Name"
+msgstr "Ваше ім'я"
+
+#: views/blocks/main/form.twig:8
+msgid "Your Phone"
+msgstr "Ваш Телефон"
+
+#: views/blocks/main/form.twig:9
+msgid "Your Email"
+msgstr "Ваш Email"
+
+#: views/blocks/main/form.twig:10
+msgid "Describe Your Case"
+msgstr "Опишіть свій випадок"
+
+#: views/blocks/main/form.twig:11
+msgid "Submit"
+msgstr "Надіслати"
+
+#: views/blocks/main/price-examples.twig:32
+msgid "Vehicle Type"
+msgstr "Тип авто"
+
+#: views/blocks/main/price-examples.twig:39
+msgid "Calculation"
+msgstr "Розрахунок"
+
+#: views/blocks/main/price-examples.twig:46
+msgid "Total Price"
+msgstr "Загальна сума"
+
+#: views/blocks/main/prices.twig:9
+msgid "Service"
+msgstr "Послуга"
+
+#: views/blocks/main/prices.twig:10
+msgid "Price"
+msgstr "Ціна"
+
 #: views/dashboard/email-log-meta.twig:7
 msgid "Log ID"
 msgstr "Ідентифікатор журналу"
@@ -897,12 +989,15 @@ msgstr "Швидкі посилання"
 msgid "Website Development"
 msgstr "Розробка сайту"
 
-#: views/password.twig:17
+#: views/password.twig:19
 msgid "Password"
 msgstr "Пароль"
 
-#~ msgid "Submit"
-#~ msgstr "Надіслати"
+#~ msgid "Success"
+#~ msgstr "Готово"
+
+#~ msgid "Call To Action"
+#~ msgstr "Заклик до дії"
 
 #~ msgid "Very Small"
 #~ msgstr "Дуже маленький"
@@ -1140,9 +1235,6 @@ msgstr "Пароль"
 #~ msgid "SMTP options"
 #~ msgstr "SMTP options"
 
-#~ msgid "Your Email"
-#~ msgstr "Ваш Email"
-
 #~ msgid "Your password"
 #~ msgstr "Ваш пароль"
 
@@ -1175,6 +1267,3 @@ msgstr "Пароль"
 
 #~ msgid "Additional system options"
 #~ msgstr "Додаткові параметри системи"
-
-#~ msgid "Your Phone"
-#~ msgstr "Ваш Телефон"

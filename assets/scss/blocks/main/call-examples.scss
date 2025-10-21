@@ -1,6 +1,110 @@
 @import "../../mixins";
 
 .main-call-examples{
+    padding: 0 40px;
+
+    @media (max-width: 1024px){
+        padding: 0 20px;
+    }
+
     .customBlock{
+        margin: 0 auto;
+        max-width: var(--inner-max-width);
+
+        .callsExamples{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: flex-start;
+            align-items: stretch;
+
+            .example{
+                flex: 1 1 calc(calc(25% - 20px) - 40px);
+                @include linearTopGradient(rgba(var(--color-white-rgb), .01), rgba(var(--color-white-rgb), .04));
+                @include box-shadow(0 0 4px var(--color-accent-teal-10));
+                border: solid 1px var(--color-accent-teal-10);
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+                gap: 18px;
+                transition: all .35s;
+                transform: translateZ(10px);
+                border-radius: 18px;
+                padding: 18px;
+
+                &:hover{
+                    transform: scale(1.05) translateZ(10px);
+                    @include box-shadow(0 0 4px var(--color-accent-teal-20));
+                }
+
+                .cls{
+                    display: flex;
+                    gap: 18px;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+
+                    .cl{
+                        display: inline-flex;
+                        flex-direction: column;
+                        gap: 8px;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+
+                        &:last-child{
+                            flex: 1;
+                        }
+                    }
+                }
+
+                .counter{
+                    width: 62px;
+                    height: 62px;
+                    border-radius: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--color-accent-teal);
+                    background-color: rgba(var(--color-accent-teal-rgb), .1);
+                    font-family: var(--font-secondary);
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+
+                .title{
+                    font-family: var(--font-secondary);
+                    font-weight: 500;
+                    font-size: 17px;
+                    line-height: 1.3;
+                }
+
+                .subtitle{
+                    font-family: var(--font-primary);
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    color: var(--color-white-80);
+                }
+
+                .time{
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+
+                    svg{
+                        width: 16px;
+                        height: 16px;
+                        color: var(--color-accent-yellow);
+                    }
+
+                    span{
+                        font-family: var(--font-secondary);
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 1.2;
+                    }
+                }
+            }
+        }
     }
 }

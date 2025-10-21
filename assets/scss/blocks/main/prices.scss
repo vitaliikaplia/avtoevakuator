@@ -1,6 +1,73 @@
 @import "../../mixins";
 
 .main-prices{
+    padding: 0 40px;
+
+    @media (max-width: 1024px){
+        padding: 0 20px;
+    }
+
     .customBlock{
+        margin: 0 auto;
+        max-width: var(--inner-max-width-sm);
+
+        .prices{
+            width: 100%;
+            border-collapse: separate; // змініть на separate
+            border-spacing: 0; // видаліть проміжки між комірками
+            border: solid 1px var(--color-accent-teal-10);
+            border-radius: 12px;
+            overflow: hidden;
+
+            thead{
+                background: linear-gradient(135deg, rgba(var(--color-accent-teal-rgb), .1), rgba(var(--color-accent-teal-rgb), .05));
+
+                th{
+                    padding: 20px;
+                    text-align: left;
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: var(--color-accent-teal);
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+
+                    &.price{
+                        text-align: right;
+                        width: 250px;
+                    }
+                }
+            }
+
+            tbody{
+                tr{
+                    transition: background-color .3s;
+
+                    &:hover{
+                        background-color: rgba(var(--color-white-rgb), .02);
+                    }
+                }
+
+                td{
+                    padding: 16px 20px;
+                    color: var(--color-white-70);
+                    border-bottom: 1px solid var(--color-accent-teal-10);
+
+                    &.label{
+                        font-size: 16px;
+                    }
+
+                    &.price{
+                        text-align: right;
+                        font-weight: 600;
+                        color: var(--color-accent-teal);
+                        font-size: 16px;
+                    }
+                }
+
+                tr:last-child td{
+                    border-bottom: none;
+                }
+            }
+        }
     }
 }

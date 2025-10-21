@@ -2,6 +2,32 @@
 
 {% block content %}
 
-    <p>{{ block.name }}</p>
+    {% if fields.text %}
+    <div class="typo">
+        {{ fields.text }}
+    </div>
+    {% endif %}
 
+{% endblock %}
+
+{% block inner_classes %}
+{% if fields.middle_text %}
+middle-text
+{% endif %}
+{% if fields.text_box %}
+text-box
+{% endif %}
+{% if fields.text_max_width_enable and fields.text_max_width %}
+max-width
+{% endif %}
+{% endblock %}
+
+{% block wrapper_after %}
+{% if fields.text_max_width_enable and fields.text_max_width %}
+<style>
+#{{ block.id }} .typo{
+    max-width: {{ fields.text_max_width }}px;
+}
+</style>
+{% endif %}
 {% endblock %}

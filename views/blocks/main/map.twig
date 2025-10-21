@@ -2,6 +2,8 @@
 
 {% block content %}
 
-    <p>{{ block.name }}</p>
+    {% if fields.map %}
+    {{ fields.map }}
+    {% endif %}
 
 {% endblock %}

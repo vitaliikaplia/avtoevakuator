@@ -2,6 +2,20 @@
 
 {% block content %}
 
-    <p>{{ block.name }}</p>
+    {% if fields.special_offers and fields.special_offers is iterable %}
+    <div class="special-offers">
+        {% for offer in fields.special_offers %}
+        <div class="offer" style="--offer-color: {{ offer.color }}">
+            <div class="offer__badge">
+                <span class="offer__discount">{{ offer.title }}</span>
+            </div>
+            <div class="offer__content">
+                {{ offer.text }}
+            </div>
+            <div class="offer__shine"></div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
 
 {% endblock %}

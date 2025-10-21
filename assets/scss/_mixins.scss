@@ -262,3 +262,38 @@
     -ms-align-self: $align;
     align-self: $align;
 }
+
+@mixin height-variant($height) {
+    .customBlock {
+        height: $height;
+        height: $height;
+
+        .header-padding & {
+            height: calc(#{$height} - 75px);
+            height: calc(#{$height} - 75px);
+
+            @media (max-width: 1024px) {
+                height: calc(#{$height} - 65px);
+                height: calc(#{$height} - 65px);
+            }
+        }
+    }
+
+    .background {
+        &-slider img,
+        &-video video {
+            height: $height;
+            height: $height;
+
+            .header-padding & {
+                height: calc(#{$height} - 75px);
+                height: calc(#{$height} - 75px);
+
+                @media (max-width: 1024px) {
+                    height: calc(#{$height} - 65px);
+                    height: calc(#{$height} - 65px);
+                }
+            }
+        }
+    }
+}

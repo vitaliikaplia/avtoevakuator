@@ -1,6 +1,134 @@
 @import "../../mixins";
 
 .main-form{
+    padding: 0 40px;
+
+    @media (max-width: 1024px){
+        padding: 0 20px;
+    }
+
     .customBlock{
+        margin: 0 auto;
+        max-width: var(--inner-max-width);
+
+        form{
+            width: 100%;
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 32px 28px;
+            border-radius: 18px;
+            @include linearTopGradient(rgba(var(--color-bg-secondary-rgb), .75), rgba(var(--color-bg-main-rgb), .75));
+            @include box-shadow(0 0 10px var(--color-accent-teal-10));
+            backdrop-filter: blur(8px);
+            border: solid 1px var(--color-accent-teal-10);
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            align-items: stretch;
+            justify-content: flex-start;
+            position: relative;
+            z-index: 12;
+            transform: translateZ(12px);
+
+            &.busy{
+                opacity: .5;
+                pointer-events: none;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            textarea{
+                border-radius: 12px;
+                border: 1px solid var(--color-accent-teal-20);
+                background: var(--color-bg-main);
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                color: var(--color-text-white);
+                font-family: inherit;
+                padding: 16px;
+                display: block;
+                width: 100%;
+                resize: none;
+                box-sizing: border-box;
+                font-size: 16px;
+                transition: all .35s;
+
+                @include placeholder(){
+                    color: var(--color-text-white);
+                }
+
+                &.red{
+                    border-color: var(--color-accent-orange);
+                }
+
+                &:focus,
+                &:hover,
+                &:active{
+                    outline: none;
+                    border-color: var(--color-accent-teal);
+                    box-shadow: 0 0 8px var(--color-accent-teal-30);
+                }
+
+                &:-webkit-autofill,
+                &:-webkit-autofill:hover,
+                &:-webkit-autofill:focus,
+                &:-webkit-autofill:active {
+                    transition: border-color .35s ease, background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s;
+                }
+            }
+
+            [type="submit"]{
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                border: none;
+                color: var(--color-white);
+                font-family: inherit;
+                font-size: 18px;
+                font-weight: 600;
+                padding: 16px 24px;
+                min-width: 198px;
+                box-sizing: border-box;
+                display: inline-block;
+                cursor: pointer;
+                border-radius: 12px;
+                transition: all,.35s;
+                background-color: var(--color-accent-orange);
+
+                &:hover{
+                    @include box-shadow(0 4px 8px var(--color-accent-orange-20));
+                }
+            }
+        }
+
+        textarea{
+            min-height: 120px;
+            max-height: 300px;
+        }
+
+        .success{
+            width: 100%;
+            max-width: 640px;
+            margin: 32px auto 0;
+            padding: 18px 24px;
+            border-radius: 12px;
+            text-align: center;
+            color: var(--color-text-white);
+            background-color: var(--color-accent-orange);
+            border: solid 1px var(--color-accent-yellow);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            transition: transform .35s, opacity .35s;
+            transform: translateZ(10px);
+
+            .successTitle{
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .successMessage{
+                font-size: 15px;
+            }
+        }
     }
 }

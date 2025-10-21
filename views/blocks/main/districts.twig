@@ -2,6 +2,14 @@
 
 {% block content %}
 
-    <p>{{ block.name }}</p>
+    {% if fields.districts and fields.districts is iterable %}
+    <div class="districts col-{{ fields.columns }}">
+        {% for val in fields.districts %}
+        <div class="district">
+            <span>{{ val.district }}</span>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
 
 {% endblock %}

@@ -14,10 +14,16 @@
     // Accent colors
     --color-accent-teal: #67DAEA;
     --color-accent-teal-rgb: 103, 218, 234;
+    --color-accent-teal-gradient-start: #4DD2E3;
+    --color-accent-teal-gradient-start-rgb: 77, 210, 227;
+    --color-accent-teal-gradient-end: #7EE8F0;
+    --color-accent-teal-gradient-end-rgb: 126, 232, 240;
     --color-accent-orange: #F47622;
     --color-accent-orange-rgb: 244, 118, 34;
     --color-accent-yellow: #FFC448;
     --color-accent-yellow-rgb: 255, 196, 72;
+    --color-accent-green: #4CE37B;
+    --color-accent-green-rgb: 76, 227, 123;
 
     // Text colors
     --color-white: #FFFFFF;
@@ -54,5 +60,6 @@
 
     // sizes
     --inner-max-width: 1280px;
+    --inner-max-width-sm: 1024px;
 
 }

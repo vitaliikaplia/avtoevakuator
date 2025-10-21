@@ -24,15 +24,15 @@ if(!defined('ABSPATH')){exit;}
 //}
 
 /** виправляємо деякі заголовки в хлібних крихтах yoast */
-//add_filter('wpseo_breadcrumb_single_link', 'custom_breadcrumb_text', 10, 2);
-//function custom_breadcrumb_text($link_output, $link) {
-//    $link_output = str_replace('Error 404: Page not found', __('Error 404: Page not found', TEXTDOMAIN), $link_output);
-//    $link_output = str_replace('Archives for', __('Archives for', TEXTDOMAIN), $link_output);
-//    $link_output = str_replace('You searched for', __('You searched for', TEXTDOMAIN), $link_output);
-//    $link_output = str_replace('Page', __('Page', TEXTDOMAIN), $link_output);
-//    $link_output = str_replace('Home', __('Home', TEXTDOMAIN), $link_output);
-//    return $link_output;
-//}
+add_filter('wpseo_breadcrumb_single_link', 'custom_breadcrumb_text', 10, 2);
+function custom_breadcrumb_text($link_output, $link) {
+    $link_output = str_replace('Error 404: Page not found', __('Error 404: Page not found', TEXTDOMAIN), $link_output);
+    $link_output = str_replace('Archives for', __('Archives for', TEXTDOMAIN), $link_output);
+    $link_output = str_replace('You searched for', __('You searched for', TEXTDOMAIN), $link_output);
+    $link_output = str_replace('Page', __('Page', TEXTDOMAIN), $link_output);
+    $link_output = str_replace('Home', __('Home', TEXTDOMAIN), $link_output);
+    return $link_output;
+}
 
 /** виправляємо заголовок сторінки 404 в yoast */
 add_filter('wpseo_title', function($title) {

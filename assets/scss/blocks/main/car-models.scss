@@ -1,6 +1,87 @@
 @import "../../mixins";
 
 .main-car-models{
+    padding: 0 40px;
+
+    @media (max-width: 1024px){
+        padding: 0 20px;
+    }
+
     .customBlock{
+        margin: 0 auto;
+        max-width: var(--inner-max-width);
+
+        .columns{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+
+            .column{
+                display: inline-flex;
+                flex-direction: column;
+                align-items: stretch;
+                justify-content: flex-start;
+                flex: 1;
+            }
+        }
+
+        .title{
+            font-size: 38px;
+            font-weight: 500;
+        }
+
+        .typo{
+            margin-top: 12px;
+            margin-bottom: 36px;
+            color: var(--color-white-80);
+        }
+
+        .models{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: flex-start;
+            align-items: stretch;
+
+            .model{
+                flex: 1 1 calc(20% - 16px); // базове значення для 5 колонок
+                @include linearTopGradient(rgba(var(--color-white-rgb), .01), rgba(var(--color-white-rgb), .04));
+                @include box-shadow(0 0 4px var(--color-accent-teal-10));
+                border: solid 1px var(--color-accent-teal-10);
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+                transition: all .35s;
+                transform: translateZ(10px);
+                border-radius: 12px;
+                padding: 8px 18px;
+                text-align: left;
+                flex: 0 0 calc((100% - 80px) / 2) !important;
+
+                figure{
+                    font-size: 0;
+
+                    svg{
+                        width: 32px;
+                        height: 32px;
+                        color: var(--color-accent-teal);
+                    }
+                }
+            }
+        }
+
+        figure{
+            font-size: 0;
+
+            img{
+                max-width: 100%;
+                height: auto;
+                border-radius: 12px;
+                border: solid 1px var(--color-accent-teal-10);
+                box-shadow: 0 0 8px var(--color-accent-teal-10);
+            }
+        }
     }
 }

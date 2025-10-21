@@ -2,6 +2,12 @@
 
 {% block content %}
 
-    <p>{{ block.name }}</p>
+    {% if fields.icon and fields.color %}
+    <figure class="icon" style="color: {{ fields.color }};">
+        <svg>
+            <use href="{{ svg_sprite }}#{{ fields.icon }}"></use>
+        </svg>
+    </figure>
+    {% endif %}
 
 {% endblock %}

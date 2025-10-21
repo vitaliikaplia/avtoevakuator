@@ -302,13 +302,16 @@ header{
 }
 
 main{
-    padding-top: 75px;
     position: relative;
     z-index: 10;
     transform: translateZ(10px);
 
-    @media (max-width: 1024px){
-        padding-top: 65px;
+    .header-padding &{
+        padding-top: 75px;
+
+        @media (max-width: 1024px){
+            padding-top: 65px;
+        }
     }
 }
 
@@ -750,8 +753,8 @@ footer{
     text-align: center;
     color: var(--color-text-white);
     @include linearTopGradient(rgba(var(--color-bg-secondary-rgb), .75), rgba(var(--color-bg-main-rgb), .75));
-    backdrop-filter: blur(8px);
     @include box-shadow(0 0 10px var(--color-accent-teal-10));
+    backdrop-filter: blur(8px);
     border: solid 1px var(--color-accent-teal-10);
     display: flex;
     flex-direction: column;

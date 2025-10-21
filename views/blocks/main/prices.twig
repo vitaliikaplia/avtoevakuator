@@ -2,6 +2,25 @@
 
 {% block content %}
 
-    <p>{{ block.name }}</p>
+    {% if fields.prices and fields.prices is iterable %}
+    <table class="prices">
+        <thead>
+            <tr>
+                <th class="label">{{ __('Service', TEXTDOMAIN) }}</th>
+                <th class="price">{{ __('Price', TEXTDOMAIN) }}</th>
+            </tr>
+        </thead>
+        {% for val in fields.prices %}
+        <tr>
+            <td class="label">
+                {% if val.service %}{{ val.service }}{% endif %}
+            </td>
+            <td class="price">
+                {% if val.price %}{{ val.price }}{% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
 
 {% endblock %}

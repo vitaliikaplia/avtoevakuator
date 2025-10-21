@@ -2,6 +2,21 @@
 
 {% block content %}
 
-    <p>{{ block.name }}</p>
+    {% if fields.features and fields.features is iterable %}
+    <div class="features">
+        {% for val in fields.features %}
+            {% if val.feature %}
+            <div class="feature">
+                <figure>
+                    <svg>
+                        <use href="{{ svg_sprite }}#icon-check"></use>
+                    </svg>
+                </figure>
+                <span>{{ val.feature }}</span>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    {% endif %}
 
 {% endblock %}

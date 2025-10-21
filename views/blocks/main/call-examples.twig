@@ -2,6 +2,34 @@
 
 {% block content %}
 
-    <p>{{ block.name }}</p>
+    {% if fields.calls_examples and fields.calls_examples is iterable %}
+    <div class="callsExamples">
+        {% for key,val in fields.calls_examples %}
+        <div class="example">
+            <div class="cls">
+                <div class="cl">
+                    <span class="counter">{{ key+1 }}</span>
+                </div>
+                <div class="cl">
+                    {% if val.title %}
+                    <p class="title">{{ val.title }}</p>
+                    {% endif %}
+                    {% if val.subtitle %}
+                    <p class="subtitle">{{ val.subtitle }}</p>
+                    {% endif %}
+                    {% if val.time %}
+                    <p class="time">
+                        <svg>
+                            <use href="{{ svg_sprite }}#icon-clock"></use>
+                        </svg>
+                        <span>{{ __('Supply', TEXTDOMAIN) }}: {{ val.time }}</span>
+                    </p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
 
 {% endblock %}

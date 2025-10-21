@@ -2,6 +2,22 @@
 
 {% block content %}
 
-    <p>{{ block.name }}</p>
+    <div class="orangeBox">
+        <figure>
+            <svg>
+                <use href="{{ svg_sprite }}#icon-alert-triangle"></use>
+            </svg>
+        </figure>
+        <div class="meta">
+            {% if fields.title %}
+            <p class="title">{{ fields.title }}</p>
+            {% endif %}
+            {% if fields.text %}
+            <div class="typo">
+                {{ fields.text }}
+            </div>
+            {% endif %}
+        </div>
+    </div>
 
 {% endblock %}

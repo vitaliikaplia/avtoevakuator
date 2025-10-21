@@ -449,3 +449,8 @@ body.mce-fullscreen{
         }
     }
 }
+
+/* hide acf field wpml original value message */
+.wpml_acf_original_value{
+    display: none;
+}

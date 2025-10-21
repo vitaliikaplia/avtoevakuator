@@ -2,6 +2,57 @@
 
 {% block content %}
 
-    <p>{{ block.name }}</p>
+    {% if fields.price_examples and fields.price_examples is iterable %}
+    <div class="priceExamples">
+        {% for val in fields.price_examples %}
+            <div class="example">
+
+                {% if val.title %}
+                <h3>{{ val.title }}</h3>
+                {% endif %}
+
+                {% if val.city_from %}
+                <div class="route">
+                    <span class="from">{{ val.city_from }}</span>
+                    {% if val.city_to %}
+                        <span class="separator">→</span>
+                        <span class="to">{{ val.city_to }}</span>
+                    {% endif %}
+                </div>
+                {% endif %}
+
+                {% if val.distance %}
+                <div class="distance">
+                    <span>{{ __('Distance', TEXTDOMAIN) }}</span>
+                    <span>{{ val.distance }}</span>
+                </div>
+                {% endif %}
+
+                {% if val.auto_type %}
+                <div class="auto-type">
+                    <span>{{ __('Vehicle Type', TEXTDOMAIN) }}</span>
+                    <span>{{ val.auto_type }}</span>
+                </div>
+                {% endif %}
+
+                {% if val.result %}
+                <div class="calculation">
+                    <span>{{ __('Calculation', TEXTDOMAIN) }}</span>
+                    <span>{{ val.result }}</span>
+                </div>
+                {% endif %}
+
+                {% if val.total_price %}
+                <div class="total-price">
+                    <span>{{ __('Total Price', TEXTDOMAIN) }}</span>
+                    <span>{{ val.total_price }}</span>
+                </div>
+                {% endif %}
+
+            </div>
+
+        {% endfor %}
+    </div>
+    {% endif %}
 
 {% endblock %}

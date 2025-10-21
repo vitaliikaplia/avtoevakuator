@@ -199,25 +199,39 @@
     }
     .mce-{
 
-        &text-size-10{ font-size: 10px; }
-        &text-size-11{ font-size: 11px; }
-        &text-size-12{ font-size: 12px; }
-        &text-size-13{ font-size: 13px; }
-        &text-size-14{ font-size: 14px; }
-        &text-size-15{ font-size: 15px; }
-        &text-size-16{ font-size: 16px; }
-        &text-size-17{ font-size: 17px; }
-        &text-size-18{ font-size: 18px; }
-        &text-size-19{ font-size: 19px; }
-        &text-size-20{ font-size: 20px; }
-        &text-size-22{ font-size: 22px; }
-        &text-size-24{ font-size: 24px; }
-        &text-size-26{ font-size: 26px; }
-        &text-size-28{ font-size: 28px; }
-        &text-size-32{ font-size: 32px; }
-        &text-size-36{ font-size: 36px; }
-        &text-size-42{ font-size: 42px; }
-        &text-size-48{ font-size: 48px; }
+        &font-montserrat{
+            font-family: var(--font-primary);
+        }
+        &font-ubuntu{
+            font-family: var(--font-secondary);
+        }
+
+        &text-size{
+            &-10{ font-size: 10px; line-height: 1.3; }
+            &-11{ font-size: 11px; line-height: 1.3; }
+            &-12{ font-size: 12px; line-height: 1.3; }
+            &-13{ font-size: 13px; line-height: 1.3; }
+            &-14{ font-size: 14px; line-height: 1.3; }
+            &-15{ font-size: 15px; line-height: 1.3; }
+            &-16{ font-size: 16px; line-height: 1.3; }
+            &-17{ font-size: 17px; line-height: 1.3; }
+            &-18{ font-size: 18px; line-height: 1.3; }
+            &-19{ font-size: 19px; line-height: 1.2; }
+            &-20{ font-size: 20px; line-height: 1.2; }
+            &-22{ font-size: 22px; line-height: 1.2; }
+            &-24{ font-size: 24px; line-height: 1.2; }
+            &-26{ font-size: 26px; line-height: 1.2; }
+            &-28{ font-size: 28px; line-height: 1.2; }
+            &-32{ font-size: 32px; line-height: 1.2; }
+            &-36{ font-size: 36px; line-height: 1.2; }
+            &-42{ font-size: 42px; line-height: 1.2; }
+            &-48{ font-size: 48px; line-height: 1.2; }
+            &-50{ font-size: 50px; line-height: 1.2; }
+            &-52{ font-size: 52px; line-height: 1.2; }
+            &-54{ font-size: 54px; line-height: 1.2; }
+            &-56{ font-size: 56px; line-height: 1.2; }
+            &-58{ font-size: 58px; line-height: 1.2; }
+        }
 
         &text-color-accent-teal{ color: var(--color-accent-teal); }
         &text-color-accent-orange{ color: var(--color-accent-orange); }
@@ -334,8 +348,8 @@
     }
 
     svg{
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
         transition: inherit;
     }
 
@@ -564,6 +578,63 @@
                 color: var(--color-bg-darkest);
                 background-position: 100% 100%;
                 background-size: 100% 1px;
+            }
+        }
+    }
+}
+
+.breadcrumbsWrapper{
+    line-height: 1;
+
+    .breadcrumbs{
+        width: 100%;
+        margin: 0 auto;
+        color: var(--color-text-white);
+        font-size: 14px;
+        height: 14px;
+
+        & > span {
+            display: flex;
+            gap: 8px;
+            align-items: flex-end;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 400;
+            height: 14px;
+
+            & > span{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                height: 14px;
+
+                @media (max-width: 1024px){
+                    gap: 8px;
+                    display: none;
+
+                    &:last-child{
+                        display: block;
+                        font-size: 14px;
+                        min-width: 0;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+
+                        &:before{
+                            content: '«';
+                            margin-right: 4px;
+                        }
+                    }
+                }
+            }
+        }
+
+        a{
+            color: var(--color-accent-teal);
+            text-decoration: none;
+
+            &:hover{
+                text-decoration: underline;
             }
         }
     }

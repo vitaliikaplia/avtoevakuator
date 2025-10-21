@@ -44,5 +44,146 @@
         //     }
         // });
 
+        /** simple swiper slider */
+        if($('.customBlockWrapper.main-first-screen').length){
+            $('.customBlockWrapper.main-first-screen').each(function(){
+                run_simple_swiper_slider($(this));
+            });
+        }
+
+        /** reviews swiper slider */
+        if($('.customBlockWrapper.main-reviews').length){
+            $('.customBlockWrapper.main-reviews').each(function(){
+                run_reviews_swiper_slider($(this));
+            });
+        }
+
+        /** contacts form phone mask */
+        if($('input.phone').length){
+            $('input.phone').each(function(){
+                let thisPhoneInput = $(this);
+                if(thisPhoneInput.length){
+                    thisPhoneInput.mask('+380 00 000-00-00', {placeholder: $(this).attr('placeholder')});
+                    thisPhoneInput.on('focus', function(){
+                        if($(this).val() == ""){
+                            $(this).val("+380 ");
+                        }
+                    }).on('blur', function(){
+                        if($(this).val() && ($(this).val().trim() == "+380" || $(this).val() == "+38" || $(this).val() == "+3" || $(this).val() == "+")){
+                            $(this).val("");
+                        }
+                    });
+                }
+            });
+        }
+
+        /** textarea autogrow */
+        if($('textarea').length){
+            $('textarea').each(function(){
+                $(this).autogrow();
+            });
+        }
+
+        /** contacts form */
+        if($('form').length){
+            $('form').each(function(){
+
+                let form = $(this);
+
+                form.find('input,textarea').on('input', function(){
+                    $(this).removeClass('red');
+                });
+
+                form.submit(function(e){
+
+                    e.preventDefault();
+                    let readyToSend = true;
+
+                    form.find('input[name="user_full_name"]').each(function(){
+                        if($(this).val().trim() == ""){
+                            readyToSend = false;
+                            form.find('input[name="user_full_name"]').addClass('red');
+                        } else if($(this).val().trim().length < 5){
+                            readyToSend = false;
+                            form.find('input[name="user_full_name"]').addClass('red');
+                        } else if($(this).val().trim().length > 88){
+                            readyToSend = false;
+                            form.find('input[name="user_full_name"]').addClass('red');
+                        }
+                    });
+
+                    form.find('input[name="user_phone"]').each(function(){
+                        if($(this).val().trim() != "" && $(this).val().trim().length != 17){
+                            readyToSend = false;
+                            form.find('input[name="user_phone"]').addClass('red');
+                        }
+                    });
+
+                    form.find('input[name="user_email"]').each(function(){
+                        if($(this).val().trim() == ""){
+                            readyToSend = true;
+                        } else if($(this).val().trim() != "" && !isValidEmailAddress($(this).val().trim())){
+                            readyToSend = false;
+                            form.find('input[name="user_email"]').addClass('red');
+                        } else if($(this).val().trim() != "" && $(this).val().trim().length < 5){
+                            readyToSend = false;
+                            form.find('input[name="user_email"]').addClass('red');
+                        } else if($(this).val().trim() != "" && $(this).val().trim().length > 58){
+                            readyToSend = false;
+                            form.find('input[name="user_email"]').addClass('red');
+                        }
+                    });
+
+                    // form.find('textarea').each(function(){
+                    //     if($(this).val().trim() == ""){
+                    //         readyToSend = false;
+                    //         form.find('textarea').addClass('red');
+                    //     } else if($(this).val().trim().length < 5){
+                    //         readyToSend = false;
+                    //         form.find('textarea').addClass('red');
+                    //     } else if($(this).val().trim().length > 58){
+                    //         readyToSend = false;
+                    //         form.find('textarea').addClass('red');
+                    //     }
+                    // });
+
+                    if(readyToSend){
+
+                        form.addClass("busy");
+
+                        form.find('input, button').each(function(){
+                            $(this).blur();
+                        });
+
+                        $.ajax({
+                            type: "POST",
+                            url: ajaxUrl,
+                            dataType: 'json',
+                            data: new FormData(form[0]),
+                            contentType: false,
+                            cache: false,
+                            processData: false,
+                            success : function (out) {
+                                form.removeClass("busy");
+                                form.trigger("reset");
+                                form.parent().append('<div class="success" style="display: none;"></div>');
+                                form.parent().find('.success').append('<p class="successTitle">'+out.data.title+'</p>');
+                                form.parent().find('.success').append('<p class="successMessage">'+out.data.message+'</p>');
+                                form.parent().find('.success').slideDown(400);
+                                setTimeout(function(){
+                                    form.parent().find('.success').slideUp(400, function(){
+                                        $(this).remove();
+                                    });
+                                }, 6000);
+                            }
+                        });
+
+                    }
+
+                });
+
+            });
+        }
+
     });
 })(jQuery);

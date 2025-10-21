@@ -1,6 +1,6 @@
 {
     "key": "group_675a4e7d8f9c8",
-    "title": "Блок: Важливо, що",
+    "title": "Блок: Важливо",
     "fields": [
         {
             "key": "field_675a4e7d8f9c9",
@@ -35,7 +35,7 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 0,
+            "wpml_cf_preferences": 2,
             "default_value": "",
             "maxlength": "",
             "allow_in_bindings": 0,
@@ -57,7 +57,7 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 0,
+            "wpml_cf_preferences": 2,
             "default_value": "",
             "allow_in_bindings": 0,
             "tabs": "visual",
@@ -86,5 +86,5 @@
     "show_in_rest": 0,
     "display_title": "",
     "acfml_field_group_mode": "translation",
-    "modified": 1760968846
+    "modified": 1761006902
 }

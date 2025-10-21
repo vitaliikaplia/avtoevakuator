@@ -2,6 +2,40 @@
 
 {% block content %}
 
-    <p>{{ block.name }}</p>
+<div class="columns">
+    <div class="column">
+        {% if fields.title %}
+        <p class="title">{{ fields.title }}</p>
+        {% endif %}
+        {% if fields.text %}
+        <div class="typo">
+            {{ fields.text }}
+        </div>
+        {% endif %}
+        {% if fields.models and fields.models is iterable %}
+        <div class="models">
+            {% for val in fields.models %}
+            <div class="model">
+                {% if val.logo %}
+                <figure>
+                    {{ val.logo | svg }}
+                </figure>
+                {% endif %}
+                {% if val.model %}
+                <span>{{ val.model }}</span>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+    <div class="column">
+        {% if fields.image %}
+        <figure>
+            {{ fields.image | picture }}
+        </figure>
+        {% endif %}
+    </div>
+</div>
 
 {% endblock %}

@@ -2,6 +2,91 @@
 
 {% block content %}
 
-    <p>{{ block.name }}</p>
+    {% if fields.icon and fields.icon_color %}
+    <figure class="icon" style="color: {{ fields.icon_color }};">
+        <svg>
+            <use href="{{ svg_sprite }}#{{ fields.icon }}"></use>
+        </svg>
+    </figure>
+    {% endif %}
 
+    {% if fields.text %}
+    <div class="typo">
+        {{ fields.text }}
+    </div>
+    {% endif %}
+
+    {% if not is_front_page() %}
+        {{ yoast_breadcrumb('<div class="breadcrumbsWrapper"><div class="breadcrumbs">','</div></div>') }}
+    {% endif %}
+
+    {% if fields.buttons and fields.buttons is iterable %}
+    <div class="buttons">
+        {% for val in fields.buttons %}
+            {% include 'overall/button.twig' with {'link': val.button, 'type': val.button_type} %}
+        {% endfor %}
+    </div>
+    {% endif %}
+
+{% endblock %}
+
+{% block inner_after_out %}
+
+    {% if fields.bg_type %}
+
+        <span class="overlay"></span>
+
+        {% if fields.scroll_icon %}
+        <span class="scroll">
+            <span class="wheel"></span>
+        </span>
+        {% endif %}
+
+        {% if fields.bg_type == 'image' and fields.bg_image %}
+        <div class="background background-image" style="background-image: url({{ fields.bg_image | picture_src }});"></div>
+        {% endif %}
+
+        {% if fields.bg_type == 'slider' and fields.bg_slider and fields.bg_slider is iterable %}
+        <div class="background background-slider swiper" data-slider-timer="3">
+            <div class="swiper-wrapper">
+            {% for val in fields.bg_slider %}
+                <div class="swiper-slide">
+                {{ val | picture }}
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        {% if
+            fields.bg_type == 'video'
+            and
+            (
+            fields.bg_video.mp4
+            or
+            fields.bg_video.ogv
+            or
+            fields.bg_video.webm
+            or
+            (fields.bg_video.ts and fields.bg_video.m3u8)
+            )
+        %}
+        <div class="background background-video">
+            <video autoplay loop muted playsinline preload="auto"{% if fields.bg_video.cover %} poster="{{ fields.bg_video.cover | picture_src }}"{% endif %}>
+                {% if fields.bg_video.mp4.url %}<source src="{{ fields.bg_video.mp4.url }}" type="video/mp4">{% endif %}
+                {% if fields.bg_video.webm.url %}<source src="{{ fields.bg_video.webm.url }}" type="video/webm">{% endif %}
+                {% if fields.bg_video.ogv.url %}<source src="{{ fields.bg_video.ogv.url }}" type="video/ogv">{% endif %}
+                {% if fields.bg_video.m3u8.url and fields.bg_video.ts.url %}<source src="{{ fields.bg_video.m3u8.url }}" type="application/x-mpegURL">{% endif %}
+            </video>
+        </div>
+        {% endif %}
+
+    {% endif %}
+
+{% endblock %}
+
+{% block wrapper_classes %}
+{% if fields.height %}
+height-{{ fields.height }}
+{% endif %}
 {% endblock %}

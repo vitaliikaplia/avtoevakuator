@@ -50,6 +50,8 @@ class StarterSite extends Site {
         $twig->addFunction( new \Twig\TwigFunction('get_custom_language_selector_flags', 'get_custom_language_selector_flags'));
         $twig->addFunction( new \Twig\TwigFunction('fix_phone_format', 'fix_phone_format'));
         $twig->addFunction( new \Twig\TwigFunction('short_phone_format', 'short_phone_format'));
+        $twig->addFunction( new \Twig\TwigFunction('hex_to_rgb', 'hex_to_rgb'));
+        $twig->addFunction( new \Twig\TwigFunction('yoast_breadcrumb', 'yoast_breadcrumb'));
         return $twig;
     }
 }
