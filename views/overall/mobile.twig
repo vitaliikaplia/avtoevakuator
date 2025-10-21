@@ -1,0 +1,23 @@
+<section class="nobileMenu">
+    {% if general_fields.header_menu %}
+    <nav class="menu">
+        {{ general_fields.header_menu.html }}
+    </nav>
+    {% endif %}
+    {% if general_fields.header_language_switcher %}
+    <ul class="languageSwitcher">
+        <li><span>{{ get_current_language_native_name() }}</span></li>
+        {{ get_custom_language_selector_flags() }}
+    </ul>
+    {% endif %}
+    {% if general_fields.header_phone %}
+    <div class="phone">
+        <a href="tel:{{ fn('fix_phone_format', general_fields.header_phone) }}">
+            <svg>
+                <use href="{{ svg_sprite }}#icon-phone"></use>
+            </svg>
+            <span>{{ fn('nice_phone_format', general_fields.header_phone) }}</span>
+        </a>
+    </div>
+    {% endif %}
+</section>

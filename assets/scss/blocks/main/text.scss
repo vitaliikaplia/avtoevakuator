@@ -29,6 +29,11 @@
                 @include box-shadow(0 0 10px var(--color-accent-teal-10));
                 backdrop-filter: blur(8px);
                 border: solid 1px var(--color-accent-teal-10);
+
+                @media (max-width: 1024px){
+                    padding: 20px 16px;
+                    border-radius: 12px;
+                }
             }
         }
     }

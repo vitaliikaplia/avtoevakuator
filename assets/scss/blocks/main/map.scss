@@ -26,10 +26,20 @@
         transition: transform .35s, opacity .35s;
         transform: translateZ(10px);
 
+        @media (max-width: 1024px){
+            padding: 16px;
+            border-radius: 12px;
+            gap: 12px;
+        }
+
         iframe{
             display: block;
             width: 100%;
             aspect-ratio: 16/9;
+
+            @media (max-width: 1024px){
+                aspect-ratio: 3/4;
+            }
         }
     }
 }

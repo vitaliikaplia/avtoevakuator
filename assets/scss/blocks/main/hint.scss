@@ -23,6 +23,13 @@
             line-height: 1.5;
             color: var(--color-text-white);
 
+            @media (max-width: 1024px){
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 16px;
+            }
+
             figure{
                 width: 64px;
                 height: 64px;
@@ -34,9 +41,19 @@
                 color: var(--color-accent-teal);
                 flex-shrink: 0;
 
+                @media (max-width: 1024px){
+                    width: 48px;
+                    height: 48px;
+                }
+
                 svg{
                     width: 32px;
                     height: 32px;
+
+                    @media (max-width: 1024px){
+                        width: 24px;
+                        height: 24px;
+                    }
                 }
             }
 
@@ -45,12 +62,24 @@
                 flex-direction: column;
                 gap: 8px;
 
+                @media (max-width: 1024px){
+                    align-items: center;
+                }
+
                 .title{
                     font-size: 28px;
                     font-weight: 500;
+
+                    @media (max-width: 1024px){
+                        font-size: 22px;
+                    }
                 }
                 .typo{
                     line-height: 1.5;
+
+                    @media (max-width: 1024px){
+                        font-size: 14px;
+                    }
                 }
             }
         }

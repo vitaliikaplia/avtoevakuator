@@ -17,24 +17,42 @@
             justify-content: flex-start;
             gap: 10px;
 
+            @media (max-width: 1024px){
+                flex-direction: column;
+                gap: 16px;
+                align-items: stretch;
+            }
+
             .column{
                 display: inline-flex;
                 flex-direction: column;
                 align-items: stretch;
                 justify-content: flex-start;
                 flex: 1;
+
+                @media (max-width: 1024px){
+                    width: 100%;
+                }
             }
         }
 
         .title{
             font-size: 38px;
             font-weight: 500;
+
+            @media (max-width: 1024px){
+                font-size: 28px;
+            }
         }
 
         .typo{
             margin-top: 12px;
             margin-bottom: 36px;
             color: var(--color-white-80);
+
+            @media (max-width: 1024px){
+                margin-bottom: 24px;
+            }
         }
 
         .models{
@@ -44,8 +62,12 @@
             justify-content: flex-start;
             align-items: stretch;
 
+            @media (max-width: 1024px){
+                justify-content: flex-start;
+                gap: 16px;
+            }
+
             .model{
-                flex: 1 1 calc(20% - 16px); // базове значення для 5 колонок
                 @include linearTopGradient(rgba(var(--color-white-rgb), .01), rgba(var(--color-white-rgb), .04));
                 @include box-shadow(0 0 4px var(--color-accent-teal-10));
                 border: solid 1px var(--color-accent-teal-10);
@@ -59,6 +81,13 @@
                 padding: 8px 18px;
                 text-align: left;
                 flex: 0 0 calc((100% - 80px) / 2) !important;
+
+                @media (max-width: 1024px){
+                    flex: 1 1 calc(50% - 8px) !important;
+                    min-width: 0;
+                    font-size: 14px;
+                    line-height: 1.2;
+                }
 
                 figure{
                     font-size: 0;

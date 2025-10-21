@@ -238,7 +238,7 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
                     $field_type = $this->get_field_type($field_key);
 
                     if ($field_type === 'repeater' && is_array($value)) {
-                        error_log('Found repeater: ' . $field_key);
+                        //error_log('Found repeater: ' . $field_key);
                         $value = $this->translate_repeater($value, $target_lang, $field_key);
                     } elseif ($field_type === 'link' && is_array($value)) {
                         if (isset($value['title']) && !empty($value['title'])) {
@@ -320,25 +320,25 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
         }
 
         private function translate_array_recursively($array, $target_lang, $parent_field_key = null) {
-            error_log('translate_array_recursively: parent_field_key=' . ($parent_field_key ?? 'null'));
-            error_log('array_keys: ' . json_encode(array_keys($array)));
+            //error_log('translate_array_recursively: parent_field_key=' . ($parent_field_key ?? 'null'));
+            //error_log('array_keys: ' . json_encode(array_keys($array)));
 
             foreach ($array as &$item) {
                 if (is_string($item) && !empty($item)) {
                     $item = $this->safe_translate($item, $target_lang);
                 } elseif (is_array($item)) {
-                    error_log('Processing array item, keys: ' . json_encode(array_keys($item)));
+                    //error_log('Processing array item, keys: ' . json_encode(array_keys($item)));
 
                     foreach ($item as $sub_key => &$sub_value) {
-                        error_log('Sub-key: ' . $sub_key . ', type: ' . gettype($sub_value));
+                        //error_log('Sub-key: ' . $sub_key . ', type: ' . gettype($sub_value));
 
                         $sub_field_type = $this->get_field_type($sub_key);
-                        error_log('Sub-field type for ' . $sub_key . ': ' . ($sub_field_type ?? 'null'));
+                        //error_log('Sub-field type for ' . $sub_key . ': ' . ($sub_field_type ?? 'null'));
 
                         if ($sub_field_type === 'link' && is_array($sub_value)) {
-                            error_log('Found link field: ' . $sub_key);
+                            //error_log('Found link field: ' . $sub_key);
                             if (isset($sub_value['title']) && !empty($sub_value['title'])) {
-                                error_log('Translating link title: ' . substr($sub_value['title'], 0, 50));
+                                //error_log('Translating link title: ' . substr($sub_value['title'], 0, 50));
                                 $sub_value['title'] = $this->safe_translate($sub_value['title'], $target_lang);
                             }
                         } elseif (is_string($sub_value) && !empty($sub_value)) {
@@ -371,19 +371,19 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
             if (!isset($this->acf_fields_map[$field_key])) {
                 $base_field_key = $this->extract_base_field_name($field_key);
                 if ($base_field_key !== $field_key && isset($this->acf_fields_map[$base_field_key])) {
-                    error_log('Field check (from base): ' . $field_key . ' -> ' . $base_field_key);
+                    //error_log('Field check (from base): ' . $field_key . ' -> ' . $base_field_key);
                     $field = $this->acf_fields_map[$base_field_key];
                     $is_translatable = isset($field['wpml_cf_preferences']) && $field['wpml_cf_preferences'] == 2;
-                    error_log('Result: ' . ($is_translatable ? 'YES' : 'NO'));
+                    //error_log('Result: ' . ($is_translatable ? 'YES' : 'NO'));
                     return $is_translatable;
                 }
-                error_log('Field NOT in map: ' . $field_key);
+                //error_log('Field NOT in map: ' . $field_key);
                 return false;
             }
 
             $field = $this->acf_fields_map[$field_key];
             $is_translatable = isset($field['wpml_cf_preferences']) && $field['wpml_cf_preferences'] == 2;
-            error_log('Field check: ' . $field_key . ' (type=' . $field['type'] . ', wpml=' . ($field['wpml_cf_preferences'] ?? 'none') . ') = ' . ($is_translatable ? 'YES' : 'NO'));
+            //error_log('Field check: ' . $field_key . ' (type=' . $field['type'] . ', wpml=' . ($field['wpml_cf_preferences'] ?? 'none') . ') = ' . ($is_translatable ? 'YES' : 'NO'));
 
             return $is_translatable;
         }

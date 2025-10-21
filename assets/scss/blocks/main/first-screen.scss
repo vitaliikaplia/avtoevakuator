@@ -23,7 +23,7 @@
         transform: translateZ(10px);
         padding-top: 75px;
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1024px){
             padding-top: 65px;
         }
 
@@ -35,15 +35,28 @@
             }
         }
 
+        @media (max-width: 1024px){
+            gap: 28px;
+        }
+
         .icon{
             display: block;
             max-width: 96px;
             font-size: 0;
             margin: 0 auto;
 
+            @media (max-width: 1024px){
+                max-width: 72px;
+            }
+
             svg{
                 width: 96px;
                 height: 96px;
+
+                @media (max-width: 1024px){
+                    width: 72px;
+                    height: 72px;
+                }
             }
         }
 
@@ -58,6 +71,10 @@
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
+
+            @media (max-width: 1024px){
+                gap: 16px;
+            }
         }
     }
 
@@ -72,6 +89,10 @@
         border: solid 1px rgba(var(--color-white-rgb),1);
         border-radius: 18px;
         pointer-events: none;
+
+        @media (max-width: 1024px){
+            display: none;
+        }
 
         .wheel{
             position: absolute;

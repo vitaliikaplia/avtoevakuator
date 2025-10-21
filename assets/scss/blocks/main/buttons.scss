@@ -18,6 +18,13 @@
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
+
+            @media (max-width: 1024px){
+                gap: 15px;
+                flex-direction: column;
+                align-items: stretch;
+                justify-content: flex-start;
+            }
         }
     }
 }

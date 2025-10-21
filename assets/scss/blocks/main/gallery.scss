@@ -26,6 +26,12 @@
         transition: transform .35s, opacity .35s;
         transform: translateZ(10px);
 
+        @media (max-width: 1024px){
+            padding: 16px;
+            border-radius: 12px;
+            gap: 12px;
+        }
+
         .gallery{
             border-radius: 8px;
 

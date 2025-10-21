@@ -11,12 +11,20 @@
         margin: 0 auto;
         max-width: var(--inner-max-width);
 
+        @media (max-width: 1024px){
+            max-width: 100%;
+        }
+
         .priceExamples{
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
             justify-content: flex-start;
             align-items: stretch;
+
+            @media (max-width: 1024px){
+                gap: 16px;
+            }
 
             .example{
                 flex: 1 1 calc(calc(33.33% - 20px) - 40px);
@@ -35,6 +43,17 @@
                 position: relative;
                 overflow: hidden;
 
+                @media (max-width: 1024px){
+                    flex: 1 1 calc(50% - 8px);
+                    gap: 16px;
+                    border-radius: 14px;
+                    padding: 20px;
+                }
+
+                @media (max-width: 768px){
+                    flex: 1 1 100%;
+                }
+
                 &::before{
                     content: '';
                     position: absolute;
@@ -45,6 +64,10 @@
                     background: linear-gradient(90deg, var(--color-accent-teal), transparent);
                     opacity: 0;
                     transition: opacity .35s;
+
+                    @media (max-width: 1024px){
+                        height: 2px;
+                    }
                 }
 
                 &:hover{
@@ -63,6 +86,10 @@
                     color: var(--color-accent-teal);
                     margin: 0;
                     letter-spacing: -0.02em;
+
+                    @media (max-width: 1024px){
+                        font-size: 1.1rem;
+                    }
                 }
 
                 .route{
@@ -77,6 +104,13 @@
                     border-radius: 10px;
                     border-left: 3px solid var(--color-accent-teal);
 
+                    @media (max-width: 1024px){
+                        gap: 10px;
+                        font-size: 0.95rem;
+                        padding: 10px 14px;
+                        border-radius: 8px;
+                    }
+
                     .from,
                     .to{
                         font-weight: 500;
@@ -86,6 +120,10 @@
                         color: var(--color-accent-teal);
                         font-size: 1.2rem;
                         font-weight: 600;
+
+                        @media (max-width: 1024px){
+                            font-size: 1.1rem;
+                        }
                     }
                 }
 
@@ -99,16 +137,28 @@
                     padding: 10px 0;
                     border-bottom: 1px solid rgba(var(--color-white-rgb), 0.05);
 
+                    @media (max-width: 1024px){
+                        padding: 8px 0;
+                    }
+
                     span:first-child{
                         opacity: 0.6;
                         font-size: 0.85rem;
                         text-transform: uppercase;
                         letter-spacing: 0.05em;
+
+                        @media (max-width: 1024px){
+                            font-size: 0.8rem;
+                        }
                     }
 
                     span:last-child{
                         text-align: right;
                         font-weight: 500;
+
+                        @media (max-width: 1024px){
+                            font-size: 0.95rem;
+                        }
                     }
                 }
 
@@ -138,9 +188,20 @@
                     font-size: 17px;
                     font-weight: 500;
 
+                    @media (max-width: 1024px){
+                        border-radius: 8px;
+                        padding: 10px 14px;
+                        gap: 6px;
+                        font-size: 16px;
+                    }
+
                     span:last-child{
                         color: rgba(var(--color-white-rgb), 0.8);
                         font-size: 15px;
+
+                        @media (max-width: 1024px){
+                            font-size: 14px;
+                        }
                     }
                 }
 
@@ -150,8 +211,16 @@
                     padding-top: 16px;
                     border-top: 2px solid var(--color-accent-teal-10);
 
+                    @media (max-width: 1024px){
+                        padding-top: 14px;
+                    }
+
                     span:first-child{
                         font-size: 0.9rem;
+
+                        @media (max-width: 1024px){
+                            font-size: 0.85rem;
+                        }
                     }
 
                     span:last-child{
@@ -159,6 +228,10 @@
                         font-weight: 700;
                         color: var(--color-accent-teal);
                         text-shadow: 0 0 20px rgba(var(--color-accent-teal-rgb), 0.3);
+
+                        @media (max-width: 1024px){
+                            font-size: 1.5rem;
+                        }
                     }
                 }
             }

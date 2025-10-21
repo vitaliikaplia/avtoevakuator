@@ -18,6 +18,10 @@
             justify-content: flex-start;
             align-items: stretch;
 
+            @media (max-width: 768px){
+                gap: 16px;
+            }
+
             .example{
                 flex: 1 1 calc(calc(25% - 20px) - 40px);
                 @include linearTopGradient(rgba(var(--color-white-rgb), .01), rgba(var(--color-white-rgb), .04));
@@ -32,6 +36,14 @@
                 transform: translateZ(10px);
                 border-radius: 18px;
                 padding: 18px;
+
+                @media (max-width: 1024px){
+                    flex: 1 1 calc(calc(50% - 16px) - 20px);
+                }
+
+                @media (max-width: 768px){
+                    flex: 1 1 100%;
+                }
 
                 &:hover{
                     transform: scale(1.05) translateZ(10px);
