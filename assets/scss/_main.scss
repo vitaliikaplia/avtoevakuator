@@ -306,7 +306,9 @@ main{
     z-index: 10;
     transform: translateZ(10px);
 
-    .header-padding &{
+    .header-padding &,
+    .password-protected &,
+    .error404 &{
         padding-top: 75px;
 
         @media (max-width: 1024px){
@@ -817,7 +819,6 @@ footer{
     }
 }
 
-// SCSS
 .secretPageBox{
     width: 100%;
     max-width: var(--inner-max-width);
@@ -951,3 +952,46 @@ footer{
     }
 }
 
+.callbackWidget{
+    position: fixed;
+    z-index: 112144;
+    @include transform(translateZ(112144px));
+    right: 32px;
+    bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0;
+    width: 64px;
+    height: 64px;
+    animation: pulse 2s infinite;
+    border-radius: 50%;
+    background-color: var(--color-accent-orange);
+    color: var(--color-white);
+
+    @media (max-width: 1024px){
+        right: 20px;
+        bottom: 20px;
+        width: 48px;
+        height: 48px;
+    }
+
+    &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: transparent;
+        animation: shadow-wave 2s infinite;
+        z-index: -1;
+    }
+
+    svg{
+        display: block;
+        width: 50%;
+        height: 50%;
+    }
+}

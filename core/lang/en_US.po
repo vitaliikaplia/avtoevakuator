@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: avtoevakuator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-21 04:30+0300\n"
+"POT-Creation-Date: 2025-10-21 18:54+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
 "Language-Team: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
@@ -49,31 +49,39 @@ msgstr ""
 msgid "Other options updated"
 msgstr ""
 
-#: core/ajax/contact_form_submit.php:27
+#: core/ajax/contact_form_submit.php:29
 msgid "New contact form message"
 msgstr ""
 
-#: core/ajax/contact_form_submit.php:28
+#: core/ajax/contact_form_submit.php:30
 msgid "Name"
 msgstr ""
 
-#: core/ajax/contact_form_submit.php:29
+#: core/ajax/contact_form_submit.php:31
 msgid "Phone"
 msgstr ""
 
-#: core/ajax/contact_form_submit.php:31
+#: core/ajax/contact_form_submit.php:33
 msgid "Email"
 msgstr ""
 
-#: core/ajax/contact_form_submit.php:34
+#: core/ajax/contact_form_submit.php:36
 msgid "Message"
 msgstr ""
 
-#: core/ajax/contact_form_submit.php:39
+#: core/ajax/contact_form_submit.php:38
+msgid "Sent from"
+msgstr ""
+
+#: core/ajax/contact_form_submit.php:41
+msgid "Geolocation and platform info"
+msgstr ""
+
+#: core/ajax/contact_form_submit.php:46
 msgid "Your message has been sent"
 msgstr ""
 
-#: core/ajax/contact_form_submit.php:40
+#: core/ajax/contact_form_submit.php:47
 msgid "Thank you for contacting us. We will get back to you shortly."
 msgstr ""
 
@@ -177,15 +185,19 @@ msgstr ""
 msgid "Buttons"
 msgstr ""
 
-#: core/gutenberg.php:212 core/includes/back/custom-post-types.php:57
+#: core/gutenberg.php:212
+msgid "Gallery"
+msgstr ""
+
+#: core/gutenberg.php:220 core/includes/back/custom-post-types.php:57
 msgid "Pattern"
 msgstr ""
 
-#: core/gutenberg.php:462
+#: core/gutenberg.php:470
 msgid "Block"
 msgstr ""
 
-#: core/gutenberg.php:463
+#: core/gutenberg.php:471
 msgid "Block from"
 msgstr ""
 
@@ -307,8 +319,6 @@ msgstr ""
 
 #: core/includes/back/custom-post-types.php:24
 #: core/includes/back/custom-post-types.php:61
-#: core/includes/back/custom-post-types.php:100
-#: core/includes/back/custom-post-types.php:101
 msgid "Edit"
 msgstr ""
 
@@ -322,8 +332,6 @@ msgstr ""
 
 #: core/includes/back/custom-post-types.php:27
 #: core/includes/back/custom-post-types.php:64
-#: core/includes/back/custom-post-types.php:103
-#: core/includes/back/custom-post-types.php:104
 msgid "View"
 msgstr ""
 
@@ -389,38 +397,6 @@ msgstr ""
 msgid "Parent item"
 msgstr ""
 
-#: core/includes/back/custom-post-types.php:75
-#: core/includes/back/custom-post-types.php:95
-#: core/includes/back/custom-post-types.php:96
-#: core/includes/back/custom-post-types.php:97
-msgid "Mail log"
-msgstr ""
-
-#: core/includes/back/custom-post-types.php:98
-#: core/includes/back/custom-post-types.php:99
-msgid "Add"
-msgstr ""
-
-#: core/includes/back/custom-post-types.php:102
-msgid "New"
-msgstr ""
-
-#: core/includes/back/custom-post-types.php:105
-msgid "Search for mail logs"
-msgstr ""
-
-#: core/includes/back/custom-post-types.php:106
-msgid "No mail logs found"
-msgstr ""
-
-#: core/includes/back/custom-post-types.php:107
-msgid "No mail logs found in trash"
-msgstr ""
-
-#: core/includes/back/custom-post-types.php:108
-msgid "Parent"
-msgstr ""
-
 #: core/includes/back/custom-taxonomies.php:10
 #: core/includes/back/custom-taxonomies.php:18
 msgid "Pattern categories"
@@ -460,22 +436,6 @@ msgstr ""
 
 #: core/includes/back/dashboard-footer.php:12
 msgid "Powered by"
-msgstr ""
-
-#: core/includes/back/dashboard-mail-log-meta.php:36
-msgid "Invalid mail log ID"
-msgstr ""
-
-#: core/includes/back/dashboard-mail-log-meta.php:53
-msgid "Email log information"
-msgstr ""
-
-#: core/includes/back/dashboard-mail-log-meta.php:74
-msgid "Email preview"
-msgstr ""
-
-#: core/includes/back/dashboard-mail-log-meta.php:98
-msgid "Recipient"
 msgstr ""
 
 #: core/includes/back/dashboard-options.php:8
@@ -660,6 +620,9 @@ msgstr ""
 
 #: core/includes/back/dashboard-options.php:323
 #: core/includes/back/dashboard-options.php:329
+#: core/includes/back/dashboard-options.php:346
+#: core/includes/back/dashboard-options.php:404
+#: core/includes/back/dashboard-options.php:463
 msgid "link"
 msgstr ""
 
@@ -672,67 +635,173 @@ msgid "Telegram chat ID to integrate with Telegram bot"
 msgstr ""
 
 #: core/includes/back/dashboard-options.php:334
-msgid "Other options"
+msgid "OpenAI"
 msgstr ""
 
 #: core/includes/back/dashboard-options.php:335
-msgid "All other various options"
+msgid "Claude"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:336
+msgid "Gemini"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:339
+msgid "AI Engine"
 msgstr ""
 
 #: core/includes/back/dashboard-options.php:340
-msgid "Disable all updates"
+msgid "Select AI engine for content generation"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:341
-msgid "Disable plugins and WordPress core updates"
+#: core/includes/back/dashboard-options.php:345
+msgid "Open AI API key"
 msgstr ""
 
 #: core/includes/back/dashboard-options.php:346
-msgid "Delete child media"
-msgstr ""
-
-#: core/includes/back/dashboard-options.php:347
-msgid "Delete child media when parent post is deleted"
-msgstr ""
-
-#: core/includes/back/dashboard-options.php:352
-msgid "Enable HTML cache"
-msgstr ""
-
-#: core/includes/back/dashboard-options.php:353
-msgid "Enable HTML page cache for anonymous users"
-msgstr ""
-
-#: core/includes/back/dashboard-options.php:358
-msgid "Enable minify"
-msgstr ""
-
-#: core/includes/back/dashboard-options.php:359
-msgid "Enable HTML minifier on frontend"
-msgstr ""
-
-#: core/includes/back/dashboard-options.php:364
-msgid "Hide ACF"
+msgid "Open AI API key to integrate with Open AI service"
 msgstr ""
 
 #: core/includes/back/dashboard-options.php:365
+msgid "Open AI API model"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:366
+msgid "Select Open AI API model to use"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:385
+#: core/includes/back/dashboard-options.php:444
+#: core/includes/back/dashboard-options.php:502
+msgid "tokens"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:387
+msgid "Open AI max tokens"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:388
+msgid "Open AI max tokens to use"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:403
+msgid "Claude API key"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:404
+msgid "Claude API key to integrate with Claude service"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:424
+msgid "Claude API model"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:425
+msgid "Select Claude API model to use"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:446
+msgid "Claude max tokens"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:447
+msgid "Claude max tokens to use"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:462
+msgid "Gemini API key"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:463
+msgid "Gemini API key to integrate with Gemini service"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:482
+msgid "Gemini API model"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:483
+msgid "Select Gemini API model to use"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:504
+msgid "Gemini max tokens"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:505
+msgid "Gemini max tokens to use"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:520
+msgid "Other options"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:521
+msgid "All other various options"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:526
+msgid "Disable all updates"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:527
+msgid "Disable plugins and WordPress core updates"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:532
+msgid "Delete child media"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:533
+msgid "Delete child media when parent post is deleted"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:538
+msgid "Enable HTML cache"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:539
+msgid "Enable HTML page cache for anonymous users"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:544
+msgid "Enable minify"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:545
+msgid "Enable HTML minifier on frontend"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:550
+msgid "Hide ACF"
+msgstr ""
+
+#: core/includes/back/dashboard-options.php:551
 msgid "Hide Advanced Custom Fields from Dashboard"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:370
+#: core/includes/back/dashboard-options.php:556
 msgid "Pages to patterns"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:371
+#: core/includes/back/dashboard-options.php:557
 msgid "Parse all pages blocks as Gutenberg patterns"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:376
+#: core/includes/back/dashboard-options.php:562
 msgid "Translation duplicates"
 msgstr ""
 
-#: core/includes/back/dashboard-options.php:377
+#: core/includes/back/dashboard-options.php:563
 msgid "Create translation duplicates while adding posts"
+msgstr ""
+
+#: core/includes/back/dashboard-pages-columns.php:15
+msgid "Yoast Title"
+msgstr ""
+
+#: core/includes/back/dashboard-pages-columns.php:16
+msgid "Yoast Description"
 msgstr ""
 
 #: core/includes/back/dashboard-update-assets-version.php:16
@@ -759,10 +828,6 @@ msgstr ""
 #: core/includes/back/system-redirect-rules.php:88
 msgid ""
 "Invalid redirect rule: Old URL must contain the current WordPress domain."
-msgstr ""
-
-#: core/includes/back/system-send-email.php:34
-msgid "Test"
 msgstr ""
 
 #: core/includes/back/system-thumbnails.php:9
@@ -899,39 +964,47 @@ msgstr ""
 msgid "Supply"
 msgstr ""
 
-#: views/blocks/main/cities.twig:22 views/blocks/main/price-examples.twig:25
+#: views/blocks/main/cities.twig:22 views/blocks/main/price-examples.twig:26
 msgid "Distance"
 msgstr ""
 
-#: views/blocks/main/form.twig:7
+#: views/blocks/main/contacts.twig:7
+msgid "Write to Us"
+msgstr ""
+
+#: views/blocks/main/contacts.twig:10 views/blocks/main/form.twig:7
 msgid "Your Name"
 msgstr ""
 
-#: views/blocks/main/form.twig:8
+#: views/blocks/main/contacts.twig:11 views/blocks/main/form.twig:8
 msgid "Your Phone"
 msgstr ""
 
-#: views/blocks/main/form.twig:9
+#: views/blocks/main/contacts.twig:12 views/blocks/main/form.twig:9
 msgid "Your Email"
 msgstr ""
 
-#: views/blocks/main/form.twig:10
+#: views/blocks/main/contacts.twig:13 views/blocks/main/form.twig:10
 msgid "Describe Your Case"
 msgstr ""
 
-#: views/blocks/main/form.twig:11
+#: views/blocks/main/contacts.twig:14 views/blocks/main/form.twig:11
 msgid "Submit"
 msgstr ""
 
-#: views/blocks/main/price-examples.twig:32
+#: views/blocks/main/contacts.twig:18
+msgid "Work schedule"
+msgstr ""
+
+#: views/blocks/main/price-examples.twig:33
 msgid "Vehicle Type"
 msgstr ""
 
-#: views/blocks/main/price-examples.twig:39
+#: views/blocks/main/price-examples.twig:40
 msgid "Calculation"
 msgstr ""
 
-#: views/blocks/main/price-examples.twig:46
+#: views/blocks/main/price-examples.twig:47
 msgid "Total Price"
 msgstr ""
 
@@ -941,6 +1014,10 @@ msgstr ""
 
 #: views/blocks/main/prices.twig:10
 msgid "Price"
+msgstr ""
+
+#: views/dashboard/email-log-meta.twig:3
+msgid "Recipient"
 msgstr ""
 
 #: views/dashboard/email-log-meta.twig:7
@@ -969,6 +1046,10 @@ msgstr ""
 
 #: views/email/base.twig:385
 msgid "Session information"
+msgstr ""
+
+#: views/email/test.twig:5
+msgid "Test"
 msgstr ""
 
 #: views/overall/cookie.twig:17

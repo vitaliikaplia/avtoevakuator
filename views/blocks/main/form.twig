@@ -2,13 +2,13 @@
 
 {% block content %}
 
-<form>
-    <input type="hidden" name="action" value="contact_form_submit">
-    <input type="text" name="user_full_name" placeholder="{{ __('Your Name', TEXTDOMAIN) }}" required>
-    <input type="text" name="user_phone" placeholder="{{ __('Your Phone', TEXTDOMAIN) }}" class="phone" required>
-    <input type="email" name="user_email" placeholder="{{ __('Your Email', TEXTDOMAIN) }}">
-    <textarea name="user_message" placeholder="{{ __('Describe Your Case', TEXTDOMAIN) }}"></textarea>
-    <button type="submit">{{ __('Submit', TEXTDOMAIN) }}</button>
-</form>
+    <form class="contact">
+        <input type="hidden" name="action" value="contact_form_submit">
+        <input type="text" name="user_full_name" placeholder="{{ __('Your Name', TEXTDOMAIN) }}" required>
+        <input type="text" name="user_phone" placeholder="{{ __('Your Phone', TEXTDOMAIN) }}" class="phone" required>
+        <input type="email" name="user_email" placeholder="{{ __('Your Email', TEXTDOMAIN) }}">
+        <textarea name="user_message" placeholder="{{ __('Describe Your Case', TEXTDOMAIN) }}"></textarea>
+        <button type="submit">{{ __('Submit', TEXTDOMAIN) }}</button>
+    </form>
 
 {% endblock %}

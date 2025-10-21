@@ -2,25 +2,25 @@
 
 {% block content %}
 
-{% if fields.services and fields.services is iterable %}
-<div class="services">
-    {% for val in fields.services %}
-    {% set post = get_post(val) %}
-    <a href="{{ post.link }}" class="service">
-        {% if post.thumbnail %}
-        <figure class="thumbnail">
-            {{ post.thumbnail | picture('medium') }}
-        </figure>
-        {% endif %}
-        <span class="meta">
-            <span class="title">{{ post.title }}</span>
-            {% if post.post_excerpt %}
-            <span class="excerpt">{{ post.post_excerpt }}</span>
+    {% if fields.services and fields.services is iterable %}
+    <div class="services">
+        {% for val in fields.services %}
+        {% set post = get_post(val) %}
+        <a href="{{ post.link }}" class="service">
+            {% if post.thumbnail %}
+            <figure class="thumbnail">
+                {{ post.thumbnail | picture('medium') }}
+            </figure>
             {% endif %}
-        </span>
-    </a>
-    {% endfor %}
-</div>
-{% endif %}
+            <span class="meta">
+                <span class="title">{{ post.title }}</span>
+                {% if post.post_excerpt %}
+                <span class="excerpt">{{ post.post_excerpt }}</span>
+                {% endif %}
+            </span>
+        </a>
+        {% endfor %}
+    </div>
+    {% endif %}
 
 {% endblock %}

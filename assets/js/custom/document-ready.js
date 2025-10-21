@@ -85,8 +85,8 @@
         }
 
         /** contacts form */
-        if($('form').length){
-            $('form').each(function(){
+        if($('form.contact').length){
+            $('form.contact').each(function(){
 
                 let form = $(this);
 
@@ -155,11 +155,14 @@
                             $(this).blur();
                         });
 
+                        let formData = new FormData(form[0]);
+                        formData.append('current_page', window.location.href);
+
                         $.ajax({
                             type: "POST",
                             url: ajaxUrl,
                             dataType: 'json',
-                            data: new FormData(form[0]),
+                            data: formData,
                             contentType: false,
                             cache: false,
                             processData: false,

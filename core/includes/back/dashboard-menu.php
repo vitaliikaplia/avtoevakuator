@@ -89,6 +89,6 @@ function add_admin_menu_separator($position) {
 function set_admin_menu_separator() {
     add_admin_menu_separator(25);
     add_admin_menu_separator(85);
-    add_admin_menu_separator(87);
+//    add_admin_menu_separator(87);
 }
 add_action('admin_menu', 'set_admin_menu_separator');

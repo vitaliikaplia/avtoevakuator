@@ -27,7 +27,7 @@ function auto_create_wpml_translations($post_id, $post) {
     if ($post->post_status !== 'publish') return;
 
     // Перевіряємо чи це дозволений тип поста
-    $allowed_post_types = ['post', 'page'];
+    $allowed_post_types = ['post', 'page', 'patterns'];
     if (!in_array($post->post_type, $allowed_post_types)) return;
 
     // Перевіряємо чи встановлений WPML

@@ -21,6 +21,19 @@
         position: relative;
         z-index: 10;
         transform: translateZ(10px);
+        padding-top: 75px;
+
+        @media (max-width: 1024px) {
+            padding-top: 65px;
+        }
+
+        .header-padding & {
+            padding-top: 0;
+
+            @media (max-width: 1024px) {
+                padding-top: 0;
+            }
+        }
 
         .icon{
             display: block;

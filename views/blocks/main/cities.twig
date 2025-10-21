@@ -2,37 +2,37 @@
 
 {% block content %}
 
-{% if fields.cities and fields.cities is iterable %}
-<div class="cities">
-    {% for val in fields.cities %}
-    <div class="city">
-        {% if val.city_name %}
-        <p class="cityName">
-            <svg>
-                <use href="{{ svg_sprite }}#icon-map-pin"></use>
-            </svg>
-            <span>{{ val.city_name }}</span>
-        </p>
-        {% endif %}
-        {% if val.distance %}
-        <p class="distance">
-            <svg>
-                <use href="{{ svg_sprite }}#icon-tow-truck"></use>
-            </svg>
-            <span>{{ __('Distance', TEXTDOMAIN) }}: {{ val.distance }}</span>
-        </p>
-        {% endif %}
-        {% if val.time %}
-        <p class="time">
-            <svg>
-                <use href="{{ svg_sprite }}#icon-clock"></use>
-            </svg>
-            <span>{{ __('Supply', TEXTDOMAIN) }}: {{ val.time }}</span>
-        </p>
-        {% endif %}
+    {% if fields.cities and fields.cities is iterable %}
+    <div class="cities">
+        {% for val in fields.cities %}
+        <div class="city">
+            {% if val.city_name %}
+            <p class="cityName">
+                <svg>
+                    <use href="{{ svg_sprite }}#icon-map-pin"></use>
+                </svg>
+                <span>{{ val.city_name }}</span>
+            </p>
+            {% endif %}
+            {% if val.distance %}
+            <p class="distance">
+                <svg>
+                    <use href="{{ svg_sprite }}#icon-tow-truck"></use>
+                </svg>
+                <span>{{ __('Distance', TEXTDOMAIN) }}: {{ val.distance }}</span>
+            </p>
+            {% endif %}
+            {% if val.time %}
+            <p class="time">
+                <svg>
+                    <use href="{{ svg_sprite }}#icon-clock"></use>
+                </svg>
+                <span>{{ __('Supply', TEXTDOMAIN) }}: {{ val.time }}</span>
+            </p>
+            {% endif %}
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
-</div>
-{% endif %}
+    {% endif %}
 
 {% endblock %}

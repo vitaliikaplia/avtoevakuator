@@ -79,7 +79,7 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 1,
+            "wpml_cf_preferences": 2,
             "layout": "table",
             "pagination": 0,
             "min": 0,
@@ -175,7 +175,7 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 1,
+            "wpml_cf_preferences": 2,
             "return_format": "array",
             "allow_in_bindings": 0
         },
@@ -193,7 +193,7 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 2,
+            "wpml_cf_preferences": 1,
             "allow_in_bindings": 0,
             "style": "",
             "icon": false,
@@ -220,6 +220,6 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "acfml_field_group_mode": "translation",
-    "modified": 1760955526
+    "acfml_field_group_mode": "advanced",
+    "modified": 1761066289
 }

@@ -18,7 +18,8 @@
             },
             "open": 0,
             "multi_expand": 0,
-            "endpoint": 0
+            "endpoint": 0,
+            "wpml_cf_preferences": 1
         },
         {
             "key": "field_666b14974af76",
@@ -45,6 +46,7 @@
             "return_format": "id",
             "multiple": 0,
             "allow_null": 1,
+            "allow_in_bindings": 1,
             "bidirectional": 0,
             "ui": 1,
             "bidirectional_target": []
@@ -69,6 +71,6 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "acfml_field_group_mode": "translation",
-    "modified": 1760955578
+    "acfml_field_group_mode": "advanced",
+    "modified": 1761066537
 }

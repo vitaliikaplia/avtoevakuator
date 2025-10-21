@@ -23,6 +23,16 @@
             <p class="subtitle">{{ val.subtitle }}</p>
             {% endif %}
 
+            {% if val.text %}
+            <div class="typo">
+                {{ val.text }}
+            </div>
+            {% endif %}
+
+            {% if val.button.url and val.button.title and val.button_type %}
+                {% include 'overall/button.twig' with {'link': val.button, 'type': val.button_type} %}
+            {% endif %}
+
         </div>
         {% endfor %}
     </div>

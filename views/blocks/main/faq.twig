@@ -2,6 +2,33 @@
 
 {% block content %}
 
-    <p>{{ block.name }}</p>
+    {% if fields.faq and fields.faq is iterable %}
+    <div class="faq-list">
+        {% for item in fields.faq %}
+            <div class="faq-item">
+                <input
+                    type="radio"
+                    name="faq-accordion"
+                    id="faq-{{ loop.index }}"
+                    class="faq-toggle"
+                    {% if loop.first %}checked{% endif %}
+                >
+                <label for="faq-{{ loop.index }}" class="faq-question">
+                    <span class="faq-question-text">{{ item.question }}</span>
+                    <span class="faq-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                </label>
+                <div class="faq-answer">
+                    <div class="faq-answer-inner">
+                        {{ item.answer|raw }}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %}
 
 {% endblock %}

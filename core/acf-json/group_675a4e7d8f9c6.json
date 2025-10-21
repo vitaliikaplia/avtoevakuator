@@ -35,7 +35,7 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 0,
+            "wpml_cf_preferences": 2,
             "layout": "table",
             "pagination": 0,
             "min": 0,
@@ -58,7 +58,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 0,
+                    "wpml_cf_preferences": 2,
                     "default_value": "",
                     "maxlength": "",
                     "allow_in_bindings": 0,
@@ -89,6 +89,6 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "acfml_field_group_mode": "translation",
-    "modified": 1760968804
+    "acfml_field_group_mode": "advanced",
+    "modified": 1761066373
 }

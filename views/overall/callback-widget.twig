@@ -1,0 +1,7 @@
+{% if general_fields.enable_footer_widget and general_fields.footer_widget_link %}
+<a href="{{ general_fields.footer_widget_link }}" class="callbackWidget">
+    <svg>
+        <use href="{{ svg_sprite }}#icon-phone"></use>
+    </svg>
+</a>
+{% endif %}

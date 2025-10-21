@@ -1,0 +1,13 @@
+{% extends "block-base.twig" %}
+
+{% block content %}
+
+    {% if fields.gallery and fields.gallery is iterable %}
+    <div class="gallery fotorama" data-nav="thumbs" data-fit="cover" data-loop="true" data-autoplay="4000" data-ratio="800/600">
+        {% for img in fields.gallery %}
+            <img src="{{ img | picture_src }}" alt="{{ img.alt }}">
+        {% endfor %}
+    </div>
+    {% endif %}
+
+{% endblock %}

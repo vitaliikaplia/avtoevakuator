@@ -3,6 +3,77 @@
     "title": "Інше",
     "fields": [
         {
+            "key": "field_68f78e1fe3bab",
+            "label": "Віджет виклику",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_68f78e30e3bac",
+            "label": "Увімкнути віджет виклику",
+            "name": "enable_footer_widget",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "message": "",
+            "default_value": 0,
+            "allow_in_bindings": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_68f78e56e3bad",
+            "label": "Посилання віджету виклику",
+            "name": "footer_widget_link",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_68f78e30e3bac",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_673189c4dbc1a",
             "label": "Кукі попап",
             "name": "",
@@ -376,5 +447,5 @@
     "show_in_rest": 0,
     "display_title": "",
     "acfml_field_group_mode": "advanced",
-    "modified": 1760831547
+    "modified": 1761054320
 }

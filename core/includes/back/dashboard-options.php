@@ -328,6 +328,192 @@ function get_custom_options(){
                     'label'         => __("Telegram chat ID", TEXTDOMAIN),
                     'description'   => __("Telegram chat ID to integrate with Telegram bot", TEXTDOMAIN) . ', <a href="https://core.telegram.org/bots#6-botfather" target="_blank">'.__('link', TEXTDOMAIN).'</a>',
                 ),
+                array (
+                    'type'          => 'select',
+                    'options'       => array (
+                        'openai' => __("OpenAI", TEXTDOMAIN),
+                        'claude' => __("Claude", TEXTDOMAIN),
+                        'gemini' => __("Gemini", TEXTDOMAIN),
+                    ),
+                    'name'         => 'ai_engine',
+                    'label'         => __("AI Engine", TEXTDOMAIN),
+                    'description'   => __("Select AI engine for content generation", TEXTDOMAIN),
+                ),
+                array (
+                    'type'          => 'password',
+                    'name'          => 'open_ai_api_key',
+                    'label'         => __("Open AI API key", TEXTDOMAIN),
+                    'description'   => __("Open AI API key to integrate with Open AI service", TEXTDOMAIN) . ', <a href="https://platform.openai.com/settings/organization/api-keys" target="_blank">'.__('link', TEXTDOMAIN).'</a>',
+                    'conditional_logic' => array(
+                        'action' => 'show',
+                        'rules' => array(
+                            array(
+                                'field' => 'ai_engine',
+                                'operator' => '==',
+                                'value' => 'openai',
+                            ),
+                        ),
+                    ),
+                ),
+                array (
+                    'type'          => 'select',
+                    'options'       => array (
+                        'gpt-4o' => 'gpt-4o',
+                        'gpt-4o-mini' => 'gpt-4o-mini'
+                    ),
+                    'name'         => 'open_ai_api_model',
+                    'label'         => __("Open AI API model", TEXTDOMAIN),
+                    'description'   => __("Select Open AI API model to use", TEXTDOMAIN),
+                    'conditional_logic' => array(
+                        'action' => 'show',
+                        'rules' => array(
+                            array(
+                                'field' => 'ai_engine',
+                                'operator' => '==',
+                                'value' => 'openai',
+                            ),
+                        ),
+                    ),
+                ),
+                array (
+                    'type'          => 'range',
+                    'name'          => 'open_ai_max_tokens',
+                    'tweaks'        => array(
+                        'min' => '100',
+                        'max' => '5000',
+                        'step' => '100',
+                        'suffix' => __("tokens", TEXTDOMAIN),
+                    ),
+                    'label'         => __("Open AI max tokens", TEXTDOMAIN),
+                    'description'   => __("Open AI max tokens to use", TEXTDOMAIN),
+                    'conditional_logic' => array(
+                        'action' => 'show',
+                        'rules' => array(
+                            array(
+                                'field' => 'ai_engine',
+                                'operator' => '==',
+                                'value' => 'openai',
+                            ),
+                        ),
+                    ),
+                ),
+                array (
+                    'type'          => 'password',
+                    'name'          => 'claude_api_key',
+                    'label'         => __("Claude API key", TEXTDOMAIN),
+                    'description'   => __("Claude API key to integrate with Claude service", TEXTDOMAIN) . ', <a href="https://claude.ai/account/api-keys" target="_blank">'.__('link', TEXTDOMAIN).'</a>',
+                    'conditional_logic' => array(
+                        'action' => 'show',
+                        'rules' => array(
+                            array(
+                                'field' => 'ai_engine',
+                                'operator' => '==',
+                                'value' => 'claude',
+                            ),
+                        ),
+                    ),
+                ),
+                array (
+                    'type'          => 'select',
+                    'options'       => array (
+                        'claude-opus-4-1' => 'claude-opus-4-1',
+                        'claude-sonnet-4-5-20250929' => 'claude-sonnet-4-5-20250929',
+                        'claude-haiku-4-5-20251001' => 'claude-haiku-4-5-20251001',
+                    ),
+                    'name'         => 'claude_api_model',
+                    'label'         => __("Claude API model", TEXTDOMAIN),
+                    'description'   => __("Select Claude API model to use", TEXTDOMAIN),
+                    'conditional_logic' => array(
+                        'action' => 'show',
+                        'rules' => array(
+                            array(
+                                'field' => 'ai_engine',
+                                'operator' => '==',
+                                'value' => 'claude',
+                            ),
+                        ),
+                    ),
+                ),
+                array (
+                    'type'          => 'range',
+                    'name'          => 'claude_max_tokens',
+                    'tweaks'        => array(
+                        'min' => '100',
+                        'max' => '9000',
+                        'step' => '100',
+                        'suffix' => __("tokens", TEXTDOMAIN),
+                    ),
+                    'label'         => __("Claude max tokens", TEXTDOMAIN),
+                    'description'   => __("Claude max tokens to use", TEXTDOMAIN),
+                    'conditional_logic' => array(
+                        'action' => 'show',
+                        'rules' => array(
+                            array(
+                                'field' => 'ai_engine',
+                                'operator' => '==',
+                                'value' => 'claude',
+                            ),
+                        ),
+                    ),
+                ),
+                array (
+                    'type'          => 'password',
+                    'name'          => 'gemini_api_key',
+                    'label'         => __("Gemini API key", TEXTDOMAIN),
+                    'description'   => __("Gemini API key to integrate with Gemini service", TEXTDOMAIN) . ', <a href="https://console.cloud.google.com/apis/credentials" target="_blank">'.__('link', TEXTDOMAIN).'</a>',
+                    'conditional_logic' => array(
+                        'action' => 'show',
+                        'rules' => array(
+                            array(
+                                'field' => 'ai_engine',
+                                'operator' => '==',
+                                'value' => 'gemini',
+                            ),
+                        ),
+                    ),
+                ),
+                array (
+                    'type'          => 'select',
+                    'options'       => array (
+                        'gemini-2.0-flash' => 'gemini-2.0-flash',
+                        'gemini-2.5-pro' => 'gemini-2.5-pro',
+                    ),
+                    'name'         => 'gemini_api_model',
+                    'label'         => __("Gemini API model", TEXTDOMAIN),
+                    'description'   => __("Select Gemini API model to use", TEXTDOMAIN),
+                    'conditional_logic' => array(
+                        'action' => 'show',
+                        'rules' => array(
+                            array(
+                                'field' => 'ai_engine',
+                                'operator' => '==',
+                                'value' => 'gemini',
+                            ),
+                        ),
+                    ),
+                ),
+                array (
+                    'type'          => 'range',
+                    'name'          => 'gemini_max_tokens',
+                    'tweaks'        => array(
+                        'min' => '100',
+                        'max' => '8192',
+                        'step' => '100',
+                        'suffix' => __("tokens", TEXTDOMAIN),
+                    ),
+                    'label'         => __("Gemini max tokens", TEXTDOMAIN),
+                    'description'   => __("Gemini max tokens to use", TEXTDOMAIN),
+                    'conditional_logic' => array(
+                        'action' => 'show',
+                        'rules' => array(
+                            array(
+                                'field' => 'ai_engine',
+                                'operator' => '==',
+                                'value' => 'gemini',
+                            ),
+                        ),
+                    ),
+                ),
             ),
         ),
         'various'   =>  Array(

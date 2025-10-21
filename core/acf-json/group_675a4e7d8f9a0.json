@@ -35,7 +35,7 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 1,
+            "wpml_cf_preferences": 2,
             "layout": "block",
             "pagination": 0,
             "min": 0,
@@ -58,7 +58,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 2,
+                    "wpml_cf_preferences": 1,
                     "allow_in_bindings": 0,
                     "parent_repeater": "field_68f42cc89b68e"
                 },
@@ -170,7 +170,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 0,
+                    "wpml_cf_preferences": 2,
                     "return_format": "array",
                     "allow_in_bindings": 0,
                     "parent_repeater": "field_68f42cc89b68e"
@@ -180,7 +180,7 @@
                     "label": "Тип кнопки",
                     "name": "button_type",
                     "aria-label": "",
-                    "type": "link",
+                    "type": "button_type",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -189,9 +189,12 @@
                         "class": "",
                         "id": ""
                     },
-                    "wpml_cf_preferences": 0,
-                    "return_format": "array",
+                    "wpml_cf_preferences": 1,
                     "allow_in_bindings": 0,
+                    "style": "",
+                    "icon": false,
+                    "icon_position": "left",
+                    "options": [],
                     "parent_repeater": "field_68f42cc89b68e"
                 }
             ]
@@ -257,6 +260,6 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "acfml_field_group_mode": "translation",
-    "modified": 1760967988
+    "acfml_field_group_mode": "advanced",
+    "modified": 1761066149
 }

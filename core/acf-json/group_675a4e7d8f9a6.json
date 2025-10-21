@@ -35,7 +35,7 @@
                 "class": "",
                 "id": ""
             },
-            "wpml_cf_preferences": 2,
+            "wpml_cf_preferences": 1,
             "default_value": "",
             "maxlength": "",
             "allow_in_bindings": 0,
@@ -63,6 +63,6 @@
     "description": "",
     "show_in_rest": 1,
     "display_title": "",
-    "acfml_field_group_mode": "translation",
-    "modified": 1760968072
+    "acfml_field_group_mode": "advanced",
+    "modified": 1761066203
 }

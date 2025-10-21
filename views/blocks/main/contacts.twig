@@ -2,6 +2,63 @@
 
 {% block content %}
 
-    <p>{{ block.name }}</p>
+    <div class="columns">
+        <div class="column">
+            <p class="title">{{ __('Write to Us', TEXTDOMAIN) }}</p>
+            <form class="contact">
+                <input type="hidden" name="action" value="contact_form_submit">
+                <input type="text" name="user_full_name" placeholder="{{ __('Your Name', TEXTDOMAIN) }}" required>
+                <input type="text" name="user_phone" placeholder="{{ __('Your Phone', TEXTDOMAIN) }}" class="phone" required>
+                <input type="email" name="user_email" placeholder="{{ __('Your Email', TEXTDOMAIN) }}">
+                <textarea name="user_message" placeholder="{{ __('Describe Your Case', TEXTDOMAIN) }}"></textarea>
+                <button type="submit">{{ __('Submit', TEXTDOMAIN) }}</button>
+            </form>
+        </div>
+        <div class="column">
+            <p class="title">{{ __('Work schedule', TEXTDOMAIN) }}</p>
+            <div class="box">
+                <div class="cls">
+                    <div class="c">
+                        <figure>
+                            <svg>
+                                <use href="{{ svg_sprite }}#icon-clock"></use>
+                            </svg>
+                        </figure>
+                    </div>
+                    <div class="c">
+                        {% if fields.schedule_title %}
+                        <p class="sTitle">{{ fields.schedule_title }}</p>
+                        {% endif %}
+                        {% if fields.schedule_subtitle %}
+                        <p class="sSubtitle">{{ fields.schedule_subtitle }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+                {% if fields.schedule and fields.schedule is iterable %}
+                <div class="schedule">
+                    {% for val in fields.schedule %}
+                    <div class="line">
+                        {% if val.left %}<span class="left">{{ val.left }}</span>{% endif %}
+                        {% if val.right %}<span class="right">{{ val.right }}</span>{% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            <div class="box">
+                {% if fields.urgent_help_title %}
+                <p class="uTitle">{{ fields.urgent_help_title }}</p>
+                {% endif %}
+                {% if fields.urgent_help_text %}
+                <div class="typo">
+                    {{ fields.urgent_help_text }}
+                </div>
+                {% endif %}
+                {% if fields.urgent_help_button.url and fields.urgent_help_button.title and fields.urgent_help_button_type %}
+                    {% include 'overall/button.twig' with {'link': fields.urgent_help_button, 'type': fields.urgent_help_button_type} %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
 
 {% endblock %}

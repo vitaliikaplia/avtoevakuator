@@ -8,6 +8,8 @@ function contact_form_submit_action() {
         !empty($full_name = stripslashes($_POST['user_full_name']))
         &&
         !empty($phone = stripslashes($_POST['user_phone']))
+        &&
+        !empty($current_page = stripslashes($_POST['current_page']))
     ){
 
         $return = array();
@@ -33,6 +35,11 @@ function contact_form_submit_action() {
         if($user_message){
             $message .= __('Message', TEXTDOMAIN) . ": " . $user_message . "\n";
         }
+        $message .= __('Sent from', TEXTDOMAIN) . ":" . "\n";
+        $message .= $current_page . "\n\n";
+
+        $message .= __('Geolocation and platform info', TEXTDOMAIN) . ":\n";
+        $message .= get_session_info(get_user_ip()) . "\n";
 
         telegram_bot($message);
 

@@ -21,7 +21,7 @@ function telegram_bot($message){
         );
         curl_setopt_array($ch, $optArray);
         $result = curl_exec($ch);
-        write_log($result);
+        //write_log($result);
         curl_close($ch);
 
     }

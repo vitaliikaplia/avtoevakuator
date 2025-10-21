@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: avtoevakuator\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-21 04:30+0300\n"
+"POT-Creation-Date: 2025-10-21 18:55+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
 "Language-Team: Vitalii Kaplia <vitalii.kaplia@gmail.com>\n"
@@ -49,31 +49,39 @@ msgstr "Інше"
 msgid "Other options updated"
 msgstr "Інші опції оновлено"
 
-#: core/ajax/contact_form_submit.php:27
+#: core/ajax/contact_form_submit.php:29
 msgid "New contact form message"
 msgstr "Нове повідомлення з контактної форми"
 
-#: core/ajax/contact_form_submit.php:28
+#: core/ajax/contact_form_submit.php:30
 msgid "Name"
 msgstr "Ім’я"
 
-#: core/ajax/contact_form_submit.php:29
+#: core/ajax/contact_form_submit.php:31
 msgid "Phone"
 msgstr "Телефон"
 
-#: core/ajax/contact_form_submit.php:31
+#: core/ajax/contact_form_submit.php:33
 msgid "Email"
 msgstr "Email"
 
-#: core/ajax/contact_form_submit.php:34
+#: core/ajax/contact_form_submit.php:36
 msgid "Message"
 msgstr "Повідомлення"
 
-#: core/ajax/contact_form_submit.php:39
+#: core/ajax/contact_form_submit.php:38
+msgid "Sent from"
+msgstr "Відправлено з"
+
+#: core/ajax/contact_form_submit.php:41
+msgid "Geolocation and platform info"
+msgstr "Інформація про геолокацію та платформу"
+
+#: core/ajax/contact_form_submit.php:46
 msgid "Your message has been sent"
 msgstr "Ваше повідомлення відправлене"
 
-#: core/ajax/contact_form_submit.php:40
+#: core/ajax/contact_form_submit.php:47
 msgid "Thank you for contacting us. We will get back to you shortly."
 msgstr "Дякуємо, що звернулися до нас. Ми зв'яжемося з вами найближчим часом."
 
@@ -177,15 +185,19 @@ msgstr "Підказка"
 msgid "Buttons"
 msgstr "Кнопки"
 
-#: core/gutenberg.php:212 core/includes/back/custom-post-types.php:57
+#: core/gutenberg.php:212
+msgid "Gallery"
+msgstr "Галерея"
+
+#: core/gutenberg.php:220 core/includes/back/custom-post-types.php:57
 msgid "Pattern"
 msgstr "Патерн"
 
-#: core/gutenberg.php:462
+#: core/gutenberg.php:470
 msgid "Block"
 msgstr "Блок"
 
-#: core/gutenberg.php:463
+#: core/gutenberg.php:471
 msgid "Block from"
 msgstr "Блок від"
 
@@ -307,8 +319,6 @@ msgstr "Додати нове правило перенаправлення"
 
 #: core/includes/back/custom-post-types.php:24
 #: core/includes/back/custom-post-types.php:61
-#: core/includes/back/custom-post-types.php:100
-#: core/includes/back/custom-post-types.php:101
 msgid "Edit"
 msgstr "Редагувати"
 
@@ -322,8 +332,6 @@ msgstr "Нове правило перенаправлення"
 
 #: core/includes/back/custom-post-types.php:27
 #: core/includes/back/custom-post-types.php:64
-#: core/includes/back/custom-post-types.php:103
-#: core/includes/back/custom-post-types.php:104
 msgid "View"
 msgstr "Переглянути"
 
@@ -389,38 +397,6 @@ msgstr "Позицій в кошиику не знайдено"
 msgid "Parent item"
 msgstr "Батьківська позииція"
 
-#: core/includes/back/custom-post-types.php:75
-#: core/includes/back/custom-post-types.php:95
-#: core/includes/back/custom-post-types.php:96
-#: core/includes/back/custom-post-types.php:97
-msgid "Mail log"
-msgstr "Email логування"
-
-#: core/includes/back/custom-post-types.php:98
-#: core/includes/back/custom-post-types.php:99
-msgid "Add"
-msgstr "Додати"
-
-#: core/includes/back/custom-post-types.php:102
-msgid "New"
-msgstr "Нове"
-
-#: core/includes/back/custom-post-types.php:105
-msgid "Search for mail logs"
-msgstr "Пошук поштових журналів"
-
-#: core/includes/back/custom-post-types.php:106
-msgid "No mail logs found"
-msgstr "Жодних поштових журналів не знайдено"
-
-#: core/includes/back/custom-post-types.php:107
-msgid "No mail logs found in trash"
-msgstr "Жодних поштових журналів не знайдено в кошику"
-
-#: core/includes/back/custom-post-types.php:108
-msgid "Parent"
-msgstr "Батько"
-
 #: core/includes/back/custom-taxonomies.php:10
 #: core/includes/back/custom-taxonomies.php:18
 msgid "Pattern categories"
@@ -461,22 +437,6 @@ msgstr "Категорії"
 #: core/includes/back/dashboard-footer.php:12
 msgid "Powered by"
 msgstr "Працює на"
-
-#: core/includes/back/dashboard-mail-log-meta.php:36
-msgid "Invalid mail log ID"
-msgstr "Невірний ідентифікатор журналу пошти"
-
-#: core/includes/back/dashboard-mail-log-meta.php:53
-msgid "Email log information"
-msgstr "Інформація Email журналу"
-
-#: core/includes/back/dashboard-mail-log-meta.php:74
-msgid "Email preview"
-msgstr "Попередній перегляд листа"
-
-#: core/includes/back/dashboard-mail-log-meta.php:98
-msgid "Recipient"
-msgstr "Одержувач"
 
 #: core/includes/back/dashboard-options.php:8
 msgid "Images"
@@ -660,6 +620,9 @@ msgstr "Токен Telegram для інтеграції з ботом Telegram"
 
 #: core/includes/back/dashboard-options.php:323
 #: core/includes/back/dashboard-options.php:329
+#: core/includes/back/dashboard-options.php:346
+#: core/includes/back/dashboard-options.php:404
+#: core/includes/back/dashboard-options.php:463
 msgid "link"
 msgstr "посилання"
 
@@ -672,68 +635,174 @@ msgid "Telegram chat ID to integrate with Telegram bot"
 msgstr "Ідентифікатор чату Telegram для інтеграції з ботом Telegram"
 
 #: core/includes/back/dashboard-options.php:334
+msgid "OpenAI"
+msgstr "OpenAI"
+
+#: core/includes/back/dashboard-options.php:335
+msgid "Claude"
+msgstr "Claude"
+
+#: core/includes/back/dashboard-options.php:336
+msgid "Gemini"
+msgstr "Gemini"
+
+#: core/includes/back/dashboard-options.php:339
+msgid "AI Engine"
+msgstr "Рушій штучного інтелекту"
+
+#: core/includes/back/dashboard-options.php:340
+msgid "Select AI engine for content generation"
+msgstr "Виберіть ШІ рушій для генерації контенту"
+
+#: core/includes/back/dashboard-options.php:345
+msgid "Open AI API key"
+msgstr "API ключ OpenAI"
+
+#: core/includes/back/dashboard-options.php:346
+msgid "Open AI API key to integrate with Open AI service"
+msgstr "API ключ OpenAI для інтеграції"
+
+#: core/includes/back/dashboard-options.php:365
+msgid "Open AI API model"
+msgstr "OpenAI модель"
+
+#: core/includes/back/dashboard-options.php:366
+msgid "Select Open AI API model to use"
+msgstr "Виберіть модель OpenAI API для використання"
+
+#: core/includes/back/dashboard-options.php:385
+#: core/includes/back/dashboard-options.php:444
+#: core/includes/back/dashboard-options.php:502
+msgid "tokens"
+msgstr "токени"
+
+#: core/includes/back/dashboard-options.php:387
+msgid "Open AI max tokens"
+msgstr "Токени OpenAI"
+
+#: core/includes/back/dashboard-options.php:388
+msgid "Open AI max tokens to use"
+msgstr "Максимальна кількість токенів OpenAI"
+
+#: core/includes/back/dashboard-options.php:403
+msgid "Claude API key"
+msgstr "Ключ API Claude"
+
+#: core/includes/back/dashboard-options.php:404
+msgid "Claude API key to integrate with Claude service"
+msgstr "Ключ API Claude для інтеграції з сервісом Claude"
+
+#: core/includes/back/dashboard-options.php:424
+msgid "Claude API model"
+msgstr "Модель API Claude"
+
+#: core/includes/back/dashboard-options.php:425
+msgid "Select Claude API model to use"
+msgstr "Виберіть модель API Claude для використання"
+
+#: core/includes/back/dashboard-options.php:446
+msgid "Claude max tokens"
+msgstr "Максимальна кількість токенів Claude"
+
+#: core/includes/back/dashboard-options.php:447
+msgid "Claude max tokens to use"
+msgstr "Максимальна кількість токенів Claude для використання"
+
+#: core/includes/back/dashboard-options.php:462
+msgid "Gemini API key"
+msgstr "Ключ API Gemini"
+
+#: core/includes/back/dashboard-options.php:463
+msgid "Gemini API key to integrate with Gemini service"
+msgstr "Ключ API Gemini для інтеграції з сервісом Gemini"
+
+#: core/includes/back/dashboard-options.php:482
+msgid "Gemini API model"
+msgstr "Модель API Gemini"
+
+#: core/includes/back/dashboard-options.php:483
+msgid "Select Gemini API model to use"
+msgstr "Виберіть модель API Gemini для використання"
+
+#: core/includes/back/dashboard-options.php:504
+msgid "Gemini max tokens"
+msgstr "Максимальна кількість токенів Gemini"
+
+#: core/includes/back/dashboard-options.php:505
+msgid "Gemini max tokens to use"
+msgstr "Максимальна кількість токенів Gemini для використання"
+
+#: core/includes/back/dashboard-options.php:520
 msgid "Other options"
 msgstr "Інші параметри"
 
-#: core/includes/back/dashboard-options.php:335
+#: core/includes/back/dashboard-options.php:521
 msgid "All other various options"
 msgstr "Інші параметри"
 
-#: core/includes/back/dashboard-options.php:340
+#: core/includes/back/dashboard-options.php:526
 msgid "Disable all updates"
 msgstr "Вимкнути всі оновлення"
 
-#: core/includes/back/dashboard-options.php:341
+#: core/includes/back/dashboard-options.php:527
 msgid "Disable plugins and WordPress core updates"
 msgstr "Вимкнути оновлення плагінів та ядра WordPress"
 
-#: core/includes/back/dashboard-options.php:346
+#: core/includes/back/dashboard-options.php:532
 msgid "Delete child media"
 msgstr "Видаляти вкладення"
 
-#: core/includes/back/dashboard-options.php:347
+#: core/includes/back/dashboard-options.php:533
 msgid "Delete child media when parent post is deleted"
 msgstr "Видалити дочірні медіафайли, коли буде видалено батьківський допис"
 
-#: core/includes/back/dashboard-options.php:352
+#: core/includes/back/dashboard-options.php:538
 msgid "Enable HTML cache"
 msgstr "Увімкнути HTML кешування"
 
-#: core/includes/back/dashboard-options.php:353
+#: core/includes/back/dashboard-options.php:539
 msgid "Enable HTML page cache for anonymous users"
 msgstr "Увімкнути кеш сторінки HTML для анонімних користувачів"
 
-#: core/includes/back/dashboard-options.php:358
+#: core/includes/back/dashboard-options.php:544
 msgid "Enable minify"
 msgstr "Увімкнути мініфікацію"
 
-#: core/includes/back/dashboard-options.php:359
+#: core/includes/back/dashboard-options.php:545
 msgid "Enable HTML minifier on frontend"
 msgstr "Ввімкнути HTML-мініфікатор на фронтенді"
 
-#: core/includes/back/dashboard-options.php:364
+#: core/includes/back/dashboard-options.php:550
 msgid "Hide ACF"
 msgstr "Приховати ACF"
 
-#: core/includes/back/dashboard-options.php:365
+#: core/includes/back/dashboard-options.php:551
 msgid "Hide Advanced Custom Fields from Dashboard"
 msgstr "Приховати ACF з інформаційної панелі"
 
-#: core/includes/back/dashboard-options.php:370
+#: core/includes/back/dashboard-options.php:556
 msgid "Pages to patterns"
 msgstr "Сторінки до патернів"
 
-#: core/includes/back/dashboard-options.php:371
+#: core/includes/back/dashboard-options.php:557
 msgid "Parse all pages blocks as Gutenberg patterns"
 msgstr "Парсити усі блоки сторінок як Гутенберг патерни"
 
-#: core/includes/back/dashboard-options.php:376
+#: core/includes/back/dashboard-options.php:562
 msgid "Translation duplicates"
 msgstr "Дублікати перекладу"
 
-#: core/includes/back/dashboard-options.php:377
+#: core/includes/back/dashboard-options.php:563
 msgid "Create translation duplicates while adding posts"
 msgstr "Створювати дублікати перекладу під час додавання дописів"
+
+#: core/includes/back/dashboard-pages-columns.php:15
+msgid "Yoast Title"
+msgstr "Заголовок Yoast"
+
+#: core/includes/back/dashboard-pages-columns.php:16
+msgid "Yoast Description"
+msgstr "Опис Yoast"
 
 #: core/includes/back/dashboard-update-assets-version.php:16
 msgid "Update theme version"
@@ -766,10 +835,6 @@ msgid ""
 msgstr ""
 "Неправильне правило перенаправлення: Стара URL-адреса повинна містити "
 "поточний домен WordPress."
-
-#: core/includes/back/system-send-email.php:34
-msgid "Test"
-msgstr "Тест"
 
 #: core/includes/back/system-thumbnails.php:9
 msgid "Thumbnail"
@@ -905,39 +970,47 @@ msgstr "Патерн не обрано"
 msgid "Supply"
 msgstr "Подача"
 
-#: views/blocks/main/cities.twig:22 views/blocks/main/price-examples.twig:25
+#: views/blocks/main/cities.twig:22 views/blocks/main/price-examples.twig:26
 msgid "Distance"
 msgstr "Відстань"
 
-#: views/blocks/main/form.twig:7
+#: views/blocks/main/contacts.twig:7
+msgid "Write to Us"
+msgstr "Напишіть нам"
+
+#: views/blocks/main/contacts.twig:10 views/blocks/main/form.twig:7
 msgid "Your Name"
 msgstr "Ваше ім'я"
 
-#: views/blocks/main/form.twig:8
+#: views/blocks/main/contacts.twig:11 views/blocks/main/form.twig:8
 msgid "Your Phone"
 msgstr "Ваш Телефон"
 
-#: views/blocks/main/form.twig:9
+#: views/blocks/main/contacts.twig:12 views/blocks/main/form.twig:9
 msgid "Your Email"
 msgstr "Ваш Email"
 
-#: views/blocks/main/form.twig:10
+#: views/blocks/main/contacts.twig:13 views/blocks/main/form.twig:10
 msgid "Describe Your Case"
 msgstr "Опишіть свій випадок"
 
-#: views/blocks/main/form.twig:11
+#: views/blocks/main/contacts.twig:14 views/blocks/main/form.twig:11
 msgid "Submit"
 msgstr "Надіслати"
 
-#: views/blocks/main/price-examples.twig:32
+#: views/blocks/main/contacts.twig:18
+msgid "Work schedule"
+msgstr "Графік роботи"
+
+#: views/blocks/main/price-examples.twig:33
 msgid "Vehicle Type"
 msgstr "Тип авто"
 
-#: views/blocks/main/price-examples.twig:39
+#: views/blocks/main/price-examples.twig:40
 msgid "Calculation"
 msgstr "Розрахунок"
 
-#: views/blocks/main/price-examples.twig:46
+#: views/blocks/main/price-examples.twig:47
 msgid "Total Price"
 msgstr "Загальна сума"
 
@@ -948,6 +1021,10 @@ msgstr "Послуга"
 #: views/blocks/main/prices.twig:10
 msgid "Price"
 msgstr "Ціна"
+
+#: views/dashboard/email-log-meta.twig:3
+msgid "Recipient"
+msgstr "Одержувач"
 
 #: views/dashboard/email-log-meta.twig:7
 msgid "Log ID"
@@ -977,6 +1054,10 @@ msgstr "Код:"
 msgid "Session information"
 msgstr "Інформація про сеанс"
 
+#: views/email/test.twig:5
+msgid "Test"
+msgstr "Тест"
+
 #: views/overall/cookie.twig:17
 msgid "Tell me more about cookies"
 msgstr "Розкажіть мені більше про файли cookie"
@@ -992,6 +1073,36 @@ msgstr "Розробка сайту"
 #: views/password.twig:19
 msgid "Password"
 msgstr "Пароль"
+
+#~ msgid "Mail log"
+#~ msgstr "Email логування"
+
+#~ msgid "Add"
+#~ msgstr "Додати"
+
+#~ msgid "New"
+#~ msgstr "Нове"
+
+#~ msgid "Search for mail logs"
+#~ msgstr "Пошук поштових журналів"
+
+#~ msgid "No mail logs found"
+#~ msgstr "Жодних поштових журналів не знайдено"
+
+#~ msgid "No mail logs found in trash"
+#~ msgstr "Жодних поштових журналів не знайдено в кошику"
+
+#~ msgid "Parent"
+#~ msgstr "Батько"
+
+#~ msgid "Invalid mail log ID"
+#~ msgstr "Невірний ідентифікатор журналу пошти"
+
+#~ msgid "Email log information"
+#~ msgstr "Інформація Email журналу"
+
+#~ msgid "Email preview"
+#~ msgstr "Попередній перегляд листа"
 
 #~ msgid "Success"
 #~ msgstr "Готово"
@@ -1213,9 +1324,6 @@ msgstr "Пароль"
 #~ msgstr ""
 #~ "Ми проводимо планове технічне обслуговування. Ми проводимо планове "
 #~ "технічне обслуговування. Незабаром ми знову будемо онлайн."
-
-#~ msgid "Google maps API key to integrate with Advanced Custom Fields"
-#~ msgstr "Ключ API карт Google для інтеграції з Advanced Custom Fields"
 
 #~ msgid "New URL:"
 #~ msgstr "Нова адреса:"
