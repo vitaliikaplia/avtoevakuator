@@ -15,16 +15,17 @@
         justify-content: center;
         text-align: center;
         gap: 38px;
-        min-height: 440px;
+        min-height: fit-content;
+        padding-bottom: 28px;
         width: 100%;
         max-width: 100%;
         position: relative;
         z-index: 10;
         transform: translateZ(10px);
-        padding-top: 75px;
+        padding-top: 95px;
 
         @media (max-width: 1024px){
-            padding-top: 65px;
+            padding-top: 85px;
         }
 
         .header-padding & {
