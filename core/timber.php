@@ -23,6 +23,9 @@ class StarterSite extends Site {
         $context['svg_sprite'] = SVG_SPRITE_URL;
         $context['general_fields'] = cache_general_fields();
         $context['TEXTDOMAIN'] = TEXTDOMAIN;
+        $current_lang = apply_filters('wpml_current_language', null);
+        $context['site']->title = get_option('blogname_' . $current_lang) ?: get_option('blogname');
+        $context['site']->description = get_option('blogdescription_' . $current_lang) ?: get_option('blogdescription');
         return $context;
     }
 
@@ -52,6 +55,7 @@ class StarterSite extends Site {
         $twig->addFunction( new \Twig\TwigFunction('short_phone_format', 'short_phone_format'));
         $twig->addFunction( new \Twig\TwigFunction('hex_to_rgb', 'hex_to_rgb'));
         $twig->addFunction( new \Twig\TwigFunction('yoast_breadcrumb', 'yoast_breadcrumb'));
+
         return $twig;
     }
 }
