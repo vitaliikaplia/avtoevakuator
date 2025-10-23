@@ -153,13 +153,13 @@ function get_redirect_rules(){
 add_action('template_redirect', function () {
     $redirect_rules = get_redirect_rules();
     if (!empty($redirect_rules) && !isset($redirect_rules['empty'])) {
-        $REQUEST_URI = isset($_SERVER['REQUEST_URI']) ? rtrim($_SERVER['REQUEST_URI'], '/') . '/' : '/';
+        $REQUEST_URI = isset($_SERVER['REQUEST_URI']) ? rtrim(urldecode($_SERVER['REQUEST_URI']), '/') . '/' : '/';
         foreach ($redirect_rules as $rule) {
             if (!$rule['old_url'] || !$rule['new_url'] || !$rule['code']) {
                 continue; // Пропускаємо цей запис, якщо якесь з полів відсутнє
             }
             // Видаляємо протокол і домен з old_url
-            $old = str_replace(["https://", "http://", parse_url(get_bloginfo('url'), PHP_URL_HOST)], "", rtrim($rule['old_url'], '/') . '/');
+            $old = str_replace(["https://", "http://", parse_url(get_bloginfo('url'), PHP_URL_HOST)], "", rtrim(urldecode($rule['old_url']), '/') . '/');
             if ($REQUEST_URI === $old) {
                 wp_redirect($rule['new_url'], $rule['code']);
                 exit;
