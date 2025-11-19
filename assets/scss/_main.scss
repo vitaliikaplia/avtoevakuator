@@ -1138,7 +1138,6 @@ footer{
 
 .mobileMenu{
     display: none;
-    display: block;
     position: fixed;
     z-index: 9000;
     @include transform(translateZ(9000px));
