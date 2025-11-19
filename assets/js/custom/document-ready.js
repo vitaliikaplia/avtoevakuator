@@ -35,7 +35,7 @@
         });
 
         /** desktop current menu items */
-        $('header .menu > li,.nobileMenu .menu > li').each(function(){
+        $('header .menu > li,.mobileMenu .menu > li').each(function(){
             let thisLiEl = $(this),
                 thisAel = thisLiEl.find('> a'),
                 thisHref = thisAel.attr('href');
