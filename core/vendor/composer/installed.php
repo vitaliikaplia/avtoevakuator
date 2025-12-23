@@ -3,7 +3,7 @@
         'name' => 'vitaliikaplia/avtoevakuator',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '1c51700add2f8e4ec42cbdc096b7da12c92da6a9',
+        'reference' => '425dd0f8dde9ec0a34526f9773ec9a69233238fe',
         'type' => 'theme',
         'install_path' => __DIR__ . '/../../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'composer/ca-bundle' => array(
-            'pretty_version' => '1.5.9',
-            'version' => '1.5.9.0',
-            'reference' => '1905981ee626e6f852448b7aaa978f8666c5bc54',
+            'pretty_version' => '1.5.10',
+            'version' => '1.5.10.0',
+            'reference' => '961a5e4056dd2e4a2eedcac7576075947c28bf63',
             'type' => 'library',
             'install_path' => __DIR__ . '/./ca-bundle',
             'aliases' => array(),
@@ -83,9 +83,9 @@
             'dev_requirement' => false,
         ),
         'twig/twig' => array(
-            'pretty_version' => 'v3.22.0',
-            'version' => '3.22.0.0',
-            'reference' => '4509984193026de413baf4ba80f68590a7f2c51d',
+            'pretty_version' => 'v3.22.2',
+            'version' => '3.22.2.0',
+            'reference' => '946ddeafa3c9f4ce279d1f34051af041db0e16f2',
             'type' => 'library',
             'install_path' => __DIR__ . '/../twig/twig',
             'aliases' => array(),
@@ -94,7 +94,7 @@
         'vitaliikaplia/avtoevakuator' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '1c51700add2f8e4ec42cbdc096b7da12c92da6a9',
+            'reference' => '425dd0f8dde9ec0a34526f9773ec9a69233238fe',
             'type' => 'theme',
             'install_path' => __DIR__ . '/../../../',
             'aliases' => array(),
