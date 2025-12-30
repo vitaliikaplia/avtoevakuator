@@ -3,7 +3,7 @@
         'name' => 'vitaliikaplia/avtoevakuator',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '425dd0f8dde9ec0a34526f9773ec9a69233238fe',
+        'reference' => '489b1d77b85d2659b6d417f57b39d0d3d876a32b',
         'type' => 'theme',
         'install_path' => __DIR__ . '/../../../',
         'aliases' => array(),
@@ -94,7 +94,7 @@
         'vitaliikaplia/avtoevakuator' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '425dd0f8dde9ec0a34526f9773ec9a69233238fe',
+            'reference' => '489b1d77b85d2659b6d417f57b39d0d3d876a32b',
             'type' => 'theme',
             'install_path' => __DIR__ . '/../../../',
             'aliases' => array(),
